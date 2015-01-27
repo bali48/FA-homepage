@@ -227,6 +227,7 @@ Navbar
 	padding:30px 10px 30px 10px;
 	margin:0;
 	/*border-top:2px solid #2e2e2e;*/
+      border-top: 2px solid #000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -245,6 +246,7 @@ Navbar
 	background:#none;
 	border:none;
 	border-top:2px solid;
+      /*padding-top: 28px;*/
 }
 
 .navbar-default .navbar-toggle,
@@ -735,7 +737,7 @@ Fusion Advisor style
 }
 
 .header-wrap .ribbon a:hover {
-  color: #f55e25;
+  color: #1ec279;
   text-decoration: none;
 }
 
@@ -757,4 +759,15 @@ Fusion Advisor style
       top: 0;
       z-index: 1030;
       width: 100%;
+}
+
+.feature-box .pe-feature,
+.feature-box:hover .pe-feature {
+      background-color: transparent !important;
+      color: #1fa2ed !important;
+      border-color: #1fa2ed !important;
+}
+
+.counter-number {
+      color: #1fa2ed !important;
 }

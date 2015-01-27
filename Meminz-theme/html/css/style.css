@@ -40,7 +40,8 @@ CSS structure
 Home
 =========================== */
 .home-wrapper{
-	background:#1a1a1a;
+	/*background:#1a1a1a;*/
+	background: #636363;
 	position:relative;
 	width:100%;
 	margin:0;
@@ -70,7 +71,7 @@ Home
 }
 
 .parallax.polygon-bg{
-	background-image:url(../img/polygon.jpg);
+	/*background-image:url(../img/polygon.jpg);*/
 }
 
 .home-contain{

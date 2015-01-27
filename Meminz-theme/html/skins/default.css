@@ -48,7 +48,8 @@ a:active,
 .counter-number,
 .pricing-head.popular .pricing-price,
 .validation{
-	color: #f55e25;
+	/*color: #f55e25;*/
+	color: #1ec279;
 }
 
 /*
@@ -77,7 +78,8 @@ Background color
 .log-tabs li a:hover,
 .log-tabs li a:focus,
 .log-tabs li a:active{
-	background-color: #f55e25;
+	/*background-color: #f55e25;*/
+	background-color: #1ec279;
 }
 
 /*
@@ -106,7 +108,8 @@ ul.listForm li .form-control:focus,
 .pe-feature,
 .accordion-heading a i,
 .accordion-heading a:hover{
-	border-color: #f55e25;
+	/*border-color: #f55e25;*/
+	border-color: #1ec279;
 }
 
 /*
@@ -121,8 +124,10 @@ Color on mobile
 	.navbar-default .navbar-nav .dropdown.active a:hover,
 	.navbar-default .navbar-nav .active a:focus,
 	.navbar-default .navbar-nav .dropdown.active a:focus{
-		background:#f55e25;
-		border:1px solid #f55e25;
+		/*background:#f55e25;
+		border:1px solid #f55e25;*/
+		background:#1ec279;
+		border:1px solid #1ec279;
 		color:#fff;
 	}
 }
