@@ -718,6 +718,14 @@ Wizard
 Fusion Advisor style
 =========================== */
 
+.text-center {
+      text-align: center;
+}
+
+.margin-bottom-0 {
+      margin-bottom: 0 !important;
+}
+
 .navbar>.container .navbar-brand {
   margin-left: 0;
 }
@@ -770,4 +778,235 @@ Fusion Advisor style
 
 .counter-number {
       color: #1fa2ed !important;
+}
+
+/* ------ Pricing page ------- */
+.pricing-page .table-responsive {
+      margin-top: 50px;
+}
+
+.pricing-page h3.text-center {
+      margin-top: 30px;
+}
+
+.pricing-page h4 {
+      margin: 30px 0 0 0;
+      font-weight: lighter;
+      color: #999;
+      font-size: 20px;
+}
+
+.table>thead:first-child>tr:first-child>th {
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+}
+
+.table>thead:first-child>tr:last-child>th {
+      border-right: 1px solid #ddd;
+}
+
+.table>thead:first-child>tr:first-child>.no-border {
+      border-top: none;
+      border-left: none;
+}
+
+.pricing-page th {
+      background: #fafafa;
+}
+
+.pricing-page th:first-child {
+      background: #fff;
+}
+
+.pricing-page th h5 {
+      color: #1ec279;
+      margin-bottom: 5px;
+}
+
+.pricing-page th h3 {
+      margin: 0;
+      color: #4a4a4a;
+}
+
+.pricing-page th p {
+      font-weight: normal;
+      font-size: 11px;
+      margin-bottom: 5px;
+      color: #999;
+}
+
+.pricing-page th span strong {
+      text-decoration: line-through;
+}
+
+.pricing-page th span {
+      font-weight: normal;
+      color: #4a4a4a;
+}
+
+.table>tbody>tr>td {
+      border-left: 1px solid #ddd;
+}
+
+.table>tbody>tr>td:last-child {
+      border-right: 1px solid #ddd;
+}
+
+.table>tbody>tr:last-child>td {
+      border-bottom: 1px solid #ddd;
+}
+
+.table>tbody>tr>td.no-border {
+      border-left: none;
+      border-bottom: none;
+}
+
+.pricing-page td .form-control {
+      height: 28px;
+      width: 34%;
+      margin: 0 auto;
+}
+
+.pricing-page td .checkbox {
+      margin: 0;
+}
+
+.pricing-page td .checkbox label {
+      height: 20px;
+}
+
+.pricing-page td .checkbox input[type=checkbox] {
+      font-size: 16px;
+}
+
+.pricing-page td .fa-check {
+      color: #1ec279;
+      font-size: 16px;
+}
+
+.pricing-page td .fa-times {
+      color: #bfbfbf;
+      font-size: 16px;
+}
+
+.pricing-page td .no-background {
+      background: none;
+      color: #1ec279;
+}
+
+.pricing-page td .no-background:hover {
+      background: #1ec279;
+      color: #fff;
+}
+
+.pricing-page .col-md-2 {
+      padding-left: 0;
+}
+
+.pricing-page .column-billing {
+      background-color: #fafafa;
+      margin-top: 175px;
+}
+
+.pricing-page .column-billing .header {
+      border-bottom: 4px solid #fff;
+      padding: 5px;
+}
+
+.pricing-page .column-billing .header .font-blue {
+      font-size: 16px;
+      color: #1fa2ed;
+}
+
+.pricing-page .column-billing .header .font-gray {
+      color: #999;
+}
+
+.pricing-page .column-billing .radio-options {
+      border: 2px dashed #1fa2ed;
+      padding: 5px 5px 5px 10px;
+}
+
+.pricing-page .column-billing .checkbox {
+      border-top: 4px solid #fff;
+      padding: 5px 5px 5px 10px;
+      margin: 0;
+      line-height: 20px;
+}
+
+/* Wizard */
+.modal-wizard .modal-dialog {
+      width: 720px;
+}
+
+.fuelux .wizard {
+      border: none;
+      box-shadow: none;
+      background: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+}
+
+.fuelux .wizard .progress-frame {
+      position: relative;
+      background: #e1e1e1;
+      padding: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+}
+
+.fuelux .wizard .progress-frame:after,
+.fuelux .wizard .progress-frame:before {
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.fuelux .wizard .progress-frame:after {
+  /*border-color: rgba(136, 183, 213, 0);*/
+  border-top-color: #e1e1e1;
+  border-width: 3px;
+  margin-left: -3px;
+}
+
+.fuelux .wizard .progress-frame:before {
+  /*border-color: rgba(194, 225, 245, 0);*/
+  border-top-color: #e1e1e1;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.fuelux .wizard .progress-frame .progress {
+      line-height: 10px;
+      height: 10px;
+}
+
+.fuelux .wizard-form .step-pane {
+      margin-top: 20px;
+}
+
+.fuelux .wizard-form fieldset .row {
+      margin-bottom: 15px;
+}
+
+.fuelux .wizard ul li {
+      background: none;
+      font-size: 12px;
+      padding: 0 20px;
+}
+
+.fuelux .wizard ul li.active {
+      background: none;
+      color: #999;
+}
+
+.fuelux .wizard ul li.active span {
+      border-bottom: 1px dotted #999;
 }

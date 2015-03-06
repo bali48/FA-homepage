@@ -71,16 +71,22 @@ Home
 }
 
 .parallax.polygon-bg{
-	/*background-image:url(../img/polygon.jpg);*/
+	/*background-image:url(../img/background.png);*/
 }
 
 .home-contain{
-	padding:160px 0 0 0;
+	padding: 71px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
 }
 
 .parallax.polygon-bg .home-contain{
-	background:none;
+	/*background:none;*/
+	background-image:url(../img/background.png);
+	height: 871px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .video-wrapper{
@@ -118,7 +124,7 @@ Contain
 }
 
 .contain.desc-wrapp{
-	padding-top:360px;
+	/*padding-top:360px;*/
 	padding-bottom:20px;
 }
 
@@ -138,7 +144,7 @@ Contain
 Counter
 =========================== */
 #counter-wrapper{
-	background-image:url(../img/bg2.jpg);
+	/*background-image:url(../img/bg2.jpg);*/
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -506,7 +512,7 @@ ul.client-list li ul li.last{
 Download
 =========================== */
 #download{
-	background-image:url(../img/bg3.jpg);
+	/*background-image:url(../img/bg3.jpg);*/
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
