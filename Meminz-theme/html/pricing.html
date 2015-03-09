@@ -102,21 +102,21 @@
                                         <th width="24%" class="text-center">
                                             <h5>ADVISOR ANNUAL</h5>
                                             <h3>$214</h3>
-                                            <p>Per Advisor/Per Month (Paid Annualy)</p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span> </p>
                                             <span><strong>$3,660</strong></span>
                                             <span>Over 29% off</span>
                                         </th>
                                         <th width="24%" class="text-center">
                                             <h5>TEAM ANNUAL</h5>
                                             <h3>$164</h3>
-                                            <p>Per Advisor/Per Month (Paid Annualy)</p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span></p>
                                             <span><strong>$3,660</strong></span>
                                             <span>Over 50% off</span>
                                         </th>
                                         <th width="24%" class="text-center">
                                             <h5>OFFICE ANNUAL</h5>
                                             <h3>$214</h3>
-                                            <p>Per Advisor/Per Month (Paid Annualy)</p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span></p>
                                             <span><strong>$3,660</strong></span>
                                             <span>Over 29% off</span>
                                         </th>
@@ -127,7 +127,7 @@
                                         <td><strong>Number of Advisor</strong></td>
                                         <td class="text-center">1</td>
                                         <td class="text-center">
-                                            <select class="form-control">
+                                            <select class="form-control" data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
                                                 <option>2</option>
                                                 <option>More</option>
                                             </select>
@@ -164,27 +164,18 @@
                                         <td class="text-center"><i class="fa fa-check"></i></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Account Aggregation</strong></td>
+                                        <td><strong>Account Aggregation</strong><input type="checkbox" value=true, data-bind="checked: isAccountAggregationSelected"></td>
                                         <td class="text-center">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="option1">
-                                                </label>
-                                            </div>
+                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check"></i></span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                         <td class="text-center">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="option2">
-                                                </label>
-                                            </div>
+                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check"></i></span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                         <td class="text-center">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="option3">
-                                                </label>
-                                            </div>
+                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check"></i></span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                     </tr>
                                     <tr>
