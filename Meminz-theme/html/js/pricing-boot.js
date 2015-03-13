@@ -42,25 +42,29 @@ require(["jquery", "knockout"], function ($, ko) {
                     period: 'monthToMonth',
                     months: 1,
                     saving: 0,
-                    teamSaving: 0
+                    teamSaving: 0,
+                    officeSaving: 0
                 },
                 monthly: {
                     period: 'monthly',
                     months: 1,
                     saving: 0.05,
-                    teamSaving: 0.1
+                    teamSaving: 0.1,
+                    officeSaving: 0.1
                 },
                 quarterly: {
                     period: 'quarterly',
                     months: 3,
                     saving: 0.1,
-                    teamSaving: 0.19
+                    teamSaving: 0.19,
+                    officeSaving: 0.15
                 },
                 annual: {
                     period: 'annual',
                     months: 12,
                     saving: 0.15,
-                    teamSaving: 0.2
+                    teamSaving: 0.2,
+                    officeSaving: 0.2
                 }
             };
         _init = function () {
@@ -85,6 +89,11 @@ require(["jquery", "knockout"], function ($, ko) {
         self.teamAdvisorRealCost = ko.observable("$2,160");
         self.teamSaving = ko.observable("%40");
         self.teamAdvisorSelectedCount = ko.observable(2);
+        // office
+        self.officeCostPerAdvisor = ko.observable("$152");
+        self.officeAdvisorRealCost = ko.observable("$3,660");
+        self.officeSaving = ko.observable("%15.28");
+        self.officeAdvisorSelectedCount = ko.observable(2);
 
         // calculated
         _calculated = ko.computed(function () {
@@ -92,8 +101,10 @@ require(["jquery", "knockout"], function ($, ko) {
                 selectedPeriod = self.selectedPeriod(),
                 isAccountAggregationSelected = self.isAccountAggregationSelected(),
                 teamAdvisorSelectedCount = self.teamAdvisorSelectedCount(),
+                officeAdvisorSelectedCount = self.officeAdvisorSelectedCount(),
                 advisorBaseCost,
                 advisorAggOptionsCost,
+                additionalAddvisorAggOptionsCost,
                 advisorCount,
                 realCost,
                 totalBaseCost,
@@ -135,7 +146,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 realCost = (advisorBaseCost + advisorAggOptionsCost) * (1 - _saving[selectedPeriod].saving);
                 realCost += 100 * (teamAdvisorSelectedCount - 1) * (1 - _saving[selectedPeriod].teamSaving);
                 realCost /= teamAdvisorSelectedCount;
-                saving = 1 - realCost / advisorBaseCost;
+                saving = 1 - realCost / (advisorBaseCost + advisorAggOptionsCost);
                 self.teamCostPerAdvisor(currencyFormat(realCost));
                 self.teamSaving(percentFormat(saving));
             } else {
@@ -149,13 +160,29 @@ require(["jquery", "knockout"], function ($, ko) {
                 self.teamCostPerAdvisor(currencyFormat(realCost));
                 self.teamSaving(percentFormat(saving));
             }
-            //realCost = advisorBaseCost + (100 * (teamAdvisorSelectedCount - 1));
-            //cost =
-            //realCost = advisorBaseCost * (1 - _saving[selectedPeriod].saving) + (100 * (teamAdvisorSelectedCount - 1)) * (1 - _saving[selectedPeriod].teamSaving);
-            //realCost = realCost / teamAdvisorSelectedCount;
-            //annualCost = 12 * realCost;
-            //saving = 1 - realCost / advisorBaseCost;
-
+            // now for office
+            if (isAccountAggregationSelected) {
+                realCost = (advisorBaseCost + advisorAggOptionsCost) * officeAdvisorSelectedCount;
+                additionalAddvisorAggOptionsCost = 105; // aggregate option price
+                cost = realCost * _saving[selectedPeriod].months;
+                self.officeAdvisorRealCost(currencyFormat(cost, 2));
+                realCost = (advisorBaseCost + advisorAggOptionsCost + additionalAddvisorAggOptionsCost * (officeAdvisorSelectedCount - 1)) * (1 - _saving[selectedPeriod].saving);
+                realCost += 125 * (officeAdvisorSelectedCount - 1) * (1 - _saving[selectedPeriod].officeSaving);
+                realCost /= officeAdvisorSelectedCount;
+                saving = 1 - realCost / (advisorBaseCost + advisorAggOptionsCost);
+                self.officeCostPerAdvisor(currencyFormat(realCost));
+                self.officeSaving(percentFormat(saving));
+            } else {
+                realCost = advisorBaseCost * officeAdvisorSelectedCount;
+                cost = realCost * _saving[selectedPeriod].months;
+                self.officeAdvisorRealCost(currencyFormat(cost, 2));
+                realCost = advisorBaseCost * (1 - _saving[selectedPeriod].saving);
+                realCost += 125 * (officeAdvisorSelectedCount - 1) * (1 - _saving[selectedPeriod].officeSaving);
+                realCost /= officeAdvisorSelectedCount;
+                saving = 1 - realCost / advisorBaseCost;
+                self.officeCostPerAdvisor(currencyFormat(realCost));
+                self.officeSaving(percentFormat(saving));
+            }
             console.log("computed executed, selected period: " + selectedPeriod);
         });
 
