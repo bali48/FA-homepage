@@ -19,7 +19,7 @@ require(["jquery", "knockout"], function ($, ko) {
     };
 
     percentFormat = function (value) {
-        var numberstring = '%' + numberFormat(value * 100, 0);
+        var numberstring = numberFormat(value * 100, 0) + '%';
         return numberstring;
     };
 
@@ -40,6 +40,7 @@ require(["jquery", "knockout"], function ($, ko) {
             _saving = {
                 monthToMonth: {
                     period: 'monthToMonth',
+                    title: 'MTM',
                     months: 1,
                     saving: 0,
                     teamSaving: 0,
@@ -47,6 +48,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 monthly: {
                     period: 'monthly',
+                    title: 'Monthly',
                     months: 1,
                     saving: 0.05,
                     teamSaving: 0.1,
@@ -54,6 +56,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 quarterly: {
                     period: 'quarterly',
+                    title: 'Quarterly',
                     months: 3,
                     saving: 0.1,
                     teamSaving: 0.19,
@@ -61,6 +64,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 annual: {
                     period: 'annual',
+                    title: 'Annual',
                     months: 12,
                     saving: 0.15,
                     teamSaving: 0.2,
@@ -79,6 +83,7 @@ require(["jquery", "knockout"], function ($, ko) {
         self.isAccountAggregationSelected = ko.observable(false);
         self.selectedPeriod = ko.observable("monthToMonth");
         self.advisorCount = ko.observableArray([]);
+        self.titlePeriod = ko.observable("MTM")
         // one advisor
         self.advisorCost = ko.observable("$180");
         self.advisorRealCost = ko.observable("$2,160");
@@ -121,6 +126,7 @@ require(["jquery", "knockout"], function ($, ko) {
                     selectedPeriod = _saving.monthly.period;
                 }
             }
+            self.titlePeriod(_saving[selectedPeriod].title);
             // do the calculation
             // first for one advisor
             advisorBaseCost = 180;

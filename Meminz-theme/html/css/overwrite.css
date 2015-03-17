@@ -828,6 +828,7 @@ Fusion Advisor style
 }
 
 .pricing-page th {
+<<<<<<< HEAD
 	background: #fafafa;
 }
 
@@ -844,12 +845,13 @@ Fusion Advisor style
 .pricing-page th h5 {
 	color: #1ec279;
 	margin-bottom: 5px;
+	text-transform: uppercase;
 }
 
-	.pricing-page th h5 span {
-		color: #1ec279;
-		font-weight: 700;
-	}
+.pricing-page th h5 span {
+	color: #1ec279;
+	font-weight: 700;
+}
 
 .pricing-page th h3 {
 	margin: 0;
@@ -871,6 +873,61 @@ Fusion Advisor style
 	font-weight: normal;
 	color: #4a4a4a;
 }
+=======
+    background: #fafafa;
+}
+
+    .pricing-page th:first-child {
+        vertical-align: middle;
+        font-size: 26px;
+        background: transparent !important;
+    }
+
+    .pricing-page th.stand-out {
+        border-top: 4px solid #1fa2ed !important;
+        border-left: 4px solid #1fa2ed !important;
+        border-right: 4px solid #1fa2ed !important;
+    }
+
+    .pricing-page th:first-child {
+        background: #fff;
+    }
+
+    .pricing-page th h5 {
+        color: #1ec279;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+        .pricing-page th h5 span {
+            color: #1ec279;
+            font-weight: 700;
+        }
+
+    .pricing-page th h3 {
+        margin: 0;
+        color: #4a4a4a;
+    }
+
+    .pricing-page th p {
+        font-weight: normal;
+        font-size: 11px;
+        margin-bottom: 5px;
+        color: #999;
+    }
+
+    /*.pricing-page th span strong {
+      text-decoration: line-through;
+    }*/
+    .pricing-page th span strong.saving {
+        text-decoration: line-through;
+    }
+
+    .pricing-page th span {
+        font-weight: normal;
+        color: #4a4a4a;
+    }
+>>>>>>> FETCH_HEAD
 
 .table > tbody > tr > td {
 	border-left: 1px solid #ddd;

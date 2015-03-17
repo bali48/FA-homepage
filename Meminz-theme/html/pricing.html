@@ -103,33 +103,30 @@
                                         <th width="24%" class="text-center">
                                             <h5>
                                                 ADVISOR
-                                                <span data-bind="visible: isAnnualAggrement">ANNUAL</span>
-                                                <span data-bind="visible: !isAnnualAggrement()">MONTHLY</span>
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
                                             </h5>
                                             <h3 data-bind="text: advisorCost">$214</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span> </p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span> </p>
                                             <span><strong data-bind="text: advisorRealCost, css: {  saving: hasSaving }">$3,660</strong></span>
                                             <span data-bind="visible: hasSaving">Over <span data-bind="text: advisorSaving">29%</span>  off</span>
                                         </th>
                                         <th width="24%" class="text-center">
                                             <h5>
                                                 TEAM
-                                                <span data-bind="visible: isAnnualAggrement">ANNUAL</span>
-                                                <span data-bind="visible: !isAnnualAggrement()">MONTHLY</span>
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
                                             </h5>
                                             <h3 data-bind="text: teamCostPerAdvisor">$164</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span></p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
                                             <span><strong class="saving" data-bind="text: teamAdvisorRealCost">$3,660</strong></span>
                                             <span>Over <span data-bind="text: teamSaving">50% </span> off</span>
                                         </th>
                                         <th width="24%" class="text-center">
                                             <h5>
                                                 OFFICE
-                                                <span data-bind="visible: isAnnualAggrement">ANNUAL</span>
-                                                <span data-bind="visible: !isAnnualAggrement()">MONTHLY</span>
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
                                             </h5>
                                             <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid Annualy)</span></p>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
                                             <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
                                             <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
                                         </th>
