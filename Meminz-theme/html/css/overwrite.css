@@ -828,15 +828,14 @@ Fusion Advisor style
 }
 
 .pricing-page th {
-<<<<<<< HEAD
 	background: #fafafa;
 }
 
-	.pricing-page th:first-child {
-		vertical-align: middle;
-		font-size: 26px;
-		background: transparent !important;
-	}
+.pricing-page th:first-child {
+	vertical-align: middle;
+	font-size: 26px;
+	background: transparent !important;
+}
 
 .pricing-page th:first-child {
 	background: #fff;
@@ -923,11 +922,10 @@ Fusion Advisor style
         text-decoration: line-through;
     }
 
-    .pricing-page th span {
-        font-weight: normal;
-        color: #4a4a4a;
-    }
->>>>>>> FETCH_HEAD
+.pricing-page th span {
+    	font-weight: normal;
+    	color: #4a4a4a;
+}
 
 .table > tbody > tr > td {
 	border-left: 1px solid #ddd;
