@@ -77,6 +77,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 counts.push(i);
             }
             self.advisorCount(counts);
+            self.selectedPeriod(_saving.quarterly.period);
         };
         // public
         self.isAnnualAggrement = ko.observable(false);
