@@ -102,6 +102,16 @@
                                         <th class="text-center no-border">Plans & Pricing</th>
                                         <th width="24%" class="text-center">
                                             <h5>
+                                                OFFICE
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
+                                            </h5>
+                                            <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
+                                            <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
+                                            <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
+                                        </th>
+                                        <th width="24%" class="text-center">
+                                            <h5>
                                                 ADVISOR
                                                 <span data-bind="text: titlePeriod">ANNUAL</span>
                                             </h5>
@@ -120,28 +130,19 @@
                                             <span><strong class="saving" data-bind="text: teamAdvisorRealCost">$3,660</strong></span>
                                             <span>Over <span data-bind="text: teamSaving">50% </span> off</span>
                                         </th>
-                                        <th width="24%" class="text-center">
-                                            <h5>
-                                                OFFICE
-                                                <span data-bind="text: titlePeriod">ANNUAL</span>
-                                            </h5>
-                                            <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
-                                            <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
-                                            <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
-                                        </th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><strong>Number of Advisors</strong></td>
-                                        <td class="text-center">1</td>
                                         <td class="text-center">
                                             <select class="form-control" data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
                                                 <option>2</option>
                                                 <option>More</option>
                                             </select>
                                         </td>
+                                        <td class="text-center">1</td>
                                         <td class="text-center">
                                             <select class="form-control" data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
                                                 <option>2</option>
@@ -152,7 +153,7 @@
                                     <tr>
                                         <td>
                                             <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                              <i class="fa fa-question-circle"></i>
+                                                <i class="fa fa-question-circle"></i>
                                             </a>
                                             Direct Custodian Feeds
                                         </td>
@@ -169,7 +170,7 @@
                                     <tr>
                                         <td>
                                             <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                              <i class="fa fa-question-circle"></i>
+                                                <i class="fa fa-question-circle"></i>
                                             </a>
                                             3rd Party Software Integration
                                         </td>
@@ -186,7 +187,7 @@
                                     <tr>
                                         <td>
                                             <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                              <i class="fa fa-question-circle"></i>
+                                                <i class="fa fa-question-circle"></i>
                                             </a>
                                             <strong>Account Aggregation</strong>
                                             <input type="checkbox" id="box1" value=true, data-bind="checked: isAccountAggregationSelected">
@@ -212,7 +213,8 @@
                                         <td class="text-center"><i class="fa fa-check"></i></td>
                                     </tr>
                                     <tr>
-                                        <td>Batch Mass File Upload
+                                        <td>
+                                            Batch Mass File Upload
                                             <a href="#" class="btn-link margin-left-5" data-toggle="tooltip" title="Includes 20GB of Storage">
                                                 <i class="fa fa-info"></i>
                                             </a>
@@ -314,21 +316,21 @@
 
             <!-- Modal Custodian Feeds -->
             <div class="modal fade" id="ModalCustodianFeeds" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
         </div>
         <!-- End content -->
