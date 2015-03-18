@@ -81,8 +81,10 @@ Home
 
 .parallax.polygon-bg .home-contain{
 	/*background:none;*/
-	background-image:url(../img/background.png);
-	height: 871px;
+	/*background-image:url(../img/background.png);*/
+	background-image:url(../img/background-2.png);
+	/*height: 871px;*/
+	height: 600px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

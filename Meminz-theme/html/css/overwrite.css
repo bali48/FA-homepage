@@ -750,40 +750,40 @@ Fusion Advisor style
 	position: static;
 }
 
-	.header-wrap .ribbon {
-		/*background: #181919;*/
-		background: #2e2e2e;
-		padding: 4px 0;
+.header-wrap .ribbon {
+	/*background: #181919;*/
+	background: #2e2e2e;
+	padding: 4px 0;
+}
+
+	.header-wrap .ribbon a {
+		color: #b6b6b6;
 	}
 
-		.header-wrap .ribbon a {
-			color: #b6b6b6;
+		.header-wrap .ribbon a:hover {
+			color: #1ec279;
+			text-decoration: none;
 		}
 
-			.header-wrap .ribbon a:hover {
-				color: #1ec279;
-				text-decoration: none;
+		.header-wrap .ribbon a.pull-right {
+			color: #fff;
+			font-weight: 300;
+		}
+
+			.header-wrap .ribbon a.pull-right:hover {
+				text-decoration: underline;
 			}
 
-			.header-wrap .ribbon a.pull-right {
-				color: #fff;
-				font-weight: 300;
-			}
+.header-wrap .menu-padding {
+	padding-top: 40px;
+}
 
-				.header-wrap .ribbon a.pull-right:hover {
-					text-decoration: underline;
-				}
-
-	.header-wrap .menu-padding {
-		padding-top: 40px;
-	}
-
-	.header-wrap .sticky {
-		position: fixed;
-		top: 0;
-		z-index: 1030;
-		width: 100%;
-	}
+.header-wrap .sticky {
+	position: fixed;
+	top: 0;
+	z-index: 1030;
+	width: 100%;
+}
 
 .feature-box .pe-feature,
 .feature-box:hover .pe-feature {
@@ -873,7 +873,6 @@ Fusion Advisor style
 		color: #4a4a4a;
 	}
 
-======= background: #fafafa;
 }
 
 .pricing-page th:first-child {
@@ -898,10 +897,10 @@ Fusion Advisor style
 	text-transform: uppercase;
 }
 
-	.pricing-page th h5 span {
-		color: #1ec279;
-		font-weight: 700;
-	}
+.pricing-page th h5 span {
+	color: #1ec279;
+	font-weight: 700;
+}
 
 .pricing-page th h3 {
 	margin: 0;
@@ -960,8 +959,10 @@ Fusion Advisor style
 
 .pricing-page td .form-control {
 	height: 28px;
-	width: 34%;
+	width: 50px;
 	margin: 0 auto;
+	border: none;
+	box-shadow: none;
 }
 
 .pricing-page td input[type=checkbox] {
