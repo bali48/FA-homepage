@@ -348,30 +348,30 @@ Tabs
 		border: none;
 	}
 
-		.log-tabs li a {
-			color: #fff;
-			border-radius: 0;
-			margin: 0;
-			padding: 15px 25px 15px 25px;
-			border: none;
-			font-size: 18px;
-			line-height: 24px;
-			font-weight: 700;
-		}
+.log-tabs li a {
+	color: #fff;
+	border-radius: 0;
+	margin: 0;
+	padding: 15px 25px 15px 25px;
+	border: none;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
 
-		.log-tabs li.active a,
-		.log-tabs li.active a:hover,
-		.log-tabs li.active a:active,
-		.log-tabs li.active a:focus {
-			color: #222222;
-			background: none;
-			border: none;
-			margin: 0;
-		}
+.log-tabs li.active a,
+.log-tabs li.active a:hover,
+.log-tabs li.active a:active,
+.log-tabs li.active a:focus {
+	color: #222222;
+	background: none;
+	border: none;
+	margin: 0;
+}
 
-		.log-tabs li a:hover {
-			opacity: 0.95;
-		}
+.log-tabs li a:hover {
+	opacity: 0.95;
+}
 
 .log-tabs-containt {
 	padding: 40px 30px 20px 30px;
@@ -831,48 +831,46 @@ Fusion Advisor style
 	background: #fafafa;
 }
 
-	.pricing-page th:first-child {
-		vertical-align: middle;
-		font-size: 26px;
-		background: transparent !important;
-	}
+.pricing-page th:first-child {
+	vertical-align: middle;
+	font-size: 26px;
+	background: transparent !important;
+}
 
-	.pricing-page th:first-child {
-		background: #fff;
-	}
+.pricing-page th:first-child {
+	background: #fff;
+}
 
-	.pricing-page th h5 {
-		color: #1ec279;
-		margin-bottom: 5px;
-		text-transform: uppercase;
-	}
+.pricing-page th h5 {
+	color: #1ec279;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
 
-		.pricing-page th h5 span {
-			color: #1ec279;
-			font-weight: 700;
-		}
+.pricing-page th h5 span {
+	color: #1ec279;
+	font-weight: 700;
+}
 
-	.pricing-page th h3 {
-		margin: 0;
-		color: #4a4a4a;
-	}
+.pricing-page th h3 {
+	margin: 0;
+	color: #4a4a4a;
+}
 
-	.pricing-page th p {
-		font-weight: normal;
-		font-size: 11px;
-		margin-bottom: 5px;
-		color: #999;
-	}
+.pricing-page th p {
+	font-weight: normal;
+	font-size: 11px;
+	margin-bottom: 5px;
+	color: #999;
+}
 
-	.pricing-page th span strong.saving {
-		text-decoration: line-through;
-	}
+.pricing-page th span strong.saving {
+	text-decoration: line-through;
+}
 
-	.pricing-page th span {
-		font-weight: normal;
-		color: #4a4a4a;
-	}
-
+.pricing-page th span {
+	font-weight: normal;
+	color: #4a4a4a;
 }
 
 .pricing-page th:first-child {
@@ -882,9 +880,7 @@ Fusion Advisor style
 }
 
 .pricing-page th.stand-out {
-	border-top: 4px solid #1fa2ed !important;
-	border-left: 4px solid #1fa2ed !important;
-	border-right: 4px solid #1fa2ed !important;
+
 }
 
 .pricing-page th:first-child {
@@ -930,22 +926,22 @@ Fusion Advisor style
 	border-left: 1px solid #ddd;
 }
 
-	.table > tbody > tr > td.stand-out {
-		border-left: 4px solid #1fa2ed !important;
-		border-right: 4px solid #1fa2ed !important;
-	}
+.table > tbody > tr > td.stand-out {
+	border-left: 4px solid #1fa2ed !important;
+	border-right: 4px solid #1fa2ed !important;
+}
 
-	.table > tbody > tr > td:last-child {
-		border-right: 1px solid #ddd;
-	}
+.table > tbody > tr > td:last-child {
+	border-right: 1px solid #ddd;
+}
 
 .table > tbody > tr:last-child > td {
 	border-bottom: 1px solid #ddd;
 }
 
-	.table > tbody > tr:last-child > td.stand-out {
-		border-bottom: 4px solid #1fa2ed !important;
-	}
+.table > tbody > tr:last-child > td.stand-out {
+	border-bottom: 4px solid #1fa2ed !important;
+}
 
 .table > tbody > tr > td.no-border {
 	border-left: none;
@@ -957,12 +953,10 @@ Fusion Advisor style
 	text-decoration: none;
 }
 
-.pricing-page td .form-control {
-	height: 28px;
-	width: 50px;
-	margin: 0 auto;
+.pricing-page td select {
 	border: none;
-	box-shadow: none;
+	background: transparent;
+	width: 44px;
 }
 
 .pricing-page td input[type=checkbox] {

@@ -137,14 +137,14 @@
                                     <tr>
                                         <td><strong>Number of Advisors</strong></td>
                                         <td class="text-center">
-                                            <select class="form-control" data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
+                                            <select data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
                                                 <option>2</option>
                                                 <option>More</option>
                                             </select>
                                         </td>
                                         <td class="text-center">1</td>
                                         <td class="text-center">
-                                            <select class="form-control" data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
+                                            <select data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
                                                 <option>2</option>
                                                 <option>More</option>
                                             </select>
@@ -157,15 +157,9 @@
                                             </a>
                                             Direct Custodian Feeds
                                         </td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Books of Business</td>
-                                        <td class="text-center">Multi</td>
-                                        <td class="text-center">Single</td>
-                                        <td class="text-center">Shared</td>
+                                        <td class="text-center"><strong>500</strong> Accounts Included</td>
+                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
+                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -177,6 +171,12 @@
                                         <td class="text-center"><i class="fa fa-check"></i></td>
                                         <td class="text-center"><i class="fa fa-check"></i></td>
                                         <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Books of Business</td>
+                                        <td class="text-center">Multi</td>
+                                        <td class="text-center">Single</td>
+                                        <td class="text-center">Shared</td>
                                     </tr>
                                     <tr>
                                         <td>Advisor Logo Branding</td>
@@ -194,15 +194,15 @@
                                             <label for="box1"></label>
                                         </td>
                                         <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check green"></i></span>
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>1,000</strong> Accounts</span>
                                             <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                         <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check green"></i></span>
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
                                             <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                         <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()"><i class="fa fa-check green"></i></span>
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
                                             <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
                                         </td>
                                     </tr>
