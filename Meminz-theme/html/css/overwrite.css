@@ -99,14 +99,14 @@ ul {
 	padding-left: 15px;
 }
 
-	ul.list {
-		padding-left: 0;
-	}
+ul.list {
+	padding-left: 0;
+}
 
-		ul.list li {
-			list-style: none;
-			font-size: 16px;
-		}
+ul.list li {
+	list-style: none;
+	font-size: 16px;
+}
 
 .alignleft {
 	float: left;
@@ -880,7 +880,7 @@ Fusion Advisor style
 }
 
 .pricing-page th.stand-out {
-
+	border-top: 4px solid #ccc !important;
 }
 
 .pricing-page th:first-child {
@@ -910,9 +910,6 @@ Fusion Advisor style
 	color: #999;
 }
 
-/*.pricing-page th span strong {
-	  text-decoration: line-through;
-	}*/
 .pricing-page th span strong.saving {
 	text-decoration: line-through;
 }
@@ -920,6 +917,10 @@ Fusion Advisor style
 .pricing-page th span {
 	font-weight: normal;
 	color: #4a4a4a;
+}
+
+.table > tbody > tr.empty-space {
+	display: none;
 }
 
 .table > tbody > tr > td {
@@ -937,15 +938,13 @@ Fusion Advisor style
 
 .table > tbody > tr:last-child > td {
 	border-bottom: 1px solid #ddd;
-}
-
-.table > tbody > tr:last-child > td.stand-out {
-	border-bottom: 4px solid #1fa2ed !important;
+	vertical-align: middle;
 }
 
 .table > tbody > tr > td.no-border {
 	border-left: none;
 	border-bottom: none;
+	background-color: #fff;
 }
 
 .pricing-page td a:hover,
@@ -966,10 +965,10 @@ Fusion Advisor style
 .pricing-page td input[type=checkbox] + label:before {
 	font-family: FontAwesome;
 	display: table;
-	margin-top: 4px;
+	margin-top: -4px;
 	margin-left: 12px;
 	font-size: 18px;
-	height: 19px;
+	height: 10px;
 }
 
 .pricing-page td input[type=checkbox] + label:before {
@@ -984,7 +983,7 @@ Fusion Advisor style
 }
 
 .pricing-page td label {
-	height: 19px;
+	height: 10px;
 	margin-bottom: 0;
 }
 
@@ -1005,12 +1004,12 @@ Fusion Advisor style
 	font-size: 16px;
 }
 
-.pricing-page td .no-background {
-	background: none;
+.pricing-page td .white-background {
+	background: #fff;
 	color: #1ec279;
 }
 
-.pricing-page td .no-background:hover {
+.pricing-page td .white-background:hover {
 	background: #1ec279;
 	color: #fff;
 }
@@ -1065,9 +1064,9 @@ Fusion Advisor style
 	border: 1px solid #1fa2ed;
 }
 
-	.pricing-page .btn-info:hover {
-		background-color: #1fa2ed;
-	}
+.pricing-page .btn-info:hover {
+	background-color: #1fa2ed;
+}
 
 /* Wizard */
 .modal-wizard .modal-dialog {
