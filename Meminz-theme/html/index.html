@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
@@ -43,9 +43,23 @@
 	<!-- Theme skin -->
 	<link href="skins/default.css" rel="stylesheet" />
 
-  </head>
+	</head>
 
-  <body>
+	<script>
+		  window.intercomSettings = {
+		    // TODO: The current logged in user's full name
+		    name: "John Doe",
+		    // TODO: The current logged in user's email address.
+		    email: "john.doe@example.com",
+		    // TODO: The current logged in user's sign-up date as a Unix timestamp.
+		    created_at: 1234567890,
+		    app_id: "zpeszl83"
+		  };
+	</script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zpeszl83';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+	</script>
+
+	<body>
 	<!-- Start preloading -->
 	<div id="loading" class="loading-invisible">
 		<i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
@@ -80,7 +94,7 @@
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
 							<li><a id="GoToHome" href="#home" class="selected">Home</a></li>
-							<li><a id="GoToFeatures" href="#features">Features</a></li>
+							<li><a id="GoToFeatures" href="#features">Benefits</a></li>
 							<li><a id="GoToDesc" href="#description">Description</a></li>
 							<li><a id="GoToGallery" href="#screenshot">Screenshot</a></li>
 							<!--<li><a id="GoToPricing" href="#pricing">Pricing</a></li>-->
@@ -146,7 +160,7 @@
 			<div class="container">
 				<div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
 					<div class="col-md-8 col-md-offset-2">
-						<h3 class="heading"><span>Features</span>The featurers of Fusion Advisor</h3>
+						<h3 class="heading"><span>Benefits</span></h3>
 					</div>
 				</div>
 				<div class="row wow fadeInDown" data-wow-delay="0.4s">
@@ -352,12 +366,12 @@
 				<div class="container">
 					<div class="row wow fadeInUp" data-wow-delay="0.4s">
 						<div class="col-md-8 col-md-offset-2">
-							<h3>Try for Free 30 days</h3>
-							<p>Risk Free. 60 Day Money Back Guarantee.</p>
+							<h3>Try for Free 14 days</h3>
+							<!--<p>Risk Free. 60 Day Money Back Guarantee.</p>-->
 							<form>
 								<fieldset class="subscribe-form">
-									<input class="subscribe" type="text" placeholder="Enter your email address">
-									<button class="subscribe-button" type="button">Download</button>
+									<input class="subscribe" type="text" placeholder="Get My 14 Day Free access">
+									<a href="pricing.html" class="subscribe-button" type="button">GET STARTED</a>
 								</fieldset>
 							</form>
 						</div>
@@ -848,7 +862,7 @@
 			}
 			document.onscroll = scroll;
 			//Bootstrap Wizard Validations
-              // Ovo sam iskomentarisao... to ti je pravilo problem.
+	          // Ovo sam iskomentarisao... to ti je pravilo problem.
 			  //var $validator = $("#wizard-1").validate({
 			  //  rules: {
 			  //    email: {
@@ -968,8 +982,8 @@
 		<script src="js/owlcarousel/setting.js"></script>
 
 	<!-- Totop -->
-	<script src="js/totop/jquery.ui.totop.js"></script>
-	<script src="js/totop/setting.js"></script>
+	<!--<script src="js/totop/jquery.ui.totop.js"></script>
+	<script src="js/totop/setting.js"></script>-->
 
 	<!-- Contact validation -->
 	<script src="js/validation.js"></script>
@@ -981,5 +995,5 @@
 	<!--<script src="js/wizard/jquery.bootstrap.wizard.min.js"></script>
 	<script src="js/wizard/wizard.min.js"></script>-->
 
-  </body>
+	</body>
 </html>

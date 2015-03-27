@@ -1136,11 +1136,13 @@ Fusion Advisor style
 	padding: 0 20px;
 }
 
-	.fuelux .wizard ul li.active {
-		background: none;
-		color: #999;
-	}
+.fuelux .wizard ul li.active {
+	background: none;
+	color: #999;
+}
 
-		.fuelux .wizard ul li.active span {
-			border-bottom: 1px dotted #999;
-		}
+.fuelux .wizard ul li.active span {
+	border-bottom: 1px dotted #999;
+}
+
+
