@@ -100,6 +100,9 @@ require(["jquery", "knockout"], function ($, ko) {
         self.officeAdvisorRealCost = ko.observable("$3,660");
         self.officeSaving = ko.observable("%15.28");
         self.officeAdvisorSelectedCount = ko.observable(2);
+        self.officeAccountsTotal = ko.observable(500);
+        self.officeAggregationTotal = ko.observable(1000);
+        self.officeDocumentVault = ko.observable("500MB");
 
         // calculated
         _calculated = ko.computed(function () {
@@ -190,6 +193,9 @@ require(["jquery", "knockout"], function ($, ko) {
                 self.officeCostPerAdvisor(currencyFormat(realCost));
                 self.officeSaving(percentFormat(saving));
             }
+            self.officeAccountsTotal(officeAdvisorSelectedCount * 250);
+            self.officeAggregationTotal(officeAdvisorSelectedCount * 500);
+            self.officeDocumentVault(officeAdvisorSelectedCount * 250 + "MB");
             console.log("computed executed, selected period: " + selectedPeriod);
         });
 

@@ -1,396 +1,397 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta name="description" content="">
-                <meta name="author" content="">
-                <link rel="shortcut icon" href="ico/favicon.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
 
-                <title>Fusion Advisor</title>
+    <title>Fusion Advisor</title>
 
-                <!-- Bootstrap core CSS -->
-                <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-                <!-- Custom bootstrap styles -->
-                <link href="css/overwrite.css" rel="stylesheet">
+    <!-- Custom bootstrap styles -->
+    <link href="css/overwrite.css" rel="stylesheet">
 
-                <!-- Font -->
-                <link href="fonts/open-sans/stylesheet.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="fonts/open-sans/stylesheet.css" rel="stylesheet">
 
-                <!-- Font icons -->
-                <link href="css/font-awesome.css" rel="stylesheet">
-                <link href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
-                <link href="fonts/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
+    <!-- Font icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="fonts/pe-icon-7-stroke/css/helper.css" rel="stylesheet">
 
-                <!-- Animate css -->
-                <link href="css/animate.css" rel="stylesheet">
+    <!-- Animate css -->
+    <link href="css/animate.css" rel="stylesheet">
 
-                <!-- flexslider -->
-                <link href="css/flexslider.css" rel="stylesheet">
+    <!-- flexslider -->
+    <link href="css/flexslider.css" rel="stylesheet">
 
-                <!-- Owl carousel -->
-                <link href="css/owl.carousel.css" rel="stylesheet">
-                <link href="css/owl.theme.css" rel="stylesheet">
-                <link href="css/owl.transitions.css" rel="stylesheet">
+    <!-- Owl carousel -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
 
-                <!-- Custom styles for this template -->
-                <link href="css/style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
 
-                <!-- Theme skin -->
-                <link href="skins/default.css" rel="stylesheet" />
-            </head>
+    <!-- Theme skin -->
+    <link href="skins/default.css" rel="stylesheet" />
+</head>
 
-            <script>
-              window.intercomSettings = {
-                // TODO: The current logged in user's full name
-                name: "John Doe",
-                // TODO: The current logged in user's email address.
-                email: "john.doe@example.com",
-                // TODO: The current logged in user's sign-up date as a Unix timestamp.
-                created_at: 1234567890,
-                app_id: "zpeszl83"
-              };
-            </script>
-            <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zpeszl83';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-            </script>
+<script>
+    window.intercomSettings = {
+        // TODO: The current logged in user's full name
+        name: "John Doe",
+        // TODO: The current logged in user's email address.
+        email: "john.doe@example.com",
+        // TODO: The current logged in user's sign-up date as a Unix timestamp.
+        created_at: 1234567890,
+        app_id: "zpeszl83"
+    };
+</script>
+<script>
+(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/zpeszl83'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+</script>
 
-            <body>
-                <!-- Start preloading -->
-                <div id="loading" class="loading-invisible">
-                    <i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
-                    <p>Please wait...</p>
-                </div>
-                <!-- End preloading -->
+<body>
+    <!-- Start preloading -->
+    <div id="loading" class="loading-invisible">
+        <i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
+        <p>Please wait...</p>
+    </div>
+    <!-- End preloading -->
 
-                <div class="pricing-page">
-                    <!-- Start header -->
-                    <div class="header-wrap">
-                        <header id="header" class="menu clearfix">
-                            <div class="navbar navbar-default" role="navigation">
-                                <div class="container">
-                                    <div class="navbar-header">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
-                                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
-                                    </div>
-                                    <div class="collapse navbar-collapse">
-                                        <ul class="nav navbar-nav">
-                                            <li><a href="index.html#home">Home</a></li>
-                                            <li><a href="index.html#feature">Benefits</a></li>
-                                            <li><a href="index.html#description">Description</a></li>
-                                            <li><a href="index.html#screenshot">Screenshot</a></li>
-                                            <!--<li><a id="GoToPricing" href="#pricing">Pricing</a></li>-->
-                                            <li><a href="index.html#testimoni">Testimoni</a></li>
-                                            <li><a href="index.html#contact">Contact</a></li>
-                                        </ul>
-                                        <div class="navbar-right">
-                                            <!--<a href="signin.html" class="btn btn-bordered">Sign in</a>
-                                            <a href="signup.html" class="btn btn-primary">Sign up</a>-->
-                                            <a href="pricing.html" class="btn btn-primary">Get Fusion Advisor</a>
-                                            <a href="signin.html" class="btn btn-bordered">Sign in</a>
-                                        </div>
-                                    </div><!--/.nav-collapse -->
-                                </div>
-                            </div>
-                        </header>
-                    </div>
-                    <!-- End header -->
-                    <!-- Start content -->
+    <div class="pricing-page">
+        <!-- Start header -->
+        <div class="header-wrap">
+            <header id="header" class="menu clearfix">
+                <div class="navbar navbar-default" role="navigation">
                     <div class="container">
-                        <h4 class="text-center">Not sure which plan to choose? <a href="#">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <div class="table-responsive">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center no-border">Plans & Pricing</th>
-                                                    <th width="24%" class="text-center">
-                                                        <h5>
-                                                            OFFICE
-                                                            <span data-bind="text: titlePeriod">ANNUAL</span>
-                                                        </h5>
-                                                        <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
-                                                        <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
-                                                        <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
-                                                        <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
-                                                    </th>
-                                                    <th width="24%" class="text-center stand-out">
-                                                        <h5>
-                                                            ADVISOR
-                                                            <span data-bind="text: titlePeriod">ANNUAL</span>
-                                                        </h5>
-                                                        <h3 data-bind="text: advisorCost">$214</h3>
-                                                        <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span> </p>
-                                                        <span><strong data-bind="text: advisorRealCost, css: {  saving: hasSaving }">$3,660</strong></span>
-                                                        <span data-bind="visible: hasSaving">Over <span data-bind="text: advisorSaving">29%</span>  off</span>
-                                                    </th>
-                                                    <th width="24%" class="text-center">
-                                                        <h5>
-                                                            TEAM
-                                                            <span data-bind="text: titlePeriod">ANNUAL</span>
-                                                        </h5>
-                                                        <h3 data-bind="text: teamCostPerAdvisor">$164</h3>
-                                                        <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
-                                                        <span><strong class="saving" data-bind="text: teamAdvisorRealCost">$3,660</strong></span>
-                                                        <span>Over <span data-bind="text: teamSaving">50% </span> off</span>
-                                                    </th>
-
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="empty-space">
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><strong>Number of Advisors</strong></td>
-                                                    <td class="text-center">
-                                                        <select data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
-                                                            <option>2</option>
-                                                            <option>More</option>
-                                                        </select>
-                                                    </td>
-                                                    <td class="text-center">1</td>
-                                                    <td class="text-center">
-                                                        <select data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
-                                                            <option>2</option>
-                                                            <option>More</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                            <i class="fa fa-question-circle"></i>
-                                                        </a>
-                                                        Direct Custodian Feeds
-                                                    </td>
-                                                    <td class="text-center"><strong>500</strong> Accounts Included</td>
-                                                    <td class="text-center"><strong>250</strong> Accounts Included</td>
-                                                    <td class="text-center"><strong>250</strong> Accounts Included</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                            <i class="fa fa-question-circle"></i>
-                                                        </a>
-                                                        3rd Party Software Integration
-                                                    </td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Books of Business</td>
-                                                    <td class="text-center">Multiple</td>
-                                                    <td class="text-center">Single</td>
-                                                    <td class="text-center">Shared</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Advisor Logo Branding</td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                            <i class="fa fa-question-circle"></i>
-                                                        </a>
-                                                        Account Aggregation
-                                                        <input type="checkbox" id="box1" value=true, data-bind="checked: isAccountAggregationSelected">
-                                                        <label for="box1"></label>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>1,000</strong> Accounts</span>
-                                                        <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
-                                                        <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
-                                                        <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Document Vault</td>
-                                                    <td class="text-center"><strong>500</strong> MB Included</td>
-                                                    <td class="text-center"><strong>250</strong> MB Included</td>
-                                                    <td class="text-center"><strong>250</strong> MB Included</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        Batch Mass File Upload
-                                                        <a href="#" class="btn-link margin-left-5" data-toggle="tooltip" title="Includes 20GB of Storage">
-                                                            <i class="fa fa-info"></i>
-                                                        </a>
-                                                    </td>
-                                                    <td class="text-center">Additional</td>
-                                                    <td class="text-center">Additional</td>
-                                                    <td class="text-center">Additional</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Custom subdomain</td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Individual Client Access</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Accounts and Document Sharing</td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Households/Grouping</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                    <td class="text-center">Unlimited</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Assistant Access</td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                    <td class="text-center"><i class="fa fa-check"></i></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="no-border">
-                                                        <img src="img/choose.png" class="img-responsive" alt="img">
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button class="btn btn-primary white-background">Get Started</button>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button class="btn btn-primary">Get Started</button>
-                                                    </td>
-                                                    <td class="text-center">
-                                                        <button class="btn btn-primary white-background">Get Started</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <!-- end col-md-10 -->
-
-                                <div class="col-md-2">
-                                    <div class="column-billing">
-                                        <!--<div class="header">
-                                            <p class="margin-bottom-0 text-center font-blue">SAVE UP TO 40%</p>
-                                            <p class="margin-bottom-0 text-center font-gray">With Annual Billing</p>
-                                        </div>-->
-                                        <div class="radio-options">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" value="monthToMonth" data-bind="checked: selectedPeriod">
-                                                    Month-to-month
-                                                </label>
-                                            </div>
-                                            <div class="radio-wrap">
-                                                <img src="img/most-popular.png">
-                                                <div class="radio">
-                                                    <label>
-                                                        <input type="radio" name="optionsRadios" value="quarterly" data-bind="checked: selectedPeriod">
-                                                        Quarterly
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" value="annual" data-bind="checked: selectedPeriod">
-                                                    Annual Billing
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="" data-bind="checked: isAnnualAggrement">
-                                                Annual Aggrement
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end col-md-2 -->
-                            </div>
-                            <!-- end row -->
-                        </form>
-
-                        <div class="text-center">
-                            <span>Corporate options and pricing available.</span>
-                            <button class="btn btn-info no-background margin-left-20">Inquire</button>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
                         </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html#home">Home</a></li>
+                                <li><a href="index.html#feature">Benefits</a></li>
+                                <li><a href="index.html#description">Description</a></li>
+                                <li><a href="index.html#screenshot">Screenshot</a></li>
+                                <!--<li><a id="GoToPricing" href="#pricing">Pricing</a></li>-->
+                                <li><a href="index.html#testimoni">Testimoni</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                            </ul>
+                            <div class="navbar-right">
+                                <!--<a href="signin.html" class="btn btn-bordered">Sign in</a>
+                                <a href="signup.html" class="btn btn-primary">Sign up</a>-->
+                                <a href="pricing.html" class="btn btn-primary">Get Fusion Advisor</a>
+                                <a href="signin.html" class="btn btn-bordered">Sign in</a>
+                            </div>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- End header -->
+        <!-- Start content -->
+        <div class="container">
+            <h4 class="text-center">Not sure which plan to choose? <a href="#">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
+            <form>
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center no-border">Plans & Pricing</th>
+                                        <th width="24%" class="text-center">
+                                            <h5>
+                                                OFFICE
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
+                                            </h5>
+                                            <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
+                                            <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
+                                            <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
+                                        </th>
+                                        <th width="24%" class="text-center stand-out">
+                                            <h5>
+                                                ADVISOR
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
+                                            </h5>
+                                            <h3 data-bind="text: advisorCost">$214</h3>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span> </p>
+                                            <span><strong data-bind="text: advisorRealCost, css: {  saving: hasSaving }">$3,660</strong></span>
+                                            <span data-bind="visible: hasSaving">Over <span data-bind="text: advisorSaving">29%</span>  off</span>
+                                        </th>
+                                        <th width="24%" class="text-center">
+                                            <h5>
+                                                TEAM
+                                                <span data-bind="text: titlePeriod">ANNUAL</span>
+                                            </h5>
+                                            <h3 data-bind="text: teamCostPerAdvisor">$164</h3>
+                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
+                                            <span><strong class="saving" data-bind="text: teamAdvisorRealCost">$3,660</strong></span>
+                                            <span>Over <span data-bind="text: teamSaving">50% </span> off</span>
+                                        </th>
 
-                        <!-- Modal Custodian Feeds -->
-                        <div class="modal fade" id="ModalCustodianFeeds" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty-space">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Number of Advisors</strong></td>
+                                        <td class="text-center">
+                                            <select data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
+                                                <option>2</option>
+                                                <option>More</option>
+                                            </select>
+                                        </td>
+                                        <td class="text-center">1</td>
+                                        <td class="text-center">
+                                            <select data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
+                                                <option>2</option>
+                                                <option>More</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
+                                                <i class="fa fa-question-circle"></i>
+                                            </a>
+                                            Direct Custodian Feeds
+                                        </td>
+                                        <td class="text-center"><strong data-bind="text: officeAccountsTotal">500</strong> Accounts Included</td>
+                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
+                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
+                                                <i class="fa fa-question-circle"></i>
+                                            </a>
+                                            3rd Party Software Integration
+                                        </td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Books of Business</td>
+                                        <td class="text-center">Multiple</td>
+                                        <td class="text-center">Single</td>
+                                        <td class="text-center">Shared</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Advisor Logo Branding</td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
+                                                <i class="fa fa-question-circle"></i>
+                                            </a>
+                                            Account Aggregation
+                                            <input type="checkbox" id="box1" value=true, data-bind="checked: isAccountAggregationSelected">
+                                            <label for="box1"></label>
+                                        </td>
+                                        <td class="text-center">
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong data-bind="text: officeAggregationTotal">1,000</strong> Accounts</span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
+                                        </td>
+                                        <td class="text-center">
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
+                                        </td>
+                                        <td class="text-center">
+                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
+                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Document Vault</td>
+                                        <td class="text-center"><strong data-bind="text: officeDocumentVault">500</strong> MB Included</td>
+                                        <td class="text-center"><strong>250</strong> MB Included</td>
+                                        <td class="text-center"><strong>250</strong> MB Included</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Batch Mass File Upload
+                                            <a href="#" class="btn-link margin-left-5" data-toggle="tooltip" title="Includes 20GB of Storage">
+                                                <i class="fa fa-info"></i>
+                                            </a>
+                                        </td>
+                                        <td class="text-center">Additional</td>
+                                        <td class="text-center">Additional</td>
+                                        <td class="text-center">Additional</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Custom subdomain</td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Individual Client Access</td>
+                                        <td class="text-center">Unlimited</td>
+                                        <td class="text-center">Unlimited</td>
+                                        <td class="text-center">Unlimited</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accounts and Document Sharing</td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Households/Grouping</td>
+                                        <td class="text-center">Unlimited</td>
+                                        <td class="text-center">Unlimited</td>
+                                        <td class="text-center">Unlimited</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assistant Access</td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                        <td class="text-center"><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no-border">
+                                            <img src="img/choose.png" class="img-responsive" alt="img">
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-primary white-background">Get Started</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-primary">Get Started</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-primary white-background">Get Started</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- end col-md-10 -->
+
+                    <div class="col-md-2">
+                        <div class="column-billing">
+                            <!--<div class="header">
+                                <p class="margin-bottom-0 text-center font-blue">SAVE UP TO 40%</p>
+                                <p class="margin-bottom-0 text-center font-gray">With Annual Billing</p>
+                            </div>-->
+                            <div class="radio-options">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="monthToMonth" data-bind="checked: selectedPeriod">
+                                        Month-to-month
+                                    </label>
+                                </div>
+                                <div class="radio-wrap">
+                                    <img src="img/most-popular.png">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="optionsRadios" value="quarterly" data-bind="checked: selectedPeriod">
+                                            Quarterly
+                                        </label>
                                     </div>
                                 </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="annual" data-bind="checked: selectedPeriod">
+                                        Annual Billing
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" data-bind="checked: isAnnualAggrement">
+                                    Annual Aggrement
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <!-- End content -->
+                    <!-- end col-md-2 -->
                 </div>
+                <!-- end row -->
+            </form>
 
-                <!-- Bootstrap core JavaScript
-                ================================================== -->
-                <!-- Placed at the end of the document so the pages load faster -->
-                <script src="js/jquery.js"></script>
-                <script src="js/bootstrap.min.js"></script>
-                <!--<script src="js/jquery-easing-1.3.js"></script>-->
-                <script src="js/require-2.1.16.js"></script>
-                <script src="js/requirejs-config.js"></script>
-                <script src="js/pricing-boot.js"></script>
+            <div class="text-center">
+                <span>Corporate options and pricing available.</span>
+                <button class="btn btn-info no-background margin-left-20">Inquire</button>
+            </div>
 
-                <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-                <!--[if lt IE 9]>
-                  <script src="js/html5shiv.js"></script>
-                  <script src="js/respond.min.js"></script>
-                <![endif]-->
-                <!--<script type="text/javascript">
-                      document.getElementById("loading").className = "loading-visible";
-                      var hideDiv = function(){document.getElementById("loading").className = "loading-invisible";};
-                      var oldLoad = window.onload;
-                      var newLoad = oldLoad ? function(){hideDiv.call(this);oldLoad.call(this);} : hideDiv;
-                      window.onload = newLoad;
-                </script>-->
-                <!-- End preloading -->
+            <!-- Modal Custodian Feeds -->
+            <div class="modal fade" id="ModalCustodianFeeds" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End content -->
+    </div>
 
-                <script type="text/javascript">
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery-easing-1.3.js"></script>-->
+    <script src="js/require-2.1.16.js"></script>
+    <script src="js/requirejs-config.js"></script>
+    <script src="js/pricing-boot.js"></script>
 
-                    $('a[data-toggle="tooltip"]').tooltip({
-                        animated: 'fade',
-                        placement: 'top',
-                    });
-                </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!--<script type="text/javascript">
+          document.getElementById("loading").className = "loading-visible";
+          var hideDiv = function(){document.getElementById("loading").className = "loading-invisible";};
+          var oldLoad = window.onload;
+          var newLoad = oldLoad ? function(){hideDiv.call(this);oldLoad.call(this);} : hideDiv;
+          window.onload = newLoad;
+    </script>-->
+    <!-- End preloading -->
 
-            </body>
+    <script type="text/javascript">
+
+        $('a[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'top',
+        });
+    </script>
+
+</body>
 </html>
 
