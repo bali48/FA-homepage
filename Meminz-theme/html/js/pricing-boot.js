@@ -81,7 +81,7 @@ require(["jquery", "knockout"], function ($, ko) {
         };
         // public
         self.isAnnualAggrement = ko.observable(false);
-        self.isAccountAggregationSelected = ko.observable(false);
+        self.isAccountAggregationSelected = ko.observable(true);
         self.selectedPeriod = ko.observable("monthToMonth");
         self.advisorCount = ko.observableArray([]);
         self.titlePeriod = ko.observable("MTM")
@@ -102,7 +102,7 @@ require(["jquery", "knockout"], function ($, ko) {
         self.officeAdvisorSelectedCount = ko.observable(2);
         self.officeAccountsTotal = ko.observable(500);
         self.officeAggregationTotal = ko.observable(1000);
-        self.officeDocumentVault = ko.observable("500MB");
+        self.officeDocumentVault = ko.observable(500);
 
         // calculated
         _calculated = ko.computed(function () {
@@ -195,7 +195,7 @@ require(["jquery", "knockout"], function ($, ko) {
             }
             self.officeAccountsTotal(officeAdvisorSelectedCount * 250);
             self.officeAggregationTotal(officeAdvisorSelectedCount * 500);
-            self.officeDocumentVault(officeAdvisorSelectedCount * 250 + "MB");
+            self.officeDocumentVault(officeAdvisorSelectedCount * 250);
             console.log("computed executed, selected period: " + selectedPeriod);
         });
 
