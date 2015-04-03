@@ -1145,4 +1145,53 @@ Fusion Advisor style
 	border-bottom: 1px dotted #999;
 }
 
+/* Benefits */
+.benefit-image img {
+	border-radius: 50%;
+}
+
+.img-left {
+	padding-right: 15%;
+}
+
+.img-right {
+	padding-left: 15%;
+}
+
+.benefit-testimonial {
+	margin-top: 80px;
+}
+
+.benefit-testimonial p {
+	font-size: 16px;
+	color: #767676;
+}
+
+.benefit-testimonial img {
+	border-radius: 50%;
+	max-width: 40px;
+}
+
+.benefit-testimonial em {
+	font-weight: 300;
+
+}
+
+.benefit-testimonial .separator {
+	color: #ddd;
+	font-weight: 300;
+	margin: 0 5px;
+}
+
+.benefit-border {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 60px;
+}
+
+.benefit-border img {
+	border-radius: 6px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
 
