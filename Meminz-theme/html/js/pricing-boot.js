@@ -51,24 +51,24 @@ require(["jquery", "knockout"], function ($, ko) {
                     title: 'Monthly',
                     months: 1,
                     saving: 0.05,
-                    teamSaving: 0.1,
-                    officeSaving: 0.1
+                    teamSaving: 0.05,
+                    officeSaving: 0.05
                 },
                 quarterly: {
                     period: 'quarterly',
                     title: 'Quarterly',
                     months: 3,
                     saving: 0.1,
-                    teamSaving: 0.19,
-                    officeSaving: 0.15
+                    teamSaving: 0.1,
+                    officeSaving: 0.1
                 },
                 annual: {
                     period: 'annual',
                     title: 'Annual',
                     months: 12,
                     saving: 0.15,
-                    teamSaving: 0.2,
-                    officeSaving: 0.2
+                    teamSaving: 0.15,
+                    officeSaving: 0.15
                 }
             };
         _init = function () {
