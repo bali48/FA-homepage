@@ -49,15 +49,19 @@ Home
 	color:#fff;
 }
 
-.home-wrapper h3{
-	font-size:58px;
-	line-height:68px;
-	color:#fff;
+.home-wrapper h3 {
+	font-size: 72px;
+	line-height: 70px;
+	color: #555;
+	text-align: left;
 }
 
-.home-wrapper h3 span{
-	font-weight:300;
-	display:block;
+.home-wrapper span{
+	font-weight: 300;
+	display: block;
+	text-align: left;
+	font-size: 30px;
+	color: #555;
 }
 
 .parallax{
@@ -75,14 +79,14 @@ Home
 }
 
 .home-contain{
-	padding: 71px 0 0 0;
+	padding: 130px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
 }
 
 .parallax.polygon-bg .home-contain{
 	/*background:none;*/
 	/*background-image:url(../img/background.png);*/
-	background-image:url(../img/background-2.png);
+	background-image: radial-gradient(   rgba(255, 255, 255, 0.85), rgba(143, 191, 229, 0.85)), url(../img/background-3.png);
 	/*height: 871px;*/
 	height: 600px;
 	-webkit-background-size: cover;
@@ -508,6 +512,10 @@ ul.client-list li ul li.last{
 	position:absolute;
 	/*left:50%;
 	margin-left:-54px;*/
+}
+
+#client .text-center h1 {
+	font-size: 80px;
 }
 
 /*
