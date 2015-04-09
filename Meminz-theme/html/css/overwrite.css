@@ -722,8 +722,20 @@ Fusion Advisor style
 	text-align: center;
 }
 
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
 .margin-bottom-0 {
 	margin-bottom: 0 !important;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10 !important;
 }
 
 .margin-bottom-30 {
@@ -736,6 +748,14 @@ Fusion Advisor style
 
 .margin-left-20 {
 	margin-left: 20px !important;
+}
+
+.margin-left-40 {
+	margin-left: 40px !important;
+}
+
+.padding-top-0 {
+	padding-top: 0 !important;
 }
 
 .no-padding {
@@ -794,6 +814,28 @@ Fusion Advisor style
 
 .counter-number {
 	color: #1fa2ed !important;
+}
+
+.arrow-down {
+    	position: relative;
+    	left: 50%;
+    	margin: 0 0 40px -30px;
+    	width: 0;
+    	height: 0;
+    	border-left: 30px solid transparent;
+    	border-right: 30px solid transparent
+}
+
+.arrow-blue {
+    	border-top: 30px solid #bdd8ee;
+}
+
+.arrow-gray {
+    	border-top: 30px solid #f9f9f9;
+}
+
+.arrow-white {
+    	border-top: 30px solid #fff;
 }
 
 /* ------ Pricing page ------- */
@@ -1148,6 +1190,8 @@ Fusion Advisor style
 /* Benefits */
 .benefit-image img {
 	border-radius: 50%;
+	max-width: 450px;
+	border: 1px solid #f9f9f9;
 }
 
 .img-left {
@@ -1193,5 +1237,7 @@ Fusion Advisor style
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 }
+
+/* General */
 
 
