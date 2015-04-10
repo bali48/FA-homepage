@@ -49,19 +49,53 @@ Home
 	color:#fff;
 }
 
-.home-wrapper h3 {
+.home-wrapper .video {
+	margin-top: 120px;
+}
+
+.home-wrapper .video h3 {
 	font-size: 72px;
 	line-height: 70px;
 	color: #555;
 	text-align: left;
 }
 
-.home-wrapper span{
+.home-wrapper .test-2 h3 {
+	text-align: center;
+}
+
+.home-wrapper .video span{
 	font-weight: 300;
 	display: block;
 	text-align: left;
 	font-size: 30px;
 	color: #555;
+}
+
+.home-wrapper .test-2 span {
+	text-align: center;
+}
+
+.home-wrapper .video .play-video-btn {
+	margin-top: 30px;
+	font-size: 16px;
+	padding: 15px 25px;
+	border-radius: 32px;
+}
+
+.home-wrapper .video .play-video-btn span {
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.home-wrapper .video .video-player {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -480px;
+	display: none;
 }
 
 .parallax{
@@ -79,7 +113,7 @@ Home
 }
 
 .home-contain{
-	padding: 150px 0 0 0;
+	padding: 30px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
 }
 
@@ -529,8 +563,6 @@ ul.client-list li ul li.last{
 
 .logo-hover{
 	position:absolute;
-	/*left:50%;
-	margin-left:-54px;*/
 }
 
 #client .titles-holder h1 {
@@ -543,6 +575,16 @@ ul.client-list li ul li.last{
 #client .titles-holder h3,
 #client .titles-holder h4 {
 	color: #555;
+}
+
+#client.test-2 .titles-holder {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	height: 606px;
+	width: 606px;
+	left: 50%;
+	margin-left: -303px;
 }
 
 /*
