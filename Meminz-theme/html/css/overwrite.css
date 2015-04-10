@@ -723,7 +723,7 @@ Fusion Advisor style
 }
 
 .margin-top-10 {
-	margin-top: 10px;
+	margin-top: 10px !important;
 }
 
 .margin-top-20 {
@@ -754,8 +754,24 @@ Fusion Advisor style
 	margin-left: 40px !important;
 }
 
+.margin-right-50 {
+	margin-right: 50px !important;
+}
+
 .padding-top-0 {
 	padding-top: 0 !important;
+}
+
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+.padding-bottom-30 {
+	padding-bottom: 30px !important;
 }
 
 .no-padding {

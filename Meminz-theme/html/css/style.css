@@ -577,14 +577,53 @@ ul.client-list li ul li.last{
 	color: #555;
 }
 
+#client.test-2 {
+	background-color: #ebebeb;
+	padding: 0;
+}
+
 #client.test-2 .titles-holder {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
-	height: 606px;
-	width: 606px;
+	height: 340px;
+	width: 340px;
 	left: 50%;
-	margin-left: -303px;
+	margin-left: -170px;
+	margin-top: -134px;
+	z-index: 999;
+}
+
+#client.test-2 .titles-holder h1 {
+	font-size: 80px;
+	padding-top: 72px;
+}
+
+#client.test-2 .titles-holder h3 {
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+#client.test-2 .titles-holder p {
+	font-size: 17px;
+}
+
+#client.test-2 .separator {
+	border-top: 2px solid #fff;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	margin-top: 35px;
+}
+
+#client.test-2 .col-sm-6.left {
+	padding-right: 180px;
+
+}
+
+#client.test-2 .col-sm-6.right {
+	padding-left: 150px;
+	border-left: 2px solid #fff;
 }
 
 /*
