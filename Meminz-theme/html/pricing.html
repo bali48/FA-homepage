@@ -103,256 +103,274 @@
             <h4 class="text-center">Not sure which plan to choose? <a href="#">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
             <form>
                 <div class="row">
-                    <div class="col-md-10">
-                        <div class="table-responsive">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center no-border">Plans & Pricing</th>
-                                        <th width="24%" class="text-center">
-                                            <h5>
-                                                OFFICE
-                                                <span data-bind="text: titlePeriod">ANNUAL</span>
-                                            </h5>
-                                            <h3 data-bind="text: officeCostPerAdvisor">$214</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
-                                            <span><strong class="saving" data-bind="text: officeAdvisorRealCost">$3,660</strong></span>
-                                            <span>Over <span data-bind="text: officeSaving">29%</span> off</span>
-                                        </th>
-                                        <th width="24%" class="text-center stand-out">
-                                            <h5>
-                                                ADVISOR
-                                                <span data-bind="text: titlePeriod">ANNUAL</span>
-                                            </h5>
-                                            <h3 data-bind="text: advisorCost">$214</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span> </p>
-                                            <span><strong data-bind="text: advisorRealCost, css: {  saving: hasSaving }">$3,660</strong></span>
-                                            <span data-bind="visible: hasSaving">Over <span data-bind="text: advisorSaving">29%</span>  off</span>
-                                        </th>
-                                        <th width="24%" class="text-center">
-                                            <h5>
-                                                TEAM
-                                                <span data-bind="text: titlePeriod">ANNUAL</span>
-                                            </h5>
-                                            <h3 data-bind="text: teamCostPerAdvisor">$164</h3>
-                                            <p>Per Advisor/Per Month <span data-bind="visible: isAnnualAggrement">(Paid <span data-bind="text: titlePeriod">Annualy</span>)</span></p>
-                                            <span><strong class="saving" data-bind="text: teamAdvisorRealCost">$3,660</strong></span>
-                                            <span>Over <span data-bind="text: teamSaving">50% </span> off</span>
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="empty-space">
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Number of Advisors</strong></td>
-                                        <td class="text-center">
-                                            <select data-bind="options: advisorCount, value: officeAdvisorSelectedCount">
-                                                <option>2</option>
-                                                <option>More</option>
-                                            </select>
-                                        </td>
-                                        <td class="text-center">1</td>
-                                        <td class="text-center">
-                                            <select data-bind="options: advisorCount, value: teamAdvisorSelectedCount">
-                                                <option>2</option>
-                                                <option>More</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                <i class="fa fa-question-circle"></i>
-                                            </a>
-                                            Direct Custodian Feeds
-                                        </td>
-                                        <td class="text-center"><strong data-bind="text: officeAccountsTotal">500</strong> Accounts Included</td>
-                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
-                                        <td class="text-center"><strong>250</strong> Accounts Included</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                <i class="fa fa-question-circle"></i>
-                                            </a>
-                                            3rd Party Software Integration
-                                        </td>
-                                        <td class="text-center"><img src="img/check-icon.png"></td>
-                                        <td class="text-center"><img src="img/check-icon.png"></td>
-                                        <td class="text-center"><img src="img/check-icon.png"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Books of Business</td>
-                                        <td class="text-center">Multiple</td>
-                                        <td class="text-center">Single</td>
-                                        <td class="text-center">Shared</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Advisor Logo Branding</td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#" class="btn-link" data-toggle="modal" data-target="#ModalCustodianFeeds">
-                                                <i class="fa fa-question-circle"></i>
-                                            </a>
-                                            Account Aggregation
-                                            <input type="checkbox" id="box1" value=true, data-bind="checked: isAccountAggregationSelected">
-                                            <label for="box1"></label>
-                                        </td>
-                                        <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong data-bind="text: officeAggregationTotal">1,000</strong> Accounts</span>
-                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                        </td>
-                                        <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
-                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                        </td>
-                                        <td class="text-center">
-                                            <span data-bind="visible: isAccountAggregationSelected()">Add'l <strong>500</strong> Accounts</span>
-                                            <span data-bind="visible: !isAccountAggregationSelected()"><i class="fa fa-times"></i></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Batch Mass File Upload
-                                            <a href="#" class="btn-link margin-left-5" data-toggle="tooltip" title="Includes 20GB of Storage">
-                                                <i class="fa fa-info"></i>
-                                            </a>
-                                        </td>
-                                        <td class="text-center">Additional</td>
-                                        <td class="text-center">Additional</td>
-                                        <td class="text-center">Additional</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Document Vault</td>
-                                        <td class="text-center"><strong data-bind="text: officeDocumentVault">500</strong> MB Included</td>
-                                        <td class="text-center"><strong>250</strong> MB Included</td>
-                                        <td class="text-center"><strong>250</strong> MB Included</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Custom subdomain</td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Individual Client Access</td>
-                                        <td class="text-center">Unlimited</td>
-                                        <td class="text-center">Unlimited</td>
-                                        <td class="text-center">Unlimited</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Accounts and Document Sharing</td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Households/Grouping</td>
-                                        <td class="text-center">Unlimited</td>
-                                        <td class="text-center">Unlimited</td>
-                                        <td class="text-center">Unlimited</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Assistant Access</td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                        <td class="text-center"><i class="fa fa-check"></i></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="no-border">
-                                            <img src="img/choose.png" class="img-responsive" alt="img">
-                                        </td>
-                                        <td class="text-center">
-                                            <button class="btn btn-primary white-background">Get Started</button>
-                                        </td>
-                                        <td class="text-center">
-                                            <button class="btn btn-primary">Get Started</button>
-                                        </td>
-                                        <td class="text-center">
-                                            <button class="btn btn-primary white-background">Get Started</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <!-- end col-md-10 -->
-
-                    <div class="col-md-2">
-                        <div class="column-billing">
-                            <!--<div class="header">
-                                <p class="margin-bottom-0 text-center font-blue">SAVE UP TO 40%</p>
-                                <p class="margin-bottom-0 text-center font-gray">With Annual Billing</p>
-                            </div>-->
+                    <div class="col-md-12 margin-top-20">
+                        <div class="text-center">
                             <div class="radio-options">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" value="monthToMonth" data-bind="checked: selectedPeriod">
-                                        Month-to-month
-                                    </label>
+                                <div class="radio-inline">
+                                    <input type='radio' value='1' name='radio' id='radio1'/ checked>
+                                    <label for='radio1'>Month-to-month</label>
                                 </div>
-                                <div class="radio-wrap">
-                                    <img src="img/most-popular.png">
-                                    <div class="radio">
+                                <div class="radio-inline">
+                                    <input type='radio' value='2' name='radio'  id='radio2'/>
+                                    <label for='radio2'>Quarterly</label>
+                                </div>
+                                <div class="radio-inline">
+                                    <input type='radio' value='3' name='radio'  id='radio3'/>
+                                    <label for='radio3' class="no-border">Annual Billing</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end text-center -->
+
+                        <div class="row common-features">
+                                <div class="col-md-3">
+                                    <div class="checkbox">
                                         <label>
-                                            <input type="radio" name="optionsRadios" value="quarterly" data-bind="checked: selectedPeriod">
-                                            Quarterly
+                                          <input type="checkbox"> Annual Contract
                                         </label>
                                     </div>
+                                    <p>
+                                        <i class="fa fa-check"></i> Unlimited Clients
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Client Dashboard
+                                    </p>
                                 </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="optionsRadios" value="annual" data-bind="checked: selectedPeriod">
-                                        Annual Billing
-                                    </label>
+
+                                <div class="col-md-3">
+                                    <p>
+                                        <i class="fa fa-check"></i> Advisor Logo Branding
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Site Color Templates
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Custom Subdomain
+                                    </p>
                                 </div>
+
+                                <div class="col-md-3">
+                                    <p>
+                                        <i class="fa fa-check"></i> Households / Grouping
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Account Sharing
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Software Integration
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <p>
+                                        <i class="fa fa-check"></i> Document Sharing
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-check"></i> Subfolders
+                                    </p>
+                                    <a class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><i class="fa fa-info"></i> Batch Document Upload
+                                    </a>
+                                </div>
+                        </div>
+
+                        <div class="row margin-top-20">
+                            <div class="col-md-3">
+                                <div class="header text-center office-color">
+                                    <h4 class="margin-top-0">OFFICE</h4>
+                                    <h2>$241</h2>
+                                    <p class="font-300">PER ADVISOR / PER MONTH</p>
+                                    <p>$1,830 Over 21% OFF</p>
+                                </div>
+
+                                <div class="features text-center">
+
+                                    <div class="item">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-6 control-label padding-top-0">Advisors</label>
+                                                <div class="col-sm-4">
+                                                  <select class="form-control">
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p>Multiple books of business</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>CUSTODIAL FEEDS</p>
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> accounts included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                            </label>
+                                        </div>
+                                        <p><strong>1,000</strong> accounts included</p>
+                                    </div>
+                                    <div class="item">
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> MB included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary office-color">14 Day trial</button>
+                                    </div>
+                                </div>
+                                <!-- end features -->
                             </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" data-bind="checked: isAnnualAggrement">
-                                    Annual Aggrement
-                                </label>
+                            <!-- end col-md-3 -->
+
+                            <div class="col-md-3">
+                                <div class="header text-center advisor-color">
+                                    <h4 class="margin-top-0">ADVISOR</h4>
+                                    <h2>$275</h2>
+                                    <p class="font-300">PER ADVISOR / PER MONTH</p>
+                                    <p>$1,830 Over 10% OFF</p>
+                                </div>
+
+                                <div class="features text-center">
+
+                                    <div class="item">
+                                        <p>Advisor <strong>1</strong></p>
+                                    </div>
+                                    <div class="item">
+                                        <p>Single book of business</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>CUSTODIAL FEEDS</p>
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> accounts included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                            </label>
+                                        </div>
+                                        <p><strong>500</strong> accounts included</p>
+                                    </div>
+                                    <div class="item">
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> MB included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary advisor-color">14 Day trial</button>
+                                    </div>
+                                </div>
+                                <!-- end features -->
                             </div>
+                            <!-- end col-md-3 -->
+
+                            <div class="col-md-3">
+                                <div class="header text-center team-color">
+                                    <h4 class="margin-top-0">TEAM</h4>
+                                    <h2>$182</h2>
+                                    <p class="font-300">PER ADVISOR / PER MONTH</p>
+                                    <p>$1,830 Over 21% OFF</p>
+                                </div>
+
+                                <div class="features text-center">
+
+                                    <div class="item">
+                                        <div class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-sm-6 control-label padding-top-0">Advisors</label>
+                                                <div class="col-sm-4">
+                                                  <select class="form-control">
+                                                      <option>2</option>
+                                                      <option>3</option>
+                                                      <option>4</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <p>Multiple books of business</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>CUSTODIAL FEEDS</p>
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> accounts included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                            </label>
+                                        </div>
+                                        <p><strong>500</strong> accounts included</p>
+                                    </div>
+                                    <div class="item">
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> MB included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary team-color">14 Day trial</button>
+                                    </div>
+                                </div>
+                                <!-- end features -->
+                            </div>
+                            <!-- end col-md-3 -->
+
+                            <div class="col-md-3">
+                                <div class="header text-center enterprise-color">
+                                    <h4 class="margin-top-0">ENTERPRISE</h4>
+                                    <img src="img/email-icon.png" class="img-responsive" alt="email-icon">
+                                </div>
+
+                                <div class="features text-center">
+
+                                    <div class="item">
+                                        <p>Advisors <strong>20+</strong></p>
+                                    </div>
+                                    <div class="item">
+                                        <p>Multiple books of business</p>
+                                    </div>
+                                    <div class="item">
+                                        <p>CUSTODIAL FEEDS</p>
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> accounts included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                            </label>
+                                        </div>
+                                        <p><strong>1,000</strong> accounts included</p>
+                                    </div>
+                                    <div class="item">
+                                        <a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> MB included
+                                            <i class="fa fa-info"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary enterprise-color">CONTACT US</button>
+                                    </div>
+                                </div>
+                                <!-- end features -->
+                            </div>
+                            <!-- end col-md-3 -->
                         </div>
                     </div>
-                    <!-- end col-md-2 -->
+                    <!-- end col-md-12 -->
                 </div>
                 <!-- end row -->
             </form>
-
-            <div class="text-center">
-                <span>Corporate options and pricing available.</span>
-                <button class="btn btn-info no-background margin-left-20">Inquire</button>
-            </div>
-
-            <!-- Modal Custodian Feeds -->
-            <div class="modal fade" id="ModalCustodianFeeds" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- End content -->
     </div>
@@ -383,10 +401,10 @@
 
     <script type="text/javascript">
 
-        $('a[data-toggle="tooltip"]').tooltip({
-            animated: 'fade',
-            placement: 'top',
-        });
+        $(function() {
+            $('.popoverData').popover();
+            $('#popoverOption').popover({ trigger: "hover" });
+          });
     </script>
 
 </body>
