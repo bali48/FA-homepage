@@ -734,8 +734,16 @@ Fusion Advisor style
 	margin-top: 10px !important;
 }
 
+.margin-top-15 {
+	margin-top: 15px;
+}
+
 .margin-top-20 {
 	margin-top: 20px;
+}
+
+.margin-top-25 {
+	margin-top: 25px;
 }
 
 .margin-bottom-0 {
@@ -743,7 +751,7 @@ Fusion Advisor style
 }
 
 .margin-bottom-10 {
-	margin-bottom: 10 !important;
+	margin-bottom: 10px;
 }
 
 .margin-bottom-30 {
@@ -1148,7 +1156,7 @@ Fusion Advisor style
 }
 
 .pricing-page .radio-options {
-	border: 2px solid #7f7f7f;
+	border: 2px solid #1ec279;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -1170,7 +1178,7 @@ Fusion Advisor style
 	cursor: pointer;
 	padding: 6px 18px;
 	margin: 0;
-	border-right: 2px solid #7f7f7f;
+	border-right: 2px solid #1ec279;
 }
 
 .pricing-page .radio-inline label.no-border {
@@ -1178,7 +1186,7 @@ Fusion Advisor style
 }
 
 .pricing-page .radio-inline input:checked + label {
-	background: #7f7f7f;
+	background: #1ec279;
 	color: #fff;
 }
 
@@ -1201,7 +1209,7 @@ Fusion Advisor style
 .pricing-page .col-md-3 .header {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	height: 150px;
+	height: 180px;
 	color: #fff;
 	padding-top: 5px;
 }

@@ -558,14 +558,18 @@ ul.client-list li ul li.last{
 }
 
 .client-link img {
-	max-width: 170px;
+	max-width: 165px;
+}
+
+.client-link.sm img {
+	max-width: 140px;
 }
 
 .logo-hover{
 	position:absolute;
 }
 
-#client .titles-holder h1 {
+/*#client .titles-holder h1 {
 	font-size: 150px;
 	line-height: 1.1;
 	color: #bdd8ee;
@@ -575,7 +579,7 @@ ul.client-list li ul li.last{
 #client .titles-holder h3,
 #client .titles-holder h4 {
 	color: #555;
-}
+}*/
 
 #client {
 	background-color: #ebebeb;
@@ -595,17 +599,23 @@ ul.client-list li ul li.last{
 }
 
 #client .titles-holder h1 {
-	font-size: 80px;
-	padding-top: 72px;
+	font-size: 70px;
+	/*padding-top: 72px;*/
+	color: #bdd8ee;
+	margin-bottom: 0;
 }
 
 #client .titles-holder h3 {
-	font-size: 20px;
+	font-size: 36px;
+	color: #b0e4c4;
+	padding-top: 82px;
 	margin-bottom: 0px;
 }
 
 #client .titles-holder p {
-	font-size: 17px;
+	font-size: 18px;
+	color: #898989;
+	font-weight: 600;
 }
 
 #client .separator {
@@ -618,12 +628,26 @@ ul.client-list li ul li.last{
 
 #client .col-sm-6.left {
 	padding-right: 180px;
+}
 
+#client a.client-link {
+	cursor: default;
 }
 
 #client .col-sm-6.right {
 	padding-left: 150px;
 	border-left: 2px solid #fff;
+}
+
+#client h4 {
+	font-size: 20px;
+}
+
+#client p.note {
+	font-family: 'Merienda', cursive;
+	color: #898989;
+	font-size: 13px;
+	margin-top: -15px;
 }
 
 /*
