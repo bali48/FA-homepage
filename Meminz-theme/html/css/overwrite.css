@@ -730,6 +730,10 @@ Fusion Advisor style
 	margin-top: 0px !important;
 }
 
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+
 .margin-top-10 {
 	margin-top: 10px !important;
 }
@@ -1156,7 +1160,7 @@ Fusion Advisor style
 }
 
 .pricing-page .radio-options {
-	border: 2px solid #1ec279;
+	border: 2px solid #2baaa8;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
@@ -1178,7 +1182,7 @@ Fusion Advisor style
 	cursor: pointer;
 	padding: 6px 18px;
 	margin: 0;
-	border-right: 2px solid #1ec279;
+	border-right: 2px solid #2baaa8;
 }
 
 .pricing-page .radio-inline label.no-border {
@@ -1186,7 +1190,7 @@ Fusion Advisor style
 }
 
 .pricing-page .radio-inline input:checked + label {
-	background: #1ec279;
+	background: #2baaa8;
 	color: #fff;
 }
 
@@ -1234,11 +1238,11 @@ Fusion Advisor style
 }
 
 .pricing-page .col-md-3 .office-color {
-	background-color: #2baaa8;
+	background-color: #437b87;
 }
 
 .pricing-page .col-md-3 .advisor-color {
-	background-color: #437b87;
+	background-color: #2baaa8;
 }
 
 .pricing-page .col-md-3 .team-color {
@@ -1273,7 +1277,8 @@ Fusion Advisor style
 	border: none;
 	box-shadow: none;
 	height: auto;
-	width: 50px;
+	width: 40px;
+	padding: 0;
 }
 
 .pricing-page .col-md-3 .item p {
