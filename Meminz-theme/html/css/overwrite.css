@@ -790,6 +790,10 @@ Fusion Advisor style
 	padding-top: 60px !important;
 }
 
+.padding-right-5 {
+	padding-right: 5px;
+}
+
 .padding-bottom-30 {
 	padding-bottom: 30px !important;
 }
@@ -1293,6 +1297,11 @@ Fusion Advisor style
 
 .pricing-page h6 {
 	margin: 30px 0 10px 15px;
+}
+
+/* Modals */
+.modal-dialog {
+	width: 700px;
 }
 
 /* Wizard */
