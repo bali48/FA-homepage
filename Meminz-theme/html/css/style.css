@@ -669,7 +669,6 @@ Download
 	color:#fff;
 	font-size:48px;
 	line-height:56px;
-	text-transform:uppercase;
 }
 
 .download-wrapper{
@@ -680,7 +679,7 @@ Download
 .subscribe-form{
 	display:inline-block;
 	background:rgba(255, 255, 255, 0.2);
-	width:75%;
+	width: 55%;
 	position:relative;
 	margin:0 auto;
 	margin-top:20px;
