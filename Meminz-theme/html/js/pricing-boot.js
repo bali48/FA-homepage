@@ -48,7 +48,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 monthly: {
                     period: 'monthly',
-                    title: 'Monthly',
+                    title: 'MONTHLY',
                     months: 1,
                     saving: 0.05,
                     teamSaving: 0.05,
@@ -56,7 +56,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 quarterly: {
                     period: 'quarterly',
-                    title: 'Quarterly',
+                    title: 'QUARTERLY',
                     months: 3,
                     saving: 0.1,
                     teamSaving: 0.1,
@@ -64,7 +64,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 annual: {
                     period: 'annual',
-                    title: 'Annual',
+                    title: 'ANNUAL',
                     months: 12,
                     saving: 0.15,
                     teamSaving: 0.15,
@@ -73,7 +73,7 @@ require(["jquery", "knockout"], function ($, ko) {
             };
         _init = function () {
             var counts = [];
-            for (var i = 2; i < 100; i++) {
+            for (var i = 2; i < 5; i++) {
                 counts.push(i);
             }
             self.advisorCount(counts);

@@ -39,22 +39,22 @@
 
     <!-- Theme skin -->
     <link href="skins/default.css" rel="stylesheet" />
+    <script>
+        window.intercomSettings = {
+            // TODO: The current logged in user's full name
+            name: "John Doe",
+            // TODO: The current logged in user's email address.
+            email: "john.doe@example.com",
+            // TODO: The current logged in user's sign-up date as a Unix timestamp.
+            created_at: 1234567890,
+            app_id: "zpeszl83"
+        };
+    </script>
+    <script>
+        (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/zpeszl83'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+    </script>
 </head>
 
-<script>
-    window.intercomSettings = {
-        // TODO: The current logged in user's full name
-        name: "John Doe",
-        // TODO: The current logged in user's email address.
-        email: "john.doe@example.com",
-        // TODO: The current logged in user's sign-up date as a Unix timestamp.
-        created_at: 1234567890,
-        app_id: "zpeszl83"
-    };
-</script>
-<script>
-(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/zpeszl83'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
-</script>
 
 <body>
     <!-- Start preloading -->
@@ -107,15 +107,15 @@
                         <div class="text-center">
                             <div class="radio-options">
                                 <div class="radio-inline">
-                                    <input type='radio' value='1' name='radio' id='radio1'/ checked>
+                                    <input type='radio' value='monthToMonth' name='radio' id='radio1' data-bind="checked: selectedPeriod" />
                                     <label for='radio1'>Monthly Billing</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <input type='radio' value='2' name='radio'  id='radio2'/>
+                                    <input type='radio' value='quarterly' name='radio' id='radio2' data-bind="checked: selectedPeriod" />
                                     <label for='radio2'>Quarterly Billing</label>
                                 </div>
                                 <div class="radio-inline">
-                                    <input type='radio' value='3' name='radio'  id='radio3'/>
+                                    <input type='radio' value='annual' name='radio' id='radio3' data-bind="checked: selectedPeriod" />
                                     <label for='radio3' class="no-border">Annual Billing</label>
                                 </div>
                             </div>
@@ -123,64 +123,65 @@
                         <!-- end text-center -->
 
                         <div class="row common-features">
-                                <div class="col-md-3 text-center">
-                                    <div class="checkbox">
-                                        <label>
-                                          <input type="checkbox"> Annual Contract
-                                        </label>
-                                    </div>
-                                    <p>
-                                        <i class="fa fa-check"></i> Unlimited Clients
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Client Dashboard
-                                    </p>
+                            <div class="col-md-3 text-center">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-bind="checked: isAnnualAggrement"> Annual Contract
+                                    </label>
                                 </div>
+                                <p>
+                                    <i class="fa fa-check"></i> Unlimited Clients
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Client Dashboard
+                                </p>
+                            </div>
 
-                                <div class="col-md-3 text-center">
-                                    <p>
-                                        <i class="fa fa-check"></i> Advisor Logo Branding
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Site Color Templates
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Custom Subdomain
-                                    </p>
-                                </div>
+                            <div class="col-md-3 text-center">
+                                <p>
+                                    <i class="fa fa-check"></i> Advisor Logo Branding
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Site Color Templates
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Custom Subdomain
+                                </p>
+                            </div>
 
-                                <div class="col-md-3 text-center">
-                                    <p>
-                                        <i class="fa fa-check"></i> Households / Grouping
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Account Sharing
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Software Integration
-                                    </p>
-                                </div>
+                            <div class="col-md-3 text-center">
+                                <p>
+                                    <i class="fa fa-check"></i> Households / Grouping
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Account Sharing
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Software Integration
+                                </p>
+                            </div>
 
-                                <div class="col-md-3 text-center">
-                                    <p>
-                                        <i class="fa fa-check"></i> Document Sharing
-                                    </p>
-                                    <p>
-                                        <i class="fa fa-check"></i> Subfolders
-                                    </p>
-                                    <a class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><i class="fa fa-info"></i> Batch Document Upload
-                                    </a>
-                                </div>
+                            <div class="col-md-3 text-center">
+                                <p>
+                                    <i class="fa fa-check"></i> Document Sharing
+                                </p>
+                                <p>
+                                    <i class="fa fa-check"></i> Subfolders
+                                </p>
+                                <a class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover">
+                                    <i class="fa fa-info"></i> Batch Document Upload
+                                </a>
+                            </div>
                         </div>
 
                         <div class="row margin-top-20">
                             <div class="col-md-3">
                                 <div class="header text-center office-color">
                                     <h4 class="margin-top-0">OFFICE</h4>
-                                    <h2>$241</h2>
+                                    <h2 data-bind="text: officeCostPerAdvisor">$241</h2>
                                     <p class="font-300">PER ADVISOR / PER MONTH</p>
-                                    <p class="font-300">(PAID MONTHLY)</p>
-                                    <p>$1,830 Over 21% OFF</p>
+                                    <p class="font-300" data-bind="visible: isAnnualAggrement">(PAID <span data-bind="text: titlePeriod">MONTHLY</span>)</p>
+                                    <p><span data-bind="text: officeAdvisorRealCost"> $1,830</span> over <span data-bind="text: officeSaving">21%</span> off</p>
                                 </div>
 
                                 <div class="features text-center">
@@ -189,14 +190,10 @@
                                         <div class="form-horizontal">
                                             <div class="form-group">
                                                 <div class="col-sm-6 padding-right-5">
-                                                  <select class="form-control pull-right">
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                      <option>4</option>
-                                                  </select>
+                                                    <select class="form-control pull-right" data-bind="options: advisorCount, value: officeAdvisorSelectedCount"></select>
                                                 </div>
                                                 <label class="control-label padding-top-0 pull-left">Advisors</label>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -212,7 +209,7 @@
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
                                         <p><strong>1,000</strong> accounts included</p>
@@ -235,10 +232,10 @@
                             <div class="col-md-3">
                                 <div class="header text-center advisor-color">
                                     <h4 class="margin-top-0">ADVISOR</h4>
-                                    <h2>$275</h2>
+                                    <h2 data-bind="text: advisorCost">$275</h2>
                                     <p class="font-300">PER ADVISOR / PER MONTH</p>
-                                    <p class="font-300">(PAID MONTHLY)</p>
-                                    <p>$1,830 Over 10% OFF</p>
+                                    <p class="font-300" data-bind="visible: isAnnualAggrement">(PAID <span data-bind="text: titlePeriod">MONTHLY</span>)</p>
+                                    <p data-bind="visible: hasSaving"><span data-bind="text: advisorRealCost">$1,830</span> Over <span data-bind="text: advisorSaving">10%</span> OFF</p>
                                 </div>
 
                                 <div class="features text-center">
@@ -259,7 +256,7 @@
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
                                         <p><strong>500</strong> accounts included</p>
@@ -282,10 +279,10 @@
                             <div class="col-md-3">
                                 <div class="header text-center team-color">
                                     <h4 class="margin-top-0">TEAM</h4>
-                                    <h2>$182</h2>
+                                    <h2 data-bind="text: teamCostPerAdvisor">$182</h2>
                                     <p class="font-300">PER ADVISOR / PER MONTH</p>
-                                    <p class="font-300">(PAID MONTHLY)</p>
-                                    <p>$1,830 Over 21% OFF</p>
+                                    <p class="font-300" data-bind="visible: isAnnualAggrement">(PAID <span data-bind="text: titlePeriod">MONTHLY</span>)</p>
+                                    <p><span data-bind="text: teamAdvisorRealCost">$1,830</span> Over <span data-bind="text: teamSaving">21%</span> OFF</p>
                                 </div>
 
                                 <div class="features text-center">
@@ -294,14 +291,10 @@
                                         <div class="form-horizontal">
                                             <div class="form-group">
                                                 <div class="col-sm-6 padding-right-5">
-                                                  <select class="form-control pull-right">
-                                                      <option>2</option>
-                                                      <option>3</option>
-                                                      <option>4</option>
-                                                  </select>
+                                                    <select class="form-control pull-right" data-bind="options: advisorCount, value: teamAdvisorSelectedCount"></select>
                                                 </div>
                                                 <label class="control-label padding-top-0 pull-left">Advisors</label>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -317,7 +310,7 @@
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
                                         <p><strong>500</strong> accounts included</p>
@@ -361,7 +354,7 @@
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                              <input type="checkbox"> ACCOUNT AGGREGATION
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
                                         <p><strong>10,000</strong> accounts included</p>
@@ -416,12 +409,11 @@
 
     <script type="text/javascript">
 
-        $(function() {
+        $(function () {
             $('.popoverData').popover();
             $('#popoverOption').popover({ trigger: "hover" });
-          });
+        });
     </script>
 
 </body>
 </html>
-
