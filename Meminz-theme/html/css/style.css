@@ -534,7 +534,7 @@ ul.client-list li ul li.last{
 	border-right:none;
 }*/
 
-#client .col-sm-5 {
+/*#client .col-sm-5 {
 	border: 2px dotted #bdd8ee;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -547,7 +547,7 @@ ul.client-list li ul li.last{
 #client .col-sm-5 h4 {
 	font-weight: 300;
 	text-align: center;
-}
+}*/
 
 .client-link{
 	position:relative;
@@ -558,31 +558,35 @@ ul.client-list li ul li.last{
 }
 
 .client-link img {
-	max-width: 170px;
+	max-width: 165px;
+}
+
+.client-link.sm img {
+	max-width: 140px;
 }
 
 .logo-hover{
 	position:absolute;
 }
 
-#client .titles-holder h1 {
+/*#client .titles-holder h1 {
 	font-size: 150px;
 	line-height: 1.1;
-	color: #1fa2ed;
+	color: #bdd8ee;
 	margin-bottom: 0;
 }
 
 #client .titles-holder h3,
 #client .titles-holder h4 {
 	color: #555;
-}
+}*/
 
-#client.test-2 {
+#client {
 	background-color: #ebebeb;
 	padding: 0;
 }
 
-#client.test-2 .titles-holder {
+#client .titles-holder {
 	background-color: #fff;
 	border-radius: 50%;
 	position: absolute;
@@ -594,21 +598,27 @@ ul.client-list li ul li.last{
 	z-index: 999;
 }
 
-#client.test-2 .titles-holder h1 {
-	font-size: 80px;
-	padding-top: 72px;
+#client .titles-holder h1 {
+	font-size: 70px;
+	/*padding-top: 72px;*/
+	color: #bdd8ee;
+	margin-bottom: 0;
 }
 
-#client.test-2 .titles-holder h3 {
-	font-size: 20px;
+#client .titles-holder h3 {
+	font-size: 36px;
+	color: #b0e4c4;
+	padding-top: 82px;
 	margin-bottom: 0px;
 }
 
-#client.test-2 .titles-holder p {
-	font-size: 17px;
+#client .titles-holder p {
+	font-size: 18px;
+	color: #898989;
+	font-weight: 600;
 }
 
-#client.test-2 .separator {
+#client .separator {
 	border-top: 2px solid #fff;
 	position: absolute;
 	left: 0;
@@ -616,14 +626,28 @@ ul.client-list li ul li.last{
 	margin-top: 35px;
 }
 
-#client.test-2 .col-sm-6.left {
+#client .col-sm-6.left {
 	padding-right: 180px;
-
 }
 
-#client.test-2 .col-sm-6.right {
+#client a.client-link {
+	cursor: default;
+}
+
+#client .col-sm-6.right {
 	padding-left: 150px;
 	border-left: 2px solid #fff;
+}
+
+#client h4 {
+	font-size: 20px;
+}
+
+#client p.note {
+	font-family: 'Merienda', cursive;
+	color: #898989;
+	font-size: 13px;
+	margin-top: -15px;
 }
 
 /*

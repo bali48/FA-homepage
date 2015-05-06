@@ -688,19 +688,19 @@ Wizard
 		border-left: 1px solid #d4d4d4;
 	}
 
-		.fuelux .wizard .actions a {
-			margin-right: 8px;
-			font-size: 12px;
-			line-height: 45px;
-		}
+.fuelux .wizard .actions a {
+	margin-right: 8px;
+	font-size: 12px;
+	line-height: 45px;
+}
 
-		.fuelux .wizard .actions .btn-prev i {
-			margin-right: 5px;
-		}
+.fuelux .wizard .actions .btn-prev i {
+	margin-right: 5px;
+}
 
-		.fuelux .wizard .actions .btn-next i {
-			margin-left: 5px;
-		}
+.fuelux .wizard .actions .btn-next i {
+	margin-left: 5px;
+}
 
 .fuelux .step-content .step-pane {
 	display: none;
@@ -722,12 +722,32 @@ Fusion Advisor style
 	text-align: center;
 }
 
+.font-300 {
+	font-weight: 300;
+}
+
+.margin-top-0 {
+	margin-top: 0px !important;
+}
+
+.margin-top-5 {
+	margin-top: 5px !important;
+}
+
 .margin-top-10 {
 	margin-top: 10px !important;
 }
 
+.margin-top-15 {
+	margin-top: 15px;
+}
+
 .margin-top-20 {
 	margin-top: 20px;
+}
+
+.margin-top-25 {
+	margin-top: 25px;
 }
 
 .margin-bottom-0 {
@@ -735,7 +755,7 @@ Fusion Advisor style
 }
 
 .margin-bottom-10 {
-	margin-bottom: 10 !important;
+	margin-bottom: 10px;
 }
 
 .margin-bottom-30 {
@@ -770,6 +790,10 @@ Fusion Advisor style
 	padding-top: 60px !important;
 }
 
+.padding-right-5 {
+	padding-right: 5px;
+}
+
 .padding-bottom-30 {
 	padding-bottom: 30px !important;
 }
@@ -792,23 +816,23 @@ Fusion Advisor style
 	padding: 4px 0;
 }
 
-	.header-wrap .ribbon a {
-		color: #b6b6b6;
-	}
+.header-wrap .ribbon a {
+	color: #b6b6b6;
+}
 
-		.header-wrap .ribbon a:hover {
-			color: #1ec279;
-			text-decoration: none;
-		}
+.header-wrap .ribbon a:hover {
+	color: #1ec279;
+	text-decoration: none;
+}
 
-		.header-wrap .ribbon a.pull-right {
-			color: #fff;
-			font-weight: 300;
-		}
+.header-wrap .ribbon a.pull-right {
+	color: #fff;
+	font-weight: 300;
+}
 
-			.header-wrap .ribbon a.pull-right:hover {
-				text-decoration: underline;
-			}
+.header-wrap .ribbon a.pull-right:hover {
+	text-decoration: underline;
+}
 
 .header-wrap .menu-padding {
 	padding-top: 40px;
@@ -867,7 +891,7 @@ Fusion Advisor style
 .pricing-page h4 {
 	margin: 30px 0 0 0;
 	font-weight: lighter;
-	color: #999;
+	/*color: #999;*/
 	font-size: 20px;
 }
 
@@ -1124,6 +1148,160 @@ Fusion Advisor style
 
 .pricing-page .btn-info:hover {
 	background-color: #1fa2ed;
+}
+
+/* new */
+.pricing-page .common-features {
+	margin-top: 30px;
+}
+
+.pricing-page .common-features .checkbox {
+	margin: 0 0 5px 0;
+}
+
+.pricing-page .common-features .fa-check {
+	color: #1ec279;
+}
+
+.pricing-page .radio-options {
+	border: 2px solid #2baaa8;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display: inline-block;
+}
+
+.pricing-page .radio-inline {
+	padding-left: 0;
+	margin-left: 0;
+	float: left;
+}
+
+.pricing-page .radio-inline input {
+	visibility:hidden;
+	margin: 0;
+}
+
+.pricing-page .radio-inline label {
+	cursor: pointer;
+	padding: 6px 18px;
+	margin: 0;
+	border-right: 2px solid #2baaa8;
+}
+
+.pricing-page .radio-inline label.no-border {
+	border-right: none;
+}
+
+.pricing-page .radio-inline input:checked + label {
+	background: #2baaa8;
+	color: #fff;
+}
+
+.pricing-page .common-features a {
+	padding: 0;
+}
+
+.pricing-page .fa-info {
+	color: #959595;
+	border: 1px solid #959595;
+	padding: 2px 7px;
+	border-radius: 50%;
+	font-size: 13px;
+}
+
+.pricing-page .btn {
+	text-transform: none;
+}
+
+.pricing-page .col-md-3 .header {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 180px;
+	color: #fff;
+	padding-top: 5px;
+}
+
+.pricing-page .col-md-3 .header img {
+	margin-top: 20px;
+}
+
+.pricing-page .col-md-3 h4,
+.pricing-page .col-md-3 h2 {
+	color: #fff;
+	font-weight: 400;
+}
+
+.pricing-page .col-md-3 h2 {
+	font-size: 48px;
+	margin-bottom: 5px;
+}
+
+.pricing-page .col-md-3 p {
+	margin-bottom: 5px;
+}
+
+.pricing-page .col-md-3 .office-color {
+	background-color: #437b87;
+}
+
+.pricing-page .col-md-3 .advisor-color {
+	background-color: #2baaa8;
+}
+
+.pricing-page .col-md-3 .team-color {
+	background-color: #334758;
+}
+
+.pricing-page .col-md-3 .enterprise-color {
+	background-color: #c1c9ce;
+}
+
+.pricing-page .col-md-3 .features {
+	border: 1px solid #ebebeb;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #fbfdfe;
+}
+
+.pricing-page .col-md-3 .item {
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0;
+}
+
+.pricing-page .col-md-3 .item .checkbox {
+	margin-top: 0;
+}
+
+.pricing-page .col-md-3 .item .form-group {
+	margin-bottom: 0;
+}
+
+.pricing-page .col-md-3 .item .form-control {
+	border: none;
+	box-shadow: none;
+	height: auto;
+	width: 40px;
+	padding: 0;
+}
+
+.pricing-page .col-md-3 .item p {
+	margin: 0;
+}
+
+.pricing-page .col-md-3 .btn-primary {
+	margin: 12px 0;
+	color: #fff;
+	border: none;
+}
+
+.pricing-page h6 {
+	margin: 30px 0 10px 15px;
+}
+
+/* Modals */
+.modal-dialog {
+	width: 700px;
 }
 
 /* Wizard */

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -17,6 +17,7 @@
 
     <!-- Font -->
     <link href="fonts/open-sans/stylesheet.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
 
     <!-- Font icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -160,8 +161,8 @@
                                 </a>
                                 <div class="video-player"></div>
                                 <div data-bind="visible: isVideoVisible" style="position:absolute; top:0px;">
-                                    <video x-webkit-airplay="allow" controls preload="none" id="video" width="450" height="200" class="video-js vjs-default-skin">
-                                        <source src="https://pdlvimeocdn-a.akamaihd.net/26588/306/182450404.mp4?token2=1428998190_9e5a310385b846e9b21454d1f1b28426&amp;aksessionid=aad6e7fffbf53106" type="video/mp4">
+                                    <video x-webkit-airplay="allow" controls preload="none" id="video" width="960" height="540" class="video-js vjs-default-skin">
+                                        <source src="FA-video.mp4" type="video/mp4">
                                     </video>
                                     <!--<p class="vjs-no-js">
                                         To view this video please enable JavaScript, and consider upgrading to a web browser
@@ -176,113 +177,88 @@
             </div>
         </section>
         <!-- End home -->
+
         <!-- Start client -->
-        <section id="client" class="contain gray-bg padding-top-0">
+        <section id="client" class="contain gray-bg test-2">
             <div class="container">
+
                 <div class="row">
-                    <div class="arrow-down arrow-blue"></div>
-                </div>
-                <!--<div class="row">
-                    <div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
-                        <ul class="client-list">
-                            <li>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo1-hover.png" alt="" /></span>
-                                            <img src="img/client/logo1.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo2-hover.png" alt="" /></span>
-                                            <img src="img/client/logo2.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo3-hover.png" alt="" /></span>
-                                            <img src="img/client/logo3.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="bottom-list">
-                                <ul>
-                                    <li>
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo4-hover.png" alt="" /></span>
-                                            <img src="img/client/logo4.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo5-hover.png" alt="" /></span>
-                                            <img src="img/client/logo5.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                    <li class="last">
-                                        <a href="#" class="client-link">
-                                            <span class="logo-hover"><img src="img/client/logo6-hover.png" alt="" /></span>
-                                            <img src="img/client/logo6.png" class="client-logo" alt="" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>-->
-                <div class="row">
-                    <div class="col-sm-5 margin-bottom-10">
-                        <h4>Direct Institution Feeds</h4>
-                        <a href="#" class="client-link">
-                            <span class="logo-hover"><img src="img/client/logo1-hover.png" alt="" /></span>
-                            <img src="img/client/logo1.png" class="client-logo" alt="" />
-                        </a>
-                        <a href="#" class="client-link pull-right">
-                            <span class="logo-hover"><img src="img/client/logo5-hover.png" alt="" /></span>
-                            <img src="img/client/logo5.png" class="client-logo" alt="" />
-                        </a>
-                        <a href="#" class="client-link margin-left-40">
+                    <div class="col-sm-6 left text-center padding-top-40">
+                        <!--<h4>Direct Custodial Feeds</h4>-->
+                        <a href="#" class="client-link pull-left">
                             <span class="logo-hover"><img src="img/client/logo3-hover.png" alt="" /></span>
                             <img src="img/client/logo3.png" class="client-logo" alt="" />
                         </a>
-                    </div>
-                    <div class="col-sm-5 pull-right margin-bottom-10">
-                        <h4>Smarter Account Aggregation</h4>
                         <a href="#" class="client-link margin-left-20">
+                            <span class="logo-hover"><img src="img/client/logo5-hover.png" alt="" /></span>
+                            <img src="img/client/logo5.png" class="client-logo" alt="" />
+                        </a>
+                        <a href="#" class="client-link pull-left margin-top-10 sm">
+                            <span class="logo-hover"><img src="img/client/logo7-hover.png" alt="" /></span>
+                            <img src="img/client/logo7.png" class="client-logo" alt="" />
+                        </a>
+                        <a href="#" class="client-link margin-top-10">
+                            <span class="logo-hover"><img src="img/client/logo1-hover.png" alt="" /></span>
+                            <img src="img/client/logo1.png" class="client-logo" alt="" />
+                        </a>
+                        <div class="margin-top-20">
+                            <a href="#" data-toggle="modal" data-target="#ClientsModal">See our growing list</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 right text-center padding-top-40">
+                        <!--<h4>Held Away Accounts</h4>-->
+                        <a href="#" class="client-link sm pull-left">
                             <span class="logo-hover"><img src="img/client/logo4-hover.png" alt="" /></span>
                             <img src="img/client/logo4.png" class="client-logo" alt="" />
                         </a>
-                        <a href="#" class="client-link pull-right">
+                        <a href="#" class="client-link">
+                            <span class="logo-hover"><img src="img/client/logo8-hover.png" alt="" /></span>
+                            <img src="img/client/logo8.png" class="client-logo" alt="" />
+                        </a>
+                        <a href="#" class="client-link pull-right sm">
+                            <span class="logo-hover"><img src="img/client/logo9-hover.png" alt="" /></span>
+                            <img src="img/client/logo9.png" class="client-logo" alt="" />
+                        </a>
+                        <a href="#" class="client-link margin-top-10">
                             <span class="logo-hover"><img src="img/client/logo2-hover.png" alt="" /></span>
                             <img src="img/client/logo2.png" class="client-logo" alt="" />
                         </a>
-                        <div class="text-center margin-top-20">
-                            <a href="#">Search for Yourself</a>
+                        <a href="#" class="client-link pull-right margin-top-10">
+                            <span class="logo-hover"><img src="img/client/logo10-hover.png" alt="" /></span>
+                            <img src="img/client/logo10.png" class="client-logo" alt="" />
+                        </a>
+                        <div class="margin-top-25">
+                            <a href="#" data-toggle="modal" data-target="#AccountsModal">Search for Yourself</a>
                         </div>
                     </div>
                 </div>
-                <div class="text-center titles-holder">
-                    <h1>HELLO</h1>
-                    <h3>TO YOUR OWN SILVERBULLET</h3>
-                    <h4>Your practice called, and it wants to more efficient</h4>
-                </div>
+
                 <div class="row">
-                    <div class="col-sm-5 text-center margin-top-10">
-                        <h4>Integration with the Industries Best</h4>
+                    <div class="text-center titles-holder">
+                        <h3>VISUALIZATION</h3>
+                        <p>FOR YOUR CLIENTS</p>
+                        <h1>GROWTH</h1>
+                        <p>FOR YOUR PRACTICE</p>
+                    </div>
+                </div>
+                <div class="separator"></div>
+
+                <div class="row row-bottom">
+                    <div class="col-sm-6 left text-center padding-top-60 padding-bottom-30">
+                        <!--<h4 class="margin-top-15">Create Your Own Silverbullet</h4>-->
                         <a href="#" class="client-link">
                             <span class="logo-hover"><img src="img/client/logo6-hover.png" alt="" /></span>
                             <img src="img/client/logo6.png" class="client-logo" alt="" />
                         </a>
-                        <div class="text-center margin-top-20">
-                            <a href="#">Not a partner? Get on the list...</a>
+                        <p class="note">Coming Soon!</p>
+                        <div class="margin-top-25">
+                            <a href="#">Not a partner? Get on the list.</a>
                         </div>
                     </div>
-                    <div class="col-sm-5 pull-right margin-top-10">
-                        <h4>Document Vault with Batch Upload</h4>
+                    <div class="col-sm-6 right text-center padding-top-60 padding-bottom-30">
+                        <h4 class="margin-top-15"><i class="fa fa-folder-o"></i> Document Vault</h4>
                         <p>Your clients can upload their own documents, share with household, create folders, and YOU can upload thousands of documents in an instant to all your clients.</p>
-                        <div class="text-center margin-top-20">
+                        <div class="margin-top-20 margin-bottom-10">
                             <a href="#">Ready to Schedule a demo?</a>
                         </div>
                     </div>
@@ -290,12 +266,11 @@
             </div>
         </section>
         <!-- End client -->
+
         <!-- Start features -->
-        <section id="features" class="contain desc-wrapp padding-top-0">
+        <section id="features" class="contain desc-wrapp">
             <div class="container">
-                <div class="row">
-                    <div class="arrow-down arrow-gray"></div>
-                </div>
+
                 <div class="row text-center wow fadeInUp">
                     <div class="col-md-8 col-md-offset-2">
                         <h3 class="heading"><span>Benefits</span></h3>
@@ -585,6 +560,7 @@
         <!-- End contact -->
     </div>
     <!-- end content -->
+
     <!-- Start Modal -->
     <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -759,6 +735,43 @@
         </div>
     </div>
     <!-- End Modal -->
+
+    <!-- Start Accounts Modal -->
+    <div class="modal fade" id="AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/modal-image.png" class="img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Accounts Modal -->
+
+    <!-- Start Accounts Modal -->
+    <div class="modal fade" id="ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/client/logo3-hover.png" class="img-responsive">
+            <img src="img/client/logo10-hover.png" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Accounts Modal -->
 
     <div class="clearfix"></div>
 
