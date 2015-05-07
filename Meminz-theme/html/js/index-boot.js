@@ -44,22 +44,23 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
         self.isVideoVisible = ko.observable(false);
         self.playVideoCommand = function () {
             self.isVideoVisible(true);
-            var player = videojs('video', {
-                textTrackDisplay: false,
-                controlBar: {
-                    fullscreenToggle: false,
-                    currentTimeDisplay: false,
-                    timeDivider: false,
-                    durationDisplay: false,
-                    remainingTimeDisplay: false,
-                    progressControl: false,
-                    volumeControl: false,
-                    muteToggle: false
-                }
-            }, function () {
-                console.log('Good to go!');
-                this.play();
-            });
+            //wistiaEmbed
+            //var player = videojs('video', {
+            //    textTrackDisplay: false,
+            //    controlBar: {
+            //        fullscreenToggle: false,
+            //        currentTimeDisplay: false,
+            //        timeDivider: false,
+            //        durationDisplay: false,
+            //        remainingTimeDisplay: false,
+            //        progressControl: false,
+            //        volumeControl: false,
+            //        muteToggle: false
+            //    }
+            //}, function () {
+            //    console.log('Good to go!');
+            //    this.play();
+            //});
         };
 
         // initialization

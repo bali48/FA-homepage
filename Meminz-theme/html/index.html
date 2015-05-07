@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -160,16 +160,7 @@
 
                                 </a>
                                 <div class="video-player"></div>
-                                <div data-bind="visible: isVideoVisible" style="position:absolute; top:0px;">
-                                    <video x-webkit-airplay="allow" controls preload="none" id="video" width="960" height="540" class="video-js vjs-default-skin">
-                                        <source src="FA-video.mp4" type="video/mp4">
-                                    </video>
-                                    <!--<p class="vjs-no-js">
-                                        To view this video please enable JavaScript, and consider upgrading to a web browser
-                                        that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                                    </p>-->
-                                    <!--<iframe src="https://player.vimeo.com/video/72049717" width="960" height="540" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-                                </div>
+                                <div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; top:0px; width:640px; height:360px;">&nbsp;</div>
                             </div>
                         </div>
                     </div>
@@ -177,7 +168,6 @@
             </div>
         </section>
         <!-- End home -->
-
         <!-- Start client -->
         <section id="client" class="contain gray-bg test-2">
             <div class="container">
@@ -266,7 +256,6 @@
             </div>
         </section>
         <!-- End client -->
-
         <!-- Start features -->
         <section id="features" class="contain desc-wrapp">
             <div class="container">
@@ -440,7 +429,6 @@
         <!-- End contact -->
     </div>
     <!-- end content -->
-
     <!-- Start Modal -->
     <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -615,90 +603,87 @@
         </div>
     </div>
     <!-- End Modal -->
-
     <!-- Start Accounts Modal -->
     <div class="modal fade" id="AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <img src="img/modal-image.png" class="img-responsive">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/modal-image.png" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- End Accounts Modal -->
-
     <!-- Start Clients Modal -->
     <div class="modal fade" id="ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="img/client/logo3-hover.png" class="img-responsive">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
                 </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo5-hover.png" class="img-responsive">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo7-hover.png" class="img-responsive">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="img/client/logo3-hover.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo5-hover.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo7-hover.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row margin-top-25">
+                        <div class="col-sm-4">
+                            <img src="img/client/logo1-hover.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo11.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo12.png" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="row margin-top-25 margin-bottom-10">
+                        <div class="col-sm-4">
+                            <img src="img/client/logo13.png" class="img-responsive negative-margin">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo14.png" class="img-responsive">
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/client/logo15.png" class="img-responsive">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row margin-top-25">
-                <div class="col-sm-4">
-                    <img src="img/client/logo1-hover.png" class="img-responsive">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo11.png" class="img-responsive">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo12.png" class="img-responsive">
-                </div>
-            </div>
-            <div class="row margin-top-25 margin-bottom-10">
-                <div class="col-sm-4">
-                    <img src="img/client/logo13.png" class="img-responsive negative-margin">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo14.png" class="img-responsive">
-                </div>
-                <div class="col-sm-4">
-                    <img src="img/client/logo15.png" class="img-responsive">
-                </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- End Clients Modal -->
-
     <!-- Start Partner Modal -->
     <div class="modal fade" id="PartnerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Partner Request</h4>
-          </div>
-          <div class="modal-body">
-            <a href="https://www.timetrade.com/book/ZFGLN" target="_blank">
-                <img src="img/partner-request.png" class="img-responsive" alt="partner-request">
-            </a>
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Partner Request</h4>
+                </div>
+                <div class="modal-body">
+                    <a href="https://www.timetrade.com/book/ZFGLN" target="_blank">
+                        <img src="img/partner-request.png" class="img-responsive" alt="partner-request">
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!-- End Clients Modal -->
 
@@ -880,6 +865,15 @@
 
     <!-- Customn javascript -->
     <script src="js/custom.js"></script>
+
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
+    <script>
+        wistiaEmbed = Wistia.embed("drrffn3n58", {
+            videoFoam: true
+        });
+    </script>
+
+
 
     <!-- Wizard javascript -->
     <!--<script src="js/wizard/jquery.bootstrap.wizard.min.js"></script>
