@@ -80,7 +80,7 @@
                 <a href="https://twitter.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-twitter"></i></a>
                 <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank" class="marginright10"><i class="fa fa-google-plus"></i></a>
                 <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
-                <a href="enterprise.html" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
+                <a href="#" data-toggle="modal" data-target="#EnterpriseModal" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
             </div>
         </div>
         <header id="header" class="menu clearfix">
@@ -242,7 +242,7 @@
                         </a>
                         <p class="note">Coming Soon!</p>
                         <div class="margin-top-25">
-                            <a href="#" data-toggle="modal" data-target="#PartnerModal">Not a partner? Get on the list.</a>
+                            <a href="#" data-toggle="modal" data-target="#PartnerRequestModal">Not a partner? Get on the list.</a>
                         </div>
                     </div>
                     <div class="col-sm-6 right text-center padding-top-60 padding-bottom-30">
@@ -631,53 +631,53 @@
                     <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-sm-4">
+                    <div class="row margin-top-10">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo3-hover.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo5-hover.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo7-hover.png" class="img-responsive">
                         </div>
                     </div>
                     <div class="row margin-top-25">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo1-hover.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo11.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo12.png" class="img-responsive">
                         </div>
                     </div>
                     <div class="row margin-top-25 margin-bottom-10">
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo13.png" class="img-responsive negative-margin">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 text-center">
                             <img src="img/client/logo14.png" class="img-responsive">
                         </div>
-                        <div class="col-sm-4">
+                        <!--<div class="col-sm-4">
                             <img src="img/client/logo15.png" class="img-responsive">
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Clients Modal -->
-    <!-- Start Partner Modal -->
-    <div class="modal fade" id="PartnerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <!-- Start Partner Request Modal -->
+    <div class="modal fade time-trade-modal" id="PartnerRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Partner Request</h4>
                 </div>
-<<<<<<< HEAD
 
                 <div class="modal-body">
                     <div class="contact-partner clearfix">
@@ -695,24 +695,56 @@
                             <h5 class="text-center">Aaron J. Smith Sr./<small>Founder and CEO</small></h5>
                         </div>
                     </div>
-                    <!--<a href="https://www.timetrade.com/book/ZFGLN" target="_blank">
-                        <img src="img/partner-request.png" class="img-responsive" alt="partner-request">
-                    </a>-->
                 </div>
 
                 <div class="modal-footer">
-                    <a href="https://www.timetrade.com/book/ZFGLN" target="_blank" class="btn btn-primary">Contact</a>
-=======
-                <div class="modal-body">
-                    <a href="https://www.timetrade.com/book/ZFGLN" target="_blank">
-                        <img src="img/partner-request.png" class="img-responsive" alt="partner-request">
-                    </a>
->>>>>>> FETCH_HEAD
+                    <a href="https://www.timetrade.com/app/td-272511/workflows/zfgln/schedule/availability?view=full&wfsid=b07a7e14-baba97f6-b07a7e17-baba97f6-00000004-l13pvq2glecgcsdnq5l1e9s35mrbuvh1" target="_blank" class="btn btn-primary">Contact</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Partner Modal -->
+    <!-- End Partner Request Modal -->
+
+    <!-- Start Enterprise Modal-->
+    <div class="modal fade time-trade-modal" id="EnterpriseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Enterprise Call</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="contact-partner clearfix">
+                        <div class="bg-white clearfix">
+                            <div class="col-sm-6">
+                                <img src="img/enterprise-image.png" class="img-responsive" alt="advisor">
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <h4>Enterprise</h4>
+                                <h5><em>Firm level Feeds to Reps<br>
+                                    Custom Dashboards<br>
+                                    No Minimums<br>
+                                    Integration<br>
+                                    Multi-office<br>
+                                    Broker/Dealer<br>
+                                    Trust Companies<br>
+                                    Credit Unions<br>
+                                    Corporate RIA<br>
+                                    Family Office
+                                </em></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="https://www.timetrade.com/app/td-272511/workflows/bsbrn/schedule/availability?view=full&wfsid=b07a7e11-baba97f6-b07a7e17-baba97f6-00000002-d09e3mrd2569736cgcpafnk39trrtgqq" target="_blank" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Enterprise Modal -->
 
     <div class="clearfix"></div>
 

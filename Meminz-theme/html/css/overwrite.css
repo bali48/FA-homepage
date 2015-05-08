@@ -883,11 +883,6 @@ Fusion Advisor style
 }
 
 /* ------ Pricing page ------- */
-
-.pricing-page .table-responsive {
-	margin-top: 45px;
-}
-
 .pricing-page h3.text-center {
 	margin-top: 30px;
 }
@@ -1303,9 +1298,9 @@ Fusion Advisor style
 	margin: 30px 0 10px 15px;
 }
 
-/* Modals */
-.modal-dialog {
-	width: 700px;
+.pricing-page .time-trade-modal h4 {
+	font-weight: 700;
+	margin: 0 0 20px 0;
 }
 
 /* Wizard */
@@ -1437,11 +1432,19 @@ Fusion Advisor style
 }
 
 /* Modals */
+.modal-dialog {
+	width: 700px;
+}
+
+#ClientsModal img {
+	max-width: 160px;
+}
+
 #ClientsModal img.negative-margin {
 	margin-top: -30px;
 }
 
-#PartnerModal .contact-partner {
+.time-trade-modal .contact-partner {
 	border: 1px solid #dfdfdf;
 	background-color: #f6f5f5;
 	border-radius: 4px;
@@ -1450,12 +1453,12 @@ Fusion Advisor style
 	padding: 20px;
 }
 
-#PartnerModal .contact-partner .bg-white {
+.time-trade-modal .contact-partner .bg-white {
 	background-color: #fff;
 	padding: 15px 0;
 }
 
-#PartnerModal h5 {
+.time-trade-modal h5 {
 	font-weight: normal;
 }
 
