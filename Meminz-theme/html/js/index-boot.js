@@ -35,15 +35,19 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
 
     VM = function () {
         var self = this,
+            _wistiaEmbed,
             _init;
         _init = function () {
-
+            _wistiaEmbed = Wistia.embed("drrffn3n58", {
+                videoFoam: true
+            });
         };
 
         // public 
         self.isVideoVisible = ko.observable(false);
         self.playVideoCommand = function () {
             self.isVideoVisible(true);
+            _wistiaEmbed.play();
             //wistiaEmbed
             //var player = videojs('video', {
             //    textTrackDisplay: false,
@@ -64,6 +68,7 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
         };
 
         // initialization
+        _init();
     }
 
     // application start
