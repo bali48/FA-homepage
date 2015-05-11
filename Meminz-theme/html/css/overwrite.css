@@ -1396,7 +1396,7 @@ Fusion Advisor style
 }
 
 .benefit-testimonial {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .benefit-testimonial p {
@@ -1406,7 +1406,7 @@ Fusion Advisor style
 
 .benefit-testimonial img {
 	border-radius: 50%;
-	max-width: 40px;
+	max-width: 60px;
 }
 
 .benefit-testimonial em {
@@ -1433,7 +1433,7 @@ Fusion Advisor style
 
 /* Modals */
 .modal-dialog {
-	width: 700px;
+	width: 800px;
 }
 
 #ClientsModal img {
