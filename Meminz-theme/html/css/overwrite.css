@@ -782,6 +782,10 @@ Fusion Advisor style
 	padding-top: 0 !important;
 }
 
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+
 .padding-top-40 {
 	padding-top: 40px !important;
 }
@@ -879,11 +883,6 @@ Fusion Advisor style
 }
 
 /* ------ Pricing page ------- */
-
-.pricing-page .table-responsive {
-	margin-top: 45px;
-}
-
 .pricing-page h3.text-center {
 	margin-top: 30px;
 }
@@ -1299,9 +1298,9 @@ Fusion Advisor style
 	margin: 30px 0 10px 15px;
 }
 
-/* Modals */
-.modal-dialog {
-	width: 700px;
+.pricing-page .time-trade-modal h4 {
+	font-weight: 700;
+	margin: 0 0 20px 0;
 }
 
 /* Wizard */
@@ -1397,7 +1396,7 @@ Fusion Advisor style
 }
 
 .benefit-testimonial {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .benefit-testimonial p {
@@ -1407,7 +1406,7 @@ Fusion Advisor style
 
 .benefit-testimonial img {
 	border-radius: 50%;
-	max-width: 40px;
+	max-width: 60px;
 }
 
 .benefit-testimonial em {
@@ -1433,8 +1432,34 @@ Fusion Advisor style
 }
 
 /* Modals */
+.modal-dialog {
+	width: 800px;
+}
+
+#ClientsModal img {
+	max-width: 160px;
+}
+
 #ClientsModal img.negative-margin {
 	margin-top: -30px;
+}
+
+.time-trade-modal .contact-partner {
+	border: 1px solid #dfdfdf;
+	background-color: #f6f5f5;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 20px;
+}
+
+.time-trade-modal .contact-partner .bg-white {
+	background-color: #fff;
+	padding: 15px 0;
+}
+
+.time-trade-modal h5 {
+	font-weight: normal;
 }
 
 

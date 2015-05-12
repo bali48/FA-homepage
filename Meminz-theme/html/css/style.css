@@ -90,12 +90,11 @@ Home
 	margin-left: 10px;
 }
 
-.home-wrapper .video .video-player {
+.close-video-btn {
 	position: absolute;
-	top: 0px;
-	left: 50%;
-	margin-left: -480px;
-	display: none;
+	top: 0;
+	right: 20px;
+	cursor: pointer;
 }
 
 .parallax{

@@ -43,7 +43,7 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
             });
         };
 
-        // public 
+        // public
         self.isVideoVisible = ko.observable(false);
         self.playVideoCommand = function () {
             self.isVideoVisible(true);
