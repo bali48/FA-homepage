@@ -64,7 +64,7 @@ Home
 	text-align: center;
 }
 
-.home-wrapper .video span{
+.home-wrapper .video span.sub-title {
 	font-weight: 300;
 	display: block;
 	text-align: left;
@@ -95,6 +95,7 @@ Home
 	top: 0;
 	right: 20px;
 	cursor: pointer;
+	z-index: 1999;
 }
 
 .parallax{

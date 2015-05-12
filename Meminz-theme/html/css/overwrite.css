@@ -883,15 +883,23 @@ Fusion Advisor style
 }
 
 /* ------ Pricing page ------- */
-.pricing-page h3.text-center {
-	margin-top: 30px;
-}
-
 .pricing-page h4 {
 	margin: 30px 0 0 0;
 	font-weight: lighter;
-	/*color: #999;*/
 	font-size: 20px;
+}
+
+.pricing-page h4 a {
+	cursor: pointer;
+}
+
+.pricing-page .wistia_embed {
+	top: 10px;
+}
+
+.pricing-page .close-video-btn {
+	color: #fff;
+	top: 10px;
 }
 
 .table > thead:first-child > tr:first-child > th {
