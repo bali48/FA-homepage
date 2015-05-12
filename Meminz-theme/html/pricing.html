@@ -100,7 +100,11 @@
         <!-- End header -->
         <!-- Start content -->
         <div class="container">
-            <h4 class="text-center">Not sure which plan to choose? <a href="#">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
+            <h4 class="text-center">Not sure which plan to choose? <a data-bind="click: playVideoCommand">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
+            <div class="video">
+                <div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; top:0px; width:640px; height:360px; z-index:20000;">&nbsp;</div>
+                <div data-bind="click: closeVideoCommand,visible: isVideoVisible" class="close-video-btn"><i class="fa fa-times"></i></div>
+            </div>
             <form>
                 <div class="row">
                     <div class="col-md-12 margin-top-20">
@@ -427,6 +431,9 @@
     <script src="js/require-2.1.16.js"></script>
     <script src="js/requirejs-config.js"></script>
     <script src="js/pricing-boot.js"></script>
+
+    <!-- http://fast.wistia.com/ -->
+    <script src="js/wistia-v1.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

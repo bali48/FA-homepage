@@ -36,6 +36,7 @@ require(["jquery", "knockout"], function ($, ko) {
     VM = function () {
         var self = this,
             _init,
+            _wistiaEmbed,
             _calculated,
             _saving = {
                 monthToMonth: {
@@ -78,8 +79,22 @@ require(["jquery", "knockout"], function ($, ko) {
             }
             self.advisorCount(counts);
             self.selectedPeriod(_saving.quarterly.period);
+            _wistiaEmbed = Wistia.embed("drrffn3n58", {
+                videoFoam: true
+            });
         };
         // public
+        // play/stop video
+        self.isVideoVisible = ko.observable(false);
+        self.playVideoCommand = function () {
+            self.isVideoVisible(true);
+            _wistiaEmbed.play();
+        };
+        self.closeVideoCommand = function () {
+            self.isVideoVisible(false);
+            _wistiaEmbed.pause();
+        };
+        // other
         self.isAnnualAggrement = ko.observable(false);
         self.isAccountAggregationSelected = ko.observable(true);
         self.selectedPeriod = ko.observable("monthToMonth");
