@@ -181,7 +181,7 @@
                                     <h2 data-bind="text: officeCostPerAdvisor">$241</h2>
                                     <p class="font-300">PER ADVISOR / PER MONTH</p>
                                     <p class="font-300" data-bind="visible: isAnnualAggrement">(PAID <span data-bind="text: titlePeriod">MONTHLY</span>)</p>
-                                    <p><span class="saving"  data-bind="text: officeAdvisorRealCost"> $1,830</span> over <span data-bind="text: officeSaving">21%</span> off</p>
+                                    <p><span class="saving" data-bind="text: officeAdvisorRealCost"> $1,830</span> over <span data-bind="text: officeSaving">21%</span> off</p>
                                 </div>
 
                                 <div class="features text-center">
@@ -212,7 +212,7 @@
                                                 <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
-                                        <p><strong>1,000</strong> accounts included</p>
+                                        <p data-bind="visible: isAccountAggregationSelected()"><strong>1,000</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> MB included
@@ -259,7 +259,7 @@
                                                 <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
-                                        <p><strong>500</strong> accounts included</p>
+                                        <p data-bind="visible: isAccountAggregationSelected()"><strong>500</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> MB included
@@ -313,7 +313,7 @@
                                                 <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
-                                        <p><strong>500</strong> accounts included</p>
+                                        <p data-bind="visible: isAccountAggregationSelected()"><strong>500</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> MB included
@@ -357,7 +357,7 @@
                                                 <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> ACCOUNT AGGREGATION
                                             </label>
                                         </div>
-                                        <p><strong>10,000</strong> accounts included</p>
+                                        <p data-bind="visible: isAccountAggregationSelected()"><strong>10,000</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>5,000</strong> MB included
