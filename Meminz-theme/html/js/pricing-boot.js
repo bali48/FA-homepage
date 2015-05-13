@@ -65,7 +65,7 @@ require(["jquery", "knockout"], function ($, ko) {
                 },
                 annual: {
                     period: 'annual',
-                    title: 'ANNUAL',
+                    title: 'ANNUALY',
                     months: 12,
                     saving: 0.15,
                     teamSaving: 0.15,

@@ -121,33 +121,6 @@
                 <div class="container">
                     <div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
                         <div class="col-md-10 col-md-offset-1">
-                            <!--<h3>We are building software to help <span>people manage our business</span></h3>
-                            <p class="btn-inline">
-                                <a href="http://www.youtube.com/watch?v=lZr5ZsFlZsM&amp;feature=share&amp;list=ALzxNYRMVOCRi5wLzuGUE7XQpqhCfYTwzI" data-pretty="prettyPhoto" class="btn btn-bordered btn-lg zoom">Take a video tour</a>
-                                <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Register for free</a>
-                            </p>
-                            <div class="home-slider">
-                                <div class="slider-wrapper">
-                                    <div class="imac-device">
-                                        <ul class="slides">
-                                            <li>
-                                                <a href="#"><img src="img/slider/img1.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="img/slider/img2.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="img/slider/img3.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="img/slider/img4.png" alt="" /></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <img src="img/imac.png" class="img-responsive" alt="" />
-                            </div>-->
-                            <!--<img src="img/tablet.png" class="img-responsive">-->
                             <div class="video">
                                 <h3>UNLOCK YOUR GREATEST <br>SOURCE OF NEW ASSETS</h3>
                                 <span class="sub-title">FROM EACH OF YOUR CLIENT HOUSEHOLDS</span>
@@ -155,7 +128,6 @@
                                 <a href="#" id="play-video" class="btn btn-primary play-video-btn" data-bind="click: playVideoCommand">
                                     WATCH THE VIDEO
                                     <span><i class="fa fa-chevron-right"></i></span>
-                                    <!--<span class="triangle table-cell">▶</span>-->
                                 </a>
                                 <div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; top:0px; width:640px; height:360px;">&nbsp;</div>
                                 <div data-bind="click: closeVideoCommand,visible: isVideoVisible" class="close-video-btn"><i class="fa fa-times"></i></div>
@@ -190,7 +162,7 @@
                             <img src="img/client/logo1.png" class="client-logo" alt="" />
                         </a>
                         <div class="margin-top-20">
-                            <a href="#" data-toggle="modal" data-target="#ClientsModal">See our growing list</a>
+                            <a href="#" data-toggle="modal" data-target=".ClientsModal">See our growing list</a>
                         </div>
                     </div>
                     <div class="col-sm-6 right text-center padding-top-40">
@@ -216,7 +188,7 @@
                             <img src="img/client/logo10.png" class="client-logo" alt="" />
                         </a>
                         <div class="margin-top-25">
-                            <a href="#" data-toggle="modal" data-target="#AccountsModal">Search for Yourself</a>
+                            <a href="#" data-toggle="modal" data-target=".AccountsModal">Search for Yourself</a>
                         </div>
                     </div>
                 </div>
@@ -601,8 +573,9 @@
         </div>
     </div>
     <!-- End Modal -->
+
     <!-- Start Accounts Modal -->
-    <div class="modal fade" id="AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -620,8 +593,9 @@
         </div>
     </div>
     <!-- End Accounts Modal -->
+
     <!-- Start Clients Modal -->
-    <div class="modal fade" id="ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

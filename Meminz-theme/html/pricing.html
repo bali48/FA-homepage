@@ -101,7 +101,7 @@
         <!-- Start content -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 header">
                     <h4 class="text-center">Not sure which plan to choose? <a data-bind="click: playVideoCommand">WATCH OUR SHORT VIDEO »</a> and decide which best fits your business.</h4>
                     <div class="video">
                         <div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; width:640px; height:360px; z-index:1000;">&nbsp;</div>
@@ -176,7 +176,7 @@
                                 <p>
                                     <i class="fa fa-check"></i> Subfolders
                                 </p>
-                                <a class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover">
+                                <a class="btn popoverData" href="#" data-content="Optional: This feature uploads and shares hundreds of documents to any client or households automatically." rel="popover" data-placement="top" data-trigger="hover">
                                     <i class="fa fa-info"></i> Batch Document Upload
                                 </a>
                             </div>
@@ -208,16 +208,14 @@
                                         <p>Multiple books of business</p>
                                     </div>
                                     <div class="item">
-                                        <p>CUSTODIAL FEEDS</p>
-                                        <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>500</strong> accounts included
-                                            <i class="fa fa-info"></i>
-                                        </a>-->
+                                        <a href="#" data-toggle="modal" data-target=".ClientsModal">CUSTODIAL FEEDS</a>
                                         <p class="margin-top-5"><strong>500</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> HELD AWAY ACCOUNTS
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected">
+                                                <a href="#" data-toggle="modal" data-target=".AccountsModal">HELD AWAY ACCOUNTS</a>
                                             </label>
                                         </div>
                                         <p data-bind="visible: isAccountAggregationSelected()"><strong>1,000</strong> accounts included</p>
@@ -255,24 +253,19 @@
                                         <p>Single book of business</p>
                                     </div>
                                     <div class="item">
-                                        <p>CUSTODIAL FEEDS</p>
-                                        <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> accounts included
-                                            <i class="fa fa-info"></i>
-                                        </a>-->
+                                        <a href="#" data-toggle="modal" data-target=".ClientsModal">CUSTODIAL FEEDS</a>
                                         <p class="margin-top-5"><strong>250</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> HELD AWAY ACCOUNTS
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected">
+                                                <a href="#" data-toggle="modal" data-target=".AccountsModal">HELD AWAY ACCOUNTS</a>
                                             </label>
                                         </div>
                                         <p data-bind="visible: isAccountAggregationSelected()"><strong>500</strong> accounts included</p>
                                     </div>
                                     <div class="item">
-                                        <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> MB included
-                                            <i class="fa fa-info"></i>
-                                        </a>-->
                                         <p>DOCUMENT MANAGEMENT</p>
                                         <p class="margin-top-5"><strong>250</strong> MB included</p>
                                     </div>
@@ -309,16 +302,14 @@
                                         <p>Single Book Shared</p>
                                     </div>
                                     <div class="item">
-                                        <p>CUSTODIAL FEEDS</p>
-                                        <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>250</strong> accounts included
-                                            <i class="fa fa-info"></i>
-                                        </a>-->
+                                        <a href="#" data-toggle="modal" data-target=".ClientsModal">CUSTODIAL FEEDS</a>
                                         <p class="margin-top-5"><strong>250</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> HELD AWAY ACCOUNTS
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected">
+                                                <a href="#" data-toggle="modal" data-target=".AccountsModal">HELD AWAY ACCOUNTS</a>
                                             </label>
                                         </div>
                                         <p data-bind="visible: isAccountAggregationSelected()"><strong>500</strong> accounts included</p>
@@ -353,16 +344,14 @@
                                         <p>Multiple books of business</p>
                                     </div>
                                     <div class="item">
-                                        <p>CUSTODIAL FEEDS</p>
-                                        <!--<a id="" class="btn popoverData" href="#" data-content="Popover with data-trigger" rel="popover" data-placement="right" data-trigger="hover"><strong>5,000</strong> accounts included
-                                            <i class="fa fa-info"></i>
-                                        </a>-->
+                                        <a href="#" data-toggle="modal" data-target=".ClientsModal">CUSTODIAL FEEDS</a>
                                         <p class="margin-top-5"><strong>5,000</strong> accounts included</p>
                                     </div>
                                     <div class="item">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected"> HELD AWAY ACCOUNTS
+                                                <input type="checkbox" data-bind="checked: isAccountAggregationSelected">
+                                                <a href="#" data-toggle="modal" data-target=".AccountsModal">HELD AWAY ACCOUNTS</a>
                                             </label>
                                         </div>
                                         <p data-bind="visible: isAccountAggregationSelected()"><strong>10,000</strong> accounts included</p>
@@ -387,6 +376,74 @@
                 </div>
                 <!-- end row -->
             </form>
+
+            <!-- Start Clients Modal -->
+            <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row margin-top-10">
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo3-hover.png" class="img-responsive">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo5-hover.png" class="img-responsive">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo7-hover.png" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="row margin-top-25">
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo1-hover.png" class="img-responsive">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo11.png" class="img-responsive">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo12.png" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="row margin-top-25 margin-bottom-10">
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo13.png" class="img-responsive negative-margin">
+                                </div>
+                                <div class="col-sm-4 text-center">
+                                    <img src="img/client/logo14.png" class="img-responsive">
+                                </div>
+                                <!--<div class="col-sm-4">
+                                    <img src="img/client/logo15.png" class="img-responsive">
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Clients Modal -->
+
+            <!-- Start Accounts Modal -->
+            <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img/modal-image.png" class="img-responsive">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Accounts Modal -->
 
             <!-- Start Partner Request Modal -->
             <div class="modal fade time-trade-modal" id="PartnerRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

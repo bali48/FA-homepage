@@ -883,7 +883,7 @@ Fusion Advisor style
 }
 
 /* ------ Pricing page ------- */
-.pricing-page h4 {
+.pricing-page .header h4 {
 	margin: 30px 0 0 0;
 	font-weight: lighter;
 	font-size: 20px;
@@ -900,57 +900,6 @@ Fusion Advisor style
 .pricing-page .close-video-btn {
 	color: #fff;
 	top: 10px;
-}
-
-.table > thead:first-child > tr:first-child > th {
-	border-top: 1px solid #ddd;
-	border-left: 1px solid #ddd;
-}
-
-.table > thead:first-child > tr:last-child > th {
-	border-right: 1px solid #ddd;
-}
-
-.table > thead:first-child > tr:first-child > .no-border {
-	border-top: none;
-	border-left: none;
-}
-
-.pricing-page th {
-	background: #fafafa;
-}
-
-.pricing-page th:first-child {
-	vertical-align: middle;
-	font-size: 26px;
-	background: transparent !important;
-}
-
-.pricing-page th:first-child {
-	background: #fff;
-}
-
-.pricing-page th h5 {
-	color: #1ec279;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-.pricing-page th h5 span {
-	color: #1ec279;
-	font-weight: 700;
-}
-
-.pricing-page th h3 {
-	margin: 0;
-	color: #4a4a4a;
-}
-
-.pricing-page th p {
-	font-weight: normal;
-	font-size: 11px;
-	margin-bottom: 5px;
-	color: #999;
 }
 
 .saving {
@@ -1444,11 +1393,11 @@ Fusion Advisor style
 	width: 800px;
 }
 
-#ClientsModal img {
+.ClientsModal img {
 	max-width: 160px;
 }
 
-#ClientsModal img.negative-margin {
+.ClientsModal img.negative-margin {
 	margin-top: -30px;
 }
 
