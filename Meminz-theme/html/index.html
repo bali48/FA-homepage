@@ -295,7 +295,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                        <i class="pe-7s-angle-down"></i> Extend YOUR brand
+                                        <i class="indicator pe-7s-angle-down"></i> Extend YOUR brand
                                     </a>
                                 </div>
                                 <div id="collapse1" class="accordion-body collapse in">
@@ -310,7 +310,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                        <i class="pe-7s-angle-down"></i> Become a leader in wealth management
+                                        <i class="indicator pe-7s-angle-down"></i> Become a leader in wealth management
                                     </a>
                                 </div>
                                 <div id="collapse2" class="accordion-body collapse">
@@ -327,7 +327,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                        <i class="pe-7s-angle-down"></i> Primary advisor of choice
+                                        <i class="indicator pe-7s-angle-down"></i> Primary advisor of choice
                                     </a>
                                 </div>
                                 <div id="collapse3" class="accordion-body collapse">
@@ -341,6 +341,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- end col-md-5 -->
                 </div>
             </div>
         </section>
@@ -370,53 +371,6 @@
         <!-- End download -->
 
         <div class="clearfix"></div>
-
-        <!-- Start contact -->
-        <!--<section id="contact">
-            <div class="contact-contain">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
-                            <h3 class="heading"><span>Contact</span>Get in touch with us</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1 wow fadeInDown" data-wow-delay="0.4s">
-                            <form id="contactform" action="contact/contact.php" method="post" class="validateform" name="leaveContact">
-                                <div class="clearfix"></div>
-                                <div id="sendmessage">
-                                    <div class="alert alert-info marginbot35">
-                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                        Your message has been sent. Thank you!
-                                    </div>
-                                </div>
-                                <ul class="listForm">
-                                    <li>
-                                        <i class="pe-7s-users"></i>
-                                        <input class="form-control input-name" type="text" name="name" data-rule="required" data-msg="Required field" placeholder="Enter your full name" />
-                                        <div class="validation"></div>
-                                    </li>
-                                    <li>
-                                        <i class="pe-7s-mail"></i>
-                                        <input class="form-control input-email" type="text" name="email" data-rule="email" data-msg="Please enter a valid email" placeholder="Enter your email address" />
-                                        <div class="validation"></div>
-                                    </li>
-                                    <li class="push">
-                                        <i class="pe-7s-paper-plane"></i>
-                                        <textarea class="form-control input-message" rows="6" name="message" data-rule="required" data-msg="Please write something for us" placeholder="Write something for us"></textarea>
-                                        <div class="validation"></div>
-                                    </li>
-                                    <li class="push text-center">
-                                        <input type="submit" value="Send message" class="btn btn-primary btn-lg" name="Submit" />
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End contact -->
     </div>
     <!-- end content -->
     <!-- Start Modal -->
@@ -764,6 +718,17 @@
                 }
             }
             document.onscroll = scroll;
+
+
+        function toggleChevron(e) {
+            $(e.target)
+                .prev('.accordion-heading')
+                .find("i.indicator")
+                .toggleClass('pe-7s-angle-down pe-7s-angle-up');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
             //Bootstrap Wizard Validations
             // Ovo sam iskomentarisao... to ti je pravilo problem.
             //var $validator = $("#wizard-1").validate({
