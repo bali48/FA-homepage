@@ -291,14 +291,15 @@
                         <img src="img/device.png" class="img-responsive" alt="" />
                     </div>
                     <div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="accordion clearfix" id="accordion1">
-                            <div class="accordion-group">
+
+                        <div class="accordion clearfix" id="accordion">
+                            <div class="panel">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                                         <i class="indicator pe-7s-angle-down"></i> Extend YOUR brand
                                     </a>
                                 </div>
-                                <div id="collapse1" class="accordion-body collapse in">
+                                <div id="collapse1" class="panel accordion-body collapse in">
                                     <div class="accordion-inner">
                                         <p>
                                             Build brand equity by allowing clients to view their portfolios via a customized Web-based portal with your own logo, template color themes, etc.<br>
@@ -307,13 +308,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-group">
+                            <div class="panel">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                                         <i class="indicator pe-7s-angle-down"></i> Become a leader in wealth management
                                     </a>
                                 </div>
-                                <div id="collapse2" class="accordion-body collapse">
+                                <div id="collapse2" class="panel accordion-body collapse">
                                     <div class="accordion-inner">
                                         <p>
                                             Simplifies wealth management and extends the power of your existing financial systems by allowing you to:<br>
@@ -324,13 +325,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-group">
+                            <div class="panel">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                                         <i class="indicator pe-7s-angle-down"></i> Primary advisor of choice
                                     </a>
                                 </div>
-                                <div id="collapse3" class="accordion-body collapse">
+                                <div id="collapse3" class="panel accordion-body collapse">
                                     <div class="accordion-inner">
                                         <p>
                                             Manage your accounts more efficiently, gain a competitive edge, and increase your earnings while increasing your clients’ wealth.<br>
@@ -547,7 +548,6 @@
         </div>
     </div>
     <!-- End Modal -->
-
     <!-- Start Accounts Modal -->
     <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -567,7 +567,6 @@
         </div>
     </div>
     <!-- End Accounts Modal -->
-
     <!-- Start Clients Modal -->
     <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -615,7 +614,6 @@
         </div>
     </div>
     <!-- End Clients Modal -->
-
     <!-- Start Partner Request Modal -->
     <div class="modal fade time-trade-modal" id="PartnerRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -626,13 +624,12 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1"  width="100%" scrolling="no" height="650"  marginheight="0" marginwidth="0" ></iframe>
+                    <iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Partner Request Modal -->
-
     <!-- Start Enterprise Modal-->
     <div class="modal fade time-trade-modal" id="EnterpriseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -643,13 +640,12 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1"  width="100%" scrolling="no" height="650"  marginheight="0" marginwidth="0" ></iframe>
+                    <iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Enterprise Modal -->
-
     <!-- Start Webinar Modal-->
     <div class="modal fade time-trade-modal" id="WebinarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -660,7 +656,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1"  width="100%" scrolling="no" height="650"  marginheight="0" marginwidth="0" ></iframe>
+                    <iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
         </div>
@@ -720,14 +716,14 @@
             document.onscroll = scroll;
 
 
-        function toggleChevron(e) {
-            $(e.target)
-                .prev('.accordion-heading')
-                .find("i.indicator")
-                .toggleClass('pe-7s-angle-down pe-7s-angle-up');
-        }
-        $('#accordion').on('hidden.bs.collapse', toggleChevron);
-        $('#accordion').on('shown.bs.collapse', toggleChevron);
+            function toggleChevron(e) {
+                $(e.target)
+                    .prev('.accordion-heading')
+                    .find("i.indicator")
+                    .toggleClass('pe-7s-angle-down pe-7s-angle-up');
+            }
+            $('#accordion').on('hidden.bs.collapse', toggleChevron);
+            $('#accordion').on('shown.bs.collapse', toggleChevron);
 
             //Bootstrap Wizard Validations
             // Ovo sam iskomentarisao... to ti je pravilo problem.
@@ -861,7 +857,6 @@
     <script src="js/wistia-v1.js"></script>
 
     <!--<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>-->
-
     <!-- Wizard javascript -->
     <!--<script src="js/wizard/jquery.bootstrap.wizard.min.js"></script>
     <script src="js/wizard/wizard.min.js"></script>-->
