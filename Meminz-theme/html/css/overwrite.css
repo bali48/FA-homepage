@@ -275,6 +275,12 @@ Navbar
 /*
 Accordion
 =========================== */
+.accordion .panel {
+	background-color: transparent;
+	box-shadow: none;
+	margin-bottom: 0;
+}
+
 .accordion-heading {
 	position: relative;
 	margin-bottom: 20px;
@@ -1416,6 +1422,10 @@ Fusion Advisor style
 .time-trade-modal .contact-partner .bg-white {
 	background-color: #fff;
 	padding: 15px 0;
+}
+
+.time-trade-modal .modal-header {
+	border-bottom: none;
 }
 
 .time-trade-modal h5 {

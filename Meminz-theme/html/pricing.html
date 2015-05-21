@@ -87,7 +87,7 @@
                                 <li><a id="" href="pricing.html">Pricing</a></li>
                             </ul>
                             <div class="navbar-right">
-                                <a href="#" class="btn btn-primary">See It In Action</a>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#WebinarModal">See It In Action</a>
                                 <a href="https://fusionadvisor.wealthoffice.com" class="btn btn-bordered">Sign in</a>
                             </div>
                         </div><!--/.nav-collapse -->
@@ -375,6 +375,23 @@
                 <!-- end row -->
             </form>
 
+            <!-- Start Webinar Modal-->
+            <div class="modal fade time-trade-modal" id="WebinarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Webinar Modal -->
+
+
             <!-- Start Clients Modal -->
             <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -449,7 +466,6 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Enterprise Call</h4>
                         </div>
 
                         <div class="modal-body">
