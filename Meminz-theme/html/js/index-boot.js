@@ -1,4 +1,4 @@
-require(["jquery", "knockout", "videojs"], function ($, ko) {
+require(["jquery", "knockout", "videojs", "fusion-knockout-bootstrap-dialog"], function ($, ko) {
     var hideDiv,
         numberFormat,
         currencyFormat,
@@ -45,6 +45,12 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
 
         // public
         self.isVideoVisible = ko.observable(false);
+        // dialog
+        self.isDialogVisible = ko.observable(false);
+        self.dialogOptions = ko.observable({
+            type: 'BootstrapDialog.TYPE_DEFAULT'
+        });
+        // commands
         self.playVideoCommand = function () {
             self.isVideoVisible(true);
             _wistiaEmbed.play();
@@ -53,6 +59,23 @@ require(["jquery", "knockout", "videojs"], function ($, ko) {
             self.isVideoVisible(false);
             _wistiaEmbed.pause();
         };
+        self.scheduleGetStartedCommand = function () {
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/PHWJP" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.isDialogVisible(true);
+        };
+        self.schedulePartnerRequestCommand = function () {
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.isDialogVisible(true);
+        };
+        self.scheduleWebinarCommand = function () {
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.isDialogVisible(true);
+        };
+        self.scheduleEnterpriseMeetingCommand = function () {
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.isDialogVisible(true);
+        };
+     
 
         // initialization
         _init();

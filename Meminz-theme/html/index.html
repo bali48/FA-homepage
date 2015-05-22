@@ -80,7 +80,7 @@
                 <a href="https://twitter.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-twitter"></i></a>
                 <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank" class="marginright10"><i class="fa fa-google-plus"></i></a>
                 <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#" data-toggle="modal" data-target="#EnterpriseModal" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
+                <a href="#" data-bind="click: scheduleEnterpriseMeetingCommand" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
             </div>
         </div>
         <header id="header" class="menu clearfix">
@@ -105,7 +105,7 @@
                         <div class="navbar-right">
                             <!--<a href="signin.html" class="btn btn-bordered">Sign in</a>
                             <a href="signup.html" class="btn btn-primary">Sign up</a>-->
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#WebinarModal">See It In Action</a>
+                            <a href="#" class="btn btn-primary" data-bind="click: scheduleWebinarCommand">See It In Action</a>
                             <a href="https://fusionadvisor.wealthoffice.com" class="btn btn-bordered">Sign in</a>
                         </div>
                     </div><!--/.nav-collapse -->
@@ -212,14 +212,14 @@
                         </a>
                         <p class="note">Coming Soon!</p>
                         <div class="margin-top-25">
-                            <a href="#" data-toggle="modal" data-target="#PartnerRequestModal">Not a partner? Get on the list.</a>
+                            <a href="#" data-bind="click: schedulePartnerRequestCommand">Not a partner? Get on the list.</a>
                         </div>
                     </div>
                     <div class="col-sm-6 right text-center padding-top-60 padding-bottom-30">
                         <h4 class="margin-top-15"><i class="fa fa-folder-o"></i> Document Vault</h4>
                         <p>Your clients can upload their own documents, share with household, create folders, and YOU can upload thousands of documents in an instant to all your clients.</p>
                         <div class="margin-top-20 margin-bottom-10">
-                            <a href="#" data-toggle="modal" data-target="#WebinarModal">Ready to Schedule a demo?</a>
+                            <a href="#" data-bind="click: scheduleWebinarCommand">Ready to Schedule a demo?</a>
                         </div>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                             <form>
                                 <fieldset class="subscribe-form">
                                     <!--<input class="subscribe" type="text" placeholder="Enter your email">-->
-                                    <a href="#" class="subscribe-button" type="button" data-toggle="modal" data-target="#GetStartedModal">GET STARTED</a>
+                                    <a href="#" class="subscribe-button" type="button" data-bind="click: scheduleGetStartedCommand">GET STARTED</a>
                                 </fieldset>
                             </form>
                         </div>
@@ -374,7 +374,6 @@
         <div class="clearfix"></div>
     </div>
     <!-- end content -->
-
     <!-- Start Modal -->
     <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -549,7 +548,6 @@
         </div>
     </div>
     <!-- End Modal -->
-
     <!-- Start Accounts Modal -->
     <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -569,7 +567,6 @@
         </div>
     </div>
     <!-- End Accounts Modal -->
-
     <!-- Start Clients Modal -->
     <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -617,9 +614,8 @@
         </div>
     </div>
     <!-- End Clients Modal -->
-
     <!-- Start Partner Request Modal -->
-    <div class="modal fade time-trade-modal" id="PartnerRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--<div class="modal fade time-trade-modal" id="PartnerRequestModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -631,11 +627,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- End Partner Request Modal -->
-
     <!-- Start Enterprise Modal-->
-    <div class="modal fade time-trade-modal" id="EnterpriseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--<div class="modal fade time-trade-modal" id="EnterpriseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -647,11 +642,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- End Enterprise Modal -->
-
     <!-- Start Webinar Modal-->
-    <div class="modal fade time-trade-modal" id="WebinarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--<div class="modal fade time-trade-modal" id="WebinarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -663,11 +657,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- End Webinar Modal -->
-
     <!-- Start GetStarted Modal-->
-    <div class="modal fade time-trade-modal" id="GetStartedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!--<div class="modal fade time-trade-modal" id="GetStartedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -679,9 +672,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- End GetStarted Modal -->
-
+    <fadialog params="isVisible: isDialogVisible, options: dialogOptions"></fadialog>
     <div class="clearfix"></div>
 
     <!-- Start footer -->
