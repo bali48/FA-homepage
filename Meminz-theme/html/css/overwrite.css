@@ -764,12 +764,20 @@ Fusion Advisor style
 	margin-bottom: 10px;
 }
 
+.margin-bottom-15 {
+	margin-bottom: 15px;
+}
+
 .margin-bottom-30 {
 	margin-bottom: 30px !important;
 }
 
 .margin-left-5 {
 	margin-left: 5px !important;
+}
+
+.margin-left-10 {
+	margin-left: 10px !important;
 }
 
 .margin-left-20 {
@@ -1397,6 +1405,11 @@ Fusion Advisor style
 	border-bottom-right-radius: 0;
 }
 
+footer .guaranted-logos {
+	position: absolute;
+	left: 0;
+}
+
 /* Modals */
 .modal-dialog {
 	width: 800px;
@@ -1431,5 +1444,7 @@ Fusion Advisor style
 .time-trade-modal h5 {
 	font-weight: normal;
 }
+
+
 
 
