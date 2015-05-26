@@ -502,53 +502,6 @@ ul.listForm li.push .form-control {
 /*
 Client
 =========================== */
-/*ul.client-list{
-	float:left;
-	width:100%;
-	margin:0;
-	padding:0;
-}
-
-ul.client-list li{
-	float:left;
-	width:100%;
-	margin:0;
-	padding:0;
-	list-style:none;
-	text-align:center;
-	border-bottom:1px solid #e2e2e2;
-}
-
-ul.client-list li.bottom-list{
-	border-bottom:none;
-}
-
-ul.client-list li ul li{
-	width: 33.3333%;
-	border-bottom:none;
-	border-right:1px solid #e2e2e2;
-	padding:50px 0 50px 0;
-}
-
-ul.client-list li ul li.last{
-	border-right:none;
-}*/
-
-/*#client .col-sm-5 {
-	border: 2px dotted #bdd8ee;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: 208px;
-}
-
-#client .col-sm-5 h4 {
-	font-weight: 300;
-	text-align: center;
-}*/
-
 .client-link{
 	position:relative;
 	margin:0;
@@ -557,8 +510,17 @@ ul.client-list li ul li.last{
 	text-align:center;
 }
 
-.client-link img {
+.client-link img,
+.client-link.same-size img {
 	max-width: 165px;
+}
+
+.client-link.same-size {
+	margin-top: 35px;
+}
+
+#client .col-sm-6 .partner-request {
+	margin-top: 58px;
 }
 
 .client-link.sm img {
@@ -568,18 +530,6 @@ ul.client-list li ul li.last{
 .logo-hover{
 	position:absolute;
 }
-
-/*#client .titles-holder h1 {
-	font-size: 150px;
-	line-height: 1.1;
-	color: #bdd8ee;
-	margin-bottom: 0;
-}
-
-#client .titles-holder h3,
-#client .titles-holder h4 {
-	color: #555;
-}*/
 
 #client {
 	background-color: #ebebeb;
@@ -600,7 +550,6 @@ ul.client-list li ul li.last{
 
 #client .titles-holder h1 {
 	font-size: 70px;
-	/*padding-top: 72px;*/
 	color: #bdd8ee;
 	margin-bottom: 0;
 }
@@ -1214,6 +1163,43 @@ Custom responsive
 		left:14px;
 	}
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.client-link img,
+	.client-link.sm img {
+		max-width: 130px;
+	}
+
+	#client .col-sm-6.right {
+		padding-left: 130px;
+	}
+
+	#client .col-sm-6.right.document-vault {
+		padding-left: 140px;
+	}
+
+	.client-link.same-size {
+		margin-top: 40px;
+	}
+
+	#client .col-sm-6 .partner-request {
+		margin-top: 76px;
+	}
+
+	#client .col-sm-6 .clients-modal {
+		margin-top: 25px;
+	}
+
+	#features .img-right {
+		padding-left: 10%;
+	}
+
+	#download h3 {
+		font-size: 45px;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 990px){
 	.slider-wrapper{
 		width:662px;
