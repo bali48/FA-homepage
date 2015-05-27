@@ -1175,7 +1175,7 @@ Custom responsive
 		padding-left: 130px;
 	}
 
-	#client .col-sm-6.right.document-vault {
+	#client .col-sm-6.right.bottom-left {
 		padding-left: 140px;
 	}
 
@@ -1200,7 +1200,7 @@ Custom responsive
 	}
 }
 
-@media (min-width: 768px) and (max-width: 990px){
+@media (min-width: 768px) and (max-width: 991px){
 	.slider-wrapper{
 		width:662px;
 		top:30px;
@@ -1223,15 +1223,25 @@ Custom responsive
 	}
 	.navbar-header{
 		float:left;
-		display:block;
-		width:100%;
-		padding:25px 0 10px 0;
+		/*display:block;
+		width:100%;*/
+		padding: 15px 0 10px 0;
 		text-align:center;
 	}
+
+	.navbar-header img {
+		width: 160px;
+	}
+
 	.home-contain,
 	.video-wrapper{
-		padding:240px 0 0 0;
+		padding: 100px 0 0 0;
 	}
+
+	.home-wrapper .video {
+		margin-top: 0;
+	}
+
 	.screenshot-wrapper{
 		width:699px;
 		top:55px;
@@ -1249,6 +1259,62 @@ Custom responsive
 	}
 	.flexslider:hover .flex-direction-nav a{
 		display:block;
+	}
+
+	.modal-dialog {
+		width: 730px;
+	}
+
+	.client-link img,
+	.client-link.sm img {
+		max-width: 125px;
+	}
+
+	#client .col-sm-6.left-top {
+		padding-right: 80px;
+	}
+
+	#client .col-sm-6.left-top .clients-modal {
+		text-align: left;
+		margin-top: 68px;
+	}
+
+	#client .col-sm-6.right-top {
+		padding-left: 80px;
+	}
+
+	#client .col-sm-6.right-top .link-modal {
+		text-align: right;
+		margin-top: 15px;
+	}
+
+	#client .titles-holder {
+		width: 310px;
+		height: 310px;
+		margin-top: -124px;
+		margin-left: -150px;
+	}
+
+	#client .titles-holder h3 {
+		font-size: 34px;
+	}
+
+	#client .titles-holder h1 {
+		font-size: 60px;
+	}
+
+	#client .separator {
+		margin-top: 25px;
+	}
+
+	#client .col-sm-6.right.bottom-left {
+		padding-left: 120px;
+		text-align: right;
+		padding-top: 40px;
+	}
+
+	#client .col-sm-6 .partner-request {
+		text-align: left;
 	}
 }
 
