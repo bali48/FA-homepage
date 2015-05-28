@@ -618,12 +618,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="guaranted-logos">
-                        <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/SORHome.aspx" target="blank" title="Servers are located in a (Formerly know as SAS 70 Type II)">
-                            <img src="img/SOC-report-SSAE-16.png" class="img-responsive margin-left-5" alt="soc">
-                        </a>
-                        <a href="https://www.pcisecuritystandards.org" target="blank">
-                            <img src="img/pci-badge.png" class="img-responsive margin-left-10" alt="pci">
-                        </a>
+                        <span class="aicpa-logo">
+                            <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/SORHome.aspx" target="blank" class="btn popoverData margin-left-5" data-content="Servers are located in a (Formerly know as SAS 70 Type II)" rel="popover" data-placement="top" data-trigger="hover">
+                                <img src="img/SOC-report-SSAE-16.png" class="img-responsive" alt="soc">
+                            </a>
+                        </span>
+                        <span class="pci-logo">
+                            <a href="https://www.pcisecuritystandards.org" target="blank" class="btn popoverData pci" data-content="Fusion Advisor is hosted within a managed facility that strictly adheres to SOC 1/SSAE 16/ISAE 3402 which supersede Statement on Auditing Standards for the formerly known SAS 70 Type II with the professional guidance on performing the service auditor's examination." rel="popover" data-placement="top" data-trigger="hover">
+                                <img src="img/pci-badge.png" class="img-responsive margin-left-10" alt="pci">
+                            </a>
+                        </span>
                     </div>
                     <div class="social-network">
                         <a href="https://www.facebook.com/fusionadvisor" target="blank"><i class="fa fa-facebook"></i></a>
@@ -679,93 +683,6 @@
             }
             $('#accordion').on('hidden.bs.collapse', toggleChevron);
             $('#accordion').on('shown.bs.collapse', toggleChevron);
-
-            //Bootstrap Wizard Validations
-            // Ovo sam iskomentarisao... to ti je pravilo problem.
-            //var $validator = $("#wizard-1").validate({
-            //  rules: {
-            //    email: {
-            //  	required: true,
-            //  	email: "Your email address must be in the format of name@domain.com"
-            //    },
-            //    fname: {
-            //  	required: true
-            //    },
-            //    lname: {
-            //  	required: true
-            //    },
-            //    country: {
-            //  	required: true
-            //    },
-            //    city: {
-            //  	required: true
-            //    },
-            //    postal: {
-            //  	required: true,
-            //  	minlength: 4
-            //    },
-            //    wphone: {
-            //  	required: true,
-            //  	minlength: 10
-            //    },
-            //    hphone: {
-            //  	required: true,
-            //  	minlength: 10
-            //    }
-            //  },
-            //  messages: {
-            //    fname: "Please specify your First name",
-            //    lname: "Please specify your Last name",
-            //    email: {
-            //  	required: "We need your email address to contact you",
-            //  	email: "Your email address must be in the format of name@domain.com"
-            //    }
-            //  },
-            //  highlight: function (element) {
-            //    $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-            //  },
-            //  unhighlight: function (element) {
-            //    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-            //  },
-            //  errorElement: 'span',
-            //  errorClass: 'help-block',
-            //  errorPlacement: function (error, element) {
-            //    if (element.parent('.input-group').length) {
-            //  	error.insertAfter(element.parent());
-            //    } else {
-            //  	error.insertAfter(element);
-            //    }
-            //  }
-            //});
-
-            /*$('#bootstrap-wizard-1').bootstrapWizard({
-              'tabClass': 'form-wizard',
-              'onNext': function (tab, navigation, index) {
-                var $valid = $("#wizard-1").valid();
-                if (!$valid) {
-                  $validator.focusInvalid();
-                  return false;
-                } else {
-                  $('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).addClass(
-                    'complete');
-                  $('#bootstrap-wizard-1').find('.form-wizard').children('li').eq(index - 1).find('.step')
-                  .html('<i class="fa fa-check"></i>');
-                }
-              }
-            });
-          // fuelux wizard
-            var wizard = $('.wizard').wizard();
-            wizard.on('finished', function (e, data) {
-              //$("#fuelux-wizard").submit();
-              //console.log("submitted!");
-              $.smallBox({
-                title: "Congratulations! Your form was submitted",
-                content: "<i class='fa fa-clock-o'></i> <i>1 seconds ago...</i>",
-                color: "#5F895F",
-                iconSmall: "fa fa-check bounce animated",
-                timeout: 4000
-              });
-            });*/
         })
     </script>
     <!-- End preloading -->
@@ -819,6 +736,14 @@
     <script src="js/require-2.1.16.js"></script>
     <script src="js/requirejs-config.js"></script>
     <script src="js/index-boot.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+            $('.popoverData').popover();
+            $('#popoverOption').popover({ trigger: "hover" });
+        });
+    </script>
 
 </body>
 </html>

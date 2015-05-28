@@ -826,6 +826,35 @@ footer{
 	padding-top:30px;
 }
 
+footer .btn {
+	background: transparent;
+	padding: 0;
+}
+
+footer .popover {
+	background-color: #2e2e2e;
+	font-size: 12px;
+}
+
+footer .popover.top>.arrow:after {
+	border-top-color: #2e2e2e;
+}
+
+footer .popover .popover-content {
+	padding: 6px 10px;
+}
+
+footer .aicpa-logo .popover {
+	left: -70px !important;
+	top: -60px !important;
+}
+
+footer .pci-logo .popover {
+	width: 180px !important;
+	top: -220px !important;
+	left: 20px !important;
+}
+
 .social-network{
 	display:block;
 	width:100%;
