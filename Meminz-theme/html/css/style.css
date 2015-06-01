@@ -1200,11 +1200,7 @@ Custom responsive
 		max-width: 130px;
 	}
 
-	#client .col-sm-6.right {
-		padding-left: 130px;
-	}
-
-	#client .col-sm-6.right.bottom-left {
+	#client .col-sm-6.bottom-right {
 		padding-left: 140px;
 	}
 
@@ -1226,6 +1222,17 @@ Custom responsive
 
 	#download h3 {
 		font-size: 45px;
+	}
+}
+
+@media (max-width: 991px) {
+	.computer-view {
+		display: none;
+	}
+
+	.tablet-view {
+		display: block;
+		margin-top: 60px;
 	}
 }
 
@@ -1291,7 +1298,7 @@ Custom responsive
 	}
 
 	.modal-dialog {
-		width: 730px;
+		width: 750px;
 	}
 
 	.client-link img,
@@ -1317,6 +1324,15 @@ Custom responsive
 		margin-top: 15px;
 	}
 
+	#client .col-sm-6.bottom-left {
+		padding-right: 160px;
+		padding-bottom: 20px !important;
+	}
+
+	#client .col-sm-6 .partner-request {
+		margin-top: 86px;
+	}
+
 	#client .titles-holder {
 		width: 310px;
 		height: 310px;
@@ -1336,14 +1352,26 @@ Custom responsive
 		margin-top: 25px;
 	}
 
-	#client .col-sm-6.right.bottom-left {
-		padding-left: 120px;
+	#client .col-sm-6.bottom-right {
+		padding: 40px 15px 20px 120px !important;
 		text-align: right;
-		padding-top: 40px;
 	}
 
 	#client .col-sm-6 .partner-request {
 		text-align: left;
+	}
+
+	.contain {
+		padding-top: 60px;
+	}
+
+	#download h3 {
+		font-size: 40px;
+	}
+
+	footer .aicpa-logo .popover {
+		left: -5px !important;
+		top: -78px !important;
 	}
 }
 
