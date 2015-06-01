@@ -120,7 +120,7 @@ Home
 .parallax.polygon-bg .home-contain{
 	/*background:none;*/
 	/*background-image:url(../img/background.png);*/
-	background-image: radial-gradient(   rgba(255, 255, 255, 0.75), rgba(143, 191, 229, 0.85)), url(../img/background-3.png);
+	background-image: radial-gradient(   rgba(255, 255, 255, 0.75), rgba(143, 191, 229, 0.85)), url(../img/background-3.jpg);
 	/*height: 871px;*/
 	height: 600px;
 	-webkit-background-size: cover;
@@ -603,7 +603,7 @@ Client
 Download
 =========================== */
 #download{
-	background-image:url(../img/footer-bg.png);
+	background-image:url(../img/footer-bg.jpg);
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;

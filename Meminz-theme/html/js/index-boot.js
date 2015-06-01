@@ -1,4 +1,4 @@
-require(["jquery", "knockout", "videojs", "fusion-knockout-bootstrap-dialog"], function ($, ko) {
+require(["jquery", "knockout", "fusion-knockout-bootstrap-dialog"], function ($, ko) {
     var hideDiv,
         numberFormat,
         currencyFormat,
