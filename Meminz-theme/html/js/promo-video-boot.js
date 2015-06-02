@@ -1,11 +1,12 @@
 /*global require */
-require(['jquery', 'knockout'], function ($, ko, promoVideoTemplate) {
+require(['jquery', 'knockout', 'text!template/wistia.html!strip'], function ($, ko, wistiaTemplate) {
     var VM, vm;
 
     VM = function () {
         var self = this,
             _init;
         _init = function () {
+            $('body').append(wistiaTemplate);
             $('iframe').each(function (index, element) {
                 var elemet$ = $(element);
                 elemet$.load(function () {
