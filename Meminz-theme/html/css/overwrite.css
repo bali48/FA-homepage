@@ -330,6 +330,11 @@ Accordion
 	margin-bottom: 30px;
 }
 
+.accordion-inner li {
+	color: #111;
+	font-weight: 300;
+}
+
 /*
 Tabs
 =========================== */
@@ -1373,8 +1378,12 @@ Fusion Advisor style
 	padding-left: 15%;
 }
 
-.benefit-testimonial {
-	margin-top: 50px;
+.benefit-testimonial.testimonial-one {
+	margin-top: 90px;
+}
+
+.benefit-testimonial.testimonial-two {
+	margin-top: 80px;
 }
 
 .benefit-testimonial p {
