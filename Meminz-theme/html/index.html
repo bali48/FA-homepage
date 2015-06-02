@@ -45,7 +45,7 @@
     <link href="skins/default.css" rel="stylesheet" />
 
     <!-- ViedoJS CSS -->
-    <link href="css/video-js.css" rel="stylesheet">
+    <!--<link href="css/video-js.css" rel="stylesheet">-->
 
 </head>
 
@@ -129,7 +129,8 @@
                                     WATCH THE VIDEO
                                     <span><i class="fa fa-chevron-right"></i></span>
                                 </a>
-                                <div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; top:0px; width:640px; height:360px;">&nbsp;</div>
+                                <div data-bind="visible: isVideoVisible, html: videoHtml" class="wistia_embed" style="position:absolute; top:0px; width: 945px; height: 532px;"></div>
+                                <!--<div data-bind="visible: isVideoVisible" id="wistia_drrffn3n58" class="wistia_embed" style="position:absolute; top:0px; width:640px; height:360px;">&nbsp;</div>-->
                                 <div data-bind="click: closeVideoCommand,visible: isVideoVisible" class="close-video-btn"><i class="fa fa-times"></i></div>
                             </div>
                         </div>
@@ -138,7 +139,6 @@
             </div>
         </section>
         <!-- End home -->
-
         <!-- Start client -->
         <section id="client" class="contain gray-bg test-2">
             <div class="container">
@@ -147,10 +147,10 @@
                     <div class="col-sm-6 left text-center padding-top-40 left-top">
                         <div class="clearfix">
                             <a href="#" class="client-link pull-left">
-                                <img src="img/client/logo3.png" alt="AmeriTrade"/>
+                                <img src="img/client/logo3.png" alt="AmeriTrade" />
                             </a>
                             <a href="#" class="client-link margin-left-20">
-                                <img src="img/client/logo5.png" alt="CharlesSchwab"/>
+                                <img src="img/client/logo5.png" alt="CharlesSchwab" />
                             </a>
                             <a href="#" class="client-link pull-left margin-top-10 sm">
                                 <img src="img/client/logo7.png" alt="Scottrade" />
@@ -166,19 +166,19 @@
                     <div class="col-sm-6 right text-center padding-top-40 right-top">
                         <div class="clearfix">
                             <a href="#" class="client-link sm pull-left">
-                                <img src="img/client/logo4.png" alt="Chase"/>
+                                <img src="img/client/logo4.png" alt="Chase" />
                             </a>
                             <a href="#" class="client-link">
-                                <img src="img/client/logo8.png" alt="Citi"/>
+                                <img src="img/client/logo8.png" alt="Citi" />
                             </a>
                             <a href="#" class="client-link pull-right sm">
-                                <img src="img/client/logo9.png" alt="CapitalOne"/>
+                                <img src="img/client/logo9.png" alt="CapitalOne" />
                             </a>
                             <a href="#" class="client-link margin-top-10">
-                                <img src="img/client/logo2.png" alt="CapitalOfAmerica"/>
+                                <img src="img/client/logo2.png" alt="CapitalOfAmerica" />
                             </a>
                             <a href="#" class="client-link pull-right margin-top-10">
-                                <img src="img/client/logo10.png" alt="Fidelity"/>
+                                <img src="img/client/logo10.png" alt="Fidelity" />
                             </a>
                         </div>
                         <div class="margin-top-25 link-modal">
@@ -200,7 +200,7 @@
                 <div class="row row-bottom">
                     <div class="col-sm-6 left text-center padding-top-60 padding-bottom-30">
                         <a href="#" class="client-link same-size">
-                            <img src="img/client/logo6.png" alt="MoneyGuidePro"/>
+                            <img src="img/client/logo6.png" alt="MoneyGuidePro" />
                         </a>
                         <p class="note">Coming Soon!</p>
                         <div class="margin-top-25 partner-request">
@@ -218,7 +218,6 @@
             </div>
         </section>
         <!-- End client -->
-
         <!-- Start features -->
         <section id="features" class="contain desc-wrapp">
             <div class="container">
@@ -366,7 +365,6 @@
         <div class="clearfix"></div>
     </div>
     <!-- end content -->
-
     <!-- Start Modal -->
     <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -560,7 +558,6 @@
         </div>
     </div>
     <!-- End Accounts Modal -->
-
     <!-- Start Clients Modal -->
     <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -743,6 +740,6 @@
     </script>
 
     <!-- http://fast.wistia.com/ -->
-    <script src="js/wistia-v1.js"></script>
+    <!--<script src="js/wistia-v1.js"></script>-->
 </body>
 </html>

@@ -1,6 +1,7 @@
-require(["jquery",
-        "knockout",
-        "fusion-knockout-bootstrap-dialog"], function ($, ko) {
+/*global require */
+require(['jquery',
+        'knockout',
+        'fusion-knockout-bootstrap-dialog'], function ($, ko) {
             var hideDiv,
                 numberFormat,
                 currencyFormat,
@@ -8,9 +9,9 @@ require(["jquery",
                 VM;
 
             numberFormat = function numberFormat(number, dec, dsep, tsep) {
-                if (isNaN(number) || number == null) return '';
+                if (isNaN(number) || number === null) { return ''; }
 
-                number = number.toFixed(~~dec);
+                number = number.toFixed(dec);
                 tsep = typeof tsep == 'string' ? tsep : ',';
 
                 var parts = number.split('.'),
@@ -76,14 +77,11 @@ require(["jquery",
                     };
                 _init = function () {
                     var counts = [];
-                    for (var i = 2; i < 5; i++) {
+                    for (var i = 2; i < 5; i++) {  //jslint ignore
                         counts.push(i);
                     }
                     self.advisorCount(counts);
                     self.selectedPeriod(_saving.quarterly.period);
-                    _wistiaEmbed = Wistia.embed("drrffn3n58", {
-                        videoFoam: true
-                    });
                 };
                 // public
                 // other
@@ -118,13 +116,15 @@ require(["jquery",
                 // commands
                 // play/stop video
                 self.isVideoVisible = ko.observable(false);
+                self.videoHtml = ko.observable('');
                 self.playVideoCommand = function () {
+                    var src = window.location.protocol + '//' + window.location.host + '/promo-video.html';
                     self.isVideoVisible(true);
-                    _wistiaEmbed.play();
+                    self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 1140px; height: 641px;" ></iframe>');
                 };
                 self.closeVideoCommand = function () {
                     self.isVideoVisible(false);
-                    _wistiaEmbed.pause();
+                    self.videoHtml("");
                 };
                 self.scheduleOfficeMeetingCommand = function () {
                     self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/167VR" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
