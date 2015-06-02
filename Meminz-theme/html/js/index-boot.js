@@ -1,4 +1,5 @@
-require(["jquery", "knockout", "fusion-knockout-bootstrap-dialog"], function ($, ko) {
+/*global require */
+require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($, ko) {
     var hideDiv,
         numberFormat,
         currencyFormat,
@@ -6,9 +7,9 @@ require(["jquery", "knockout", "fusion-knockout-bootstrap-dialog"], function ($,
         VM;
 
     numberFormat = function numberFormat(number, dec, dsep, tsep) {
-        if (isNaN(number) || number == null) return '';
+        if (isNaN(number) || number === null) { return ''; }
 
-        number = number.toFixed(~~dec);
+        number = number.toFixed(dec);
         tsep = typeof tsep == 'string' ? tsep : ',';
 
         var parts = number.split('.'),
@@ -38,13 +39,11 @@ require(["jquery", "knockout", "fusion-knockout-bootstrap-dialog"], function ($,
             _wistiaEmbed,
             _init;
         _init = function () {
-            _wistiaEmbed = Wistia.embed("drrffn3n58", {
-                videoFoam: true
-            });
         };
 
         // public
         self.isVideoVisible = ko.observable(false);
+        self.videoHtml = ko.observable("");
         // dialog
         self.isDialogVisible = ko.observable(false);
         self.dialogOptions = ko.observable({
@@ -52,34 +51,35 @@ require(["jquery", "knockout", "fusion-knockout-bootstrap-dialog"], function ($,
         });
         // commands
         self.playVideoCommand = function () {
+            var src = window.location.protocol + '//' + window.location.host + '/promo-video.html';
             self.isVideoVisible(true);
-            _wistiaEmbed.play();
+            self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 945px; height: 532px;" ></iframe>');
         };
         self.closeVideoCommand = function () {
             self.isVideoVisible(false);
-            _wistiaEmbed.pause();
+            self.videoHtml("");
         };
         self.scheduleGetStartedCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/PHWJP" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/PHWJP" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
             self.isDialogVisible(true);
         };
         self.schedulePartnerRequestCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
             self.isDialogVisible(true);
         };
         self.scheduleWebinarCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
             self.isDialogVisible(true);
         };
         self.scheduleEnterpriseMeetingCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
+            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
             self.isDialogVisible(true);
         };
-     
+
 
         // initialization
         _init();
-    }
+    };
 
     // application start
     document.getElementById("loading").className = "loading-visible";
