@@ -1355,6 +1355,10 @@ Fusion Advisor style
 }
 
 /* Benefits */
+.tablet-view {
+	display: none;
+}
+
 .benefit-image img {
 	border-radius: 50%;
 	max-width: 450px;
