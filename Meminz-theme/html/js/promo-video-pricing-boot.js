@@ -1,5 +1,5 @@
 /*global require */
-require(['jquery', 'knockout', 'text!template/wistia.html!strip'], function ($, ko, wistiaTemplate) {
+require(['jquery', 'knockout', 'text!template/wistia-pricing.html!strip'], function ($, ko, wistiaTemplate) {
     var VM, vm;
 
     VM = function () {

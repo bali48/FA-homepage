@@ -51,7 +51,7 @@ require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($,
         });
         // commands
         self.playVideoCommand = function () {
-            var src = window.location.protocol + '//' + window.location.host + '/promo-video.html';
+            var src = window.location.protocol + '//' + window.location.host + '/promo-video-index.html';
             self.isVideoVisible(true);
             self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 945px; height: 532px;" ></iframe>');
         };
