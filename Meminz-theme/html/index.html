@@ -65,596 +65,600 @@
 </script>
 
 <body>
-    <!-- Start preloading -->
-    <div id="loading" class="loading-invisible">
-        <i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
-        <p>Please wait...</p>
-    </div>
-    <!-- End preloading -->
-    <!-- Start header -->
-    <div class="header-wrap">
-        <div class="ribbon clearfix">
-            <div class="container">
-                <!--<a href="#" class="marginright10">Blog</a>-->
-                <a href="https://www.facebook.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-twitter"></i></a>
-                <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank" class="marginright10"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
-                <a href="#" data-bind="click: scheduleEnterpriseMeetingCommand" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
-            </div>
+    <div data-fa-main>
+
+
+        <!-- Start preloading -->
+        <div id="loading" class="loading-invisible">
+            <i class="pe-7s-refresh pe-spin pe-3x pe-va"></i><br />
+            <p>Please wait...</p>
         </div>
-        <header id="header" class="menu clearfix">
-            <div class="navbar navbar-default" role="navigation">
+        <!-- End preloading -->
+        <!-- Start header -->
+        <div class="header-wrap">
+            <div class="ribbon clearfix">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a id="GoToHome" href="#home" class="selected">Home</a></li>
-                            <li><a id="GoToFeatures" href="#features">Benefits</a></li>
-                            <li><a id="GoToDesc" href="#description">How it works</a></li>
-                            <li><a id="" href="pricing.html">Pricing</a></li>
-                        </ul>
-                        <div class="navbar-right">
-                            <!--<a href="signin.html" class="btn btn-bordered">Sign in</a>
-                            <a href="signup.html" class="btn btn-primary">Sign up</a>-->
-                            <a href="#" class="btn btn-primary" data-bind="click: scheduleWebinarCommand">See It In Action</a>
-                            <a href="https://wealthoffice.com" class="btn btn-bordered">Sign in</a>
-                        </div>
-                    </div><!--/.nav-collapse -->
+                    <!--<a href="#" class="marginright10">Blog</a>-->
+                    <a href="https://www.facebook.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/fusionadvisor" target="blank" class="marginright10"><i class="fa fa-twitter"></i></a>
+                    <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank" class="marginright10"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" data-bind="click: showScheduleCommand" data-fa-src="https://www.timetrade.com/book/BSBRN" class="pull-right">Enterprise? <i class="fa fa-angle-double-right"></i></a>
                 </div>
             </div>
-        </header>
-    </div>
-    <!-- End header -->
-    <!-- start content -->
-    <div class="content">
-        <section id="home" class="home-wrapper parallax polygon-bg">
-            <div class="home-contain">
-                <div class="container">
-                    <div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="col-md-12 col-lg-10 col-lg-offset-1">
-                            <div class="video">
-                                <h3>UNLOCK YOUR GREATEST <br>SOURCE OF NEW ASSETS</h3>
-                                <span class="sub-title">FROM EACH OF YOUR CLIENT HOUSEHOLDS</span>
-
-                                <a href="#" id="play-video" class="btn btn-primary play-video-btn" data-bind="click: playVideoCommand">
-                                    WATCH THE VIDEO
-                                    <span><i class="fa fa-chevron-right"></i></span>
-                                </a>
-                                <div data-bind="visible: isVideoVisible, html: videoHtml" class="wistia_embed" style="position:absolute; top:0px; width: 945px; height: 532px;"></div>
-                                <div data-bind="click: closeVideoCommand,visible: isVideoVisible" class="close-video-btn"><i class="fa fa-times"></i></div>
-                            </div>
+            <header id="header" class="menu clearfix">
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End home -->
-        <!-- Start client -->
-        <section id="client" class="contain gray-bg test-2">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-sm-6 left text-center padding-top-40 left-top">
-                        <div class="clearfix">
-                            <a href="#" class="client-link pull-left">
-                                <img src="img/client/logo3.png" alt="AmeriTrade" />
-                            </a>
-                            <a href="#" class="client-link margin-left-20">
-                                <img src="img/client/logo5.png" alt="CharlesSchwab" />
-                            </a>
-                            <a href="#" class="client-link pull-left margin-top-10 sm">
-                                <img src="img/client/logo7.png" alt="Scottrade" />
-                            </a>
-                            <a href="#" class="client-link margin-top-10">
-                                <img src="img/client/logo1.png" alt="FolioInstituional" />
-                            </a>
-                        </div>
-                        <div class="margin-top-20 clients-modal">
-                            <a href="#" data-toggle="modal" data-target=".ClientsModal">See our growing list</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 right text-center padding-top-40 right-top">
-                        <div class="clearfix">
-                            <a href="#" class="client-link sm pull-left">
-                                <img src="img/client/logo4.png" alt="Chase" />
-                            </a>
-                            <a href="#" class="client-link">
-                                <img src="img/client/logo8.png" alt="Citi" />
-                            </a>
-                            <a href="#" class="client-link pull-right sm">
-                                <img src="img/client/logo9.png" alt="CapitalOne" />
-                            </a>
-                            <a href="#" class="client-link margin-top-10">
-                                <img src="img/client/logo2.png" alt="CapitalOfAmerica" />
-                            </a>
-                            <a href="#" class="client-link pull-right margin-top-10">
-                                <img src="img/client/logo10.png" alt="Fidelity" />
-                            </a>
-                        </div>
-                        <div class="margin-top-25 link-modal">
-                            <a href="#" data-toggle="modal" data-target=".AccountsModal">Search for Yourself</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="text-center titles-holder">
-                        <h3>VISUALIZATION</h3>
-                        <p>FOR YOUR CLIENTS</p>
-                        <h1>GROWTH</h1>
-                        <p>FOR YOUR PRACTICE</p>
-                    </div>
-                </div>
-                <div class="separator"></div>
-
-                <div class="row row-bottom">
-                    <div class="col-sm-6 left text-center padding-top-60 padding-bottom-30 bottom-left">
-                        <a href="#" class="client-link same-size">
-                            <img src="img/client/logo6.png" alt="MoneyGuidePro" />
-                        </a>
-                        <p class="note">Coming Soon!</p>
-                        <div class="margin-top-25 partner-request">
-                            <a href="#" data-bind="click: schedulePartnerRequestCommand">Not a partner? Get on the list.</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 right text-center padding-top-60 padding-bottom-30 bottom-right">
-                        <h4 class="margin-top-15"><i class="fa fa-folder-o"></i> Document Vault</h4>
-                        <p>Your clients can upload their own documents, share with household, create folders, and YOU can upload thousands of documents in an instant to all your clients.</p>
-                        <div class="margin-top-20 margin-bottom-10">
-                            <a href="#" data-bind="click: scheduleWebinarCommand">Ready to Schedule a demo?</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End client -->
-        <!-- Start features -->
-        <section id="features" class="contain desc-wrapp">
-            <div class="container">
-
-                <div class="row text-center wow fadeInUp">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h3 class="heading"><span>Benefits</span></h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 feature-box benefit-image img-left">
-                        <img src="img/benefit-1.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-5 benefit-testimonial testimonial-one text-right">
-                        <p><em>"Fusion Advisor’s all about providing a clear uncomplicated view of client accounts while synchronizing your financial planning platform. Less data entry time means more proactive advice and growth."</em></p>
-                        <img src="img/AaronSmith.png" class="img-responsive">
-                        <span>- <em>Aaron J. Smith Sr</em></span>
-                        <span class="separator">|</span>
-                        <span>Founder / CEO</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="computer-view">
-                        <div class="col-md-5 benefit-testimonial testimonial-two">
-                            <p><em>"Fusion Advisor has been an outstanding account aggregation platform for our clients. The portal provides a value added service for our clients, while providing the advisors a tool to maintain touches and accumulate additional assets under management."</em></p>
-                            <img src="img/testimoni/AndrewKinney.png" class="img-responsive">
-                            <span>- <em>Andrew Kinney</em></span>
-                            <span class="separator">|</span>
-                            <a href="http://jw-cole.com" target="_blank">jw-cole.com</a>
-                        </div>
-                        <div class="col-md-7 feature-box benefit-image img-right text-right">
-                            <img src="img/benefit-6.png" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="tablet-view">
-                        <div class="col-md-7 feature-box benefit-image img-left">
-                            <img src="img/benefit-6.png" class="img-responsive"
-                        </div>
-                        <div class="col-md-5 benefit-testimonial">
-                            <p>"Fusion Advisor has been an outstanding account aggregation platform for our clients. The portal provides a value added service for our clients, while providing the advisors a tool to maintain touches and accumulate additional assets under management."</p>
-                            <img src="img/testimoni/AndrewKinney.png" class="img-responsive">
-                            <span>- <em>Andrew Kinney</em></span>
-                            <span class="separator">|</span>
-                            <a href="http://jw-cole.com" target="_blank">jw-cole.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-7 feature-box benefit-image img-left">
-                        <img src="img/benefit-5.png" class="img-responsive">
-                    </div>
-                    <div class="col-md-5 benefit-testimonial testimonial-two text-right">
-                        <p><em>"When financial advisors are looking for a client portal with account aggregation, I always recommend the Wealth Portal. Their (a) integration partners, (b) easy to use platform, and (c) branded customization makes the Wealth Portal any easy choice for any advisor."</em></p>
-                        <img src="img/testimoni/MattPeterson.png" class="img-responsive">
-                        <span>- <em>Matt Peterson</em></span>
-                        <span class="separator">|</span>
-                        <a href="http://www.miagd.com" target="_blank">miagd.com</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End features -->
-
-        <div class="clearfix"></div>
-
-        <!-- Start description -->
-        <section id="description" class="contain gray-bg padding-top-0">
-            <div class="container">
-                <div class="row">
-                    <div class="arrow-down arrow-white"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 wow fadeInLeft">
-                        <img src="img/device.png" class="img-responsive" alt="" />
-                    </div>
-                    <div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
-
-                        <div class="accordion clearfix" id="accordion">
-                            <div class="panel">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                        <i class="indicator pe-7s-angle-up"></i> Extend YOUR Brand
-                                    </a>
-                                </div>
-                                <div id="collapse1" class="panel accordion-body collapse in">
-                                    <div class="accordion-inner">
-                                        <p>Your clients will view their portfolios through a web-based portal you can brand and customize.</p>
-                                        <ul>
-                                            <li>Sport your own logo, template color, theme, etc.</li>
-                                            <li>Capture their complete financial landscape.</li>
-                                            <li>Simplified dashboard provides real-time snapshots for proactive advice.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                        <i class="indicator pe-7s-angle-down"></i> Empower YOUR Business
-                                    </a>
-                                </div>
-                                <div id="collapse2" class="panel accordion-body collapse">
-                                    <div class="accordion-inner">
-                                        <p>Simplify your wealth management strategy and leverage the full influence of your existing financial systems.</p>
-                                        <ul>
-                                            <li>Create a single view of all client accounts from 10,000+ online institutions.</li>
-                                            <li>Easily manage both offline and other hard to track assets.</li>
-                                            <li>Archive and store investment related documents or other important electronic files.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                        <i class="indicator pe-7s-angle-down"></i> Economize YOUR Approach
-                                    </a>
-                                </div>
-                                <div id="collapse3" class="panel accordion-body collapse">
-                                    <div class="accordion-inner">
-                                        <p>Finally manage your accounts like a pro and gain the competitive edge that increases earnings for you and your clients!</p>
-                                        <ul>
-                                            <li>Our intuitive formatting and presentation style will compliment your strategies.</li>
-                                            <li>Clients will become more actively engaged in their own asset management.</li>
-                                            <li>Leverage next-gen account aggregation for office, advisors, teams, and enterprise.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col-md-5 -->
-                </div>
-            </div>
-        </section>
-        <!-- End description -->
-
-        <div class="clearfix"></div>
-
-        <!-- Start download -->
-        <section id="download">
-            <div class="download-wrapper">
-                <div class="container">
-                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="col-md-10 col-md-offset-1">
-                            <h3>Try Fusion Advisor Free for 14 days</h3>
-                            <p>No Credit Card needed, Unlimited access, Free Web Training</p>
-                            <form>
-                                <fieldset class="subscribe-form">
-                                    <!--<input class="subscribe" type="text" placeholder="Enter your email">-->
-                                    <a href="#" class="subscribe-button" type="button" data-bind="click: scheduleGetStartedCommand">GET STARTED</a>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End download -->
-
-        <div class="clearfix"></div>
-    </div>
-    <!-- end content -->
-    <!-- Start Modal -->
-    <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-
-                <div class="modal-body">
-
-                    <!-- widget content -->
-                    <div class="widget-body fuelux">
-
-                        <div class="wizard">
-                            <div class="progress-frame">
-                                <div class="progress margin-bottom-0">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemax="100" style="width: 40%">
-                                        <span class="sr-only">40% Complete (success)</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <ul class="steps">
-                                <li data-target="#step1" class="active">
-                                    <span>1. LOGIN SETTINGS</span>
-                                </li>
-                                <li data-target="#step2">
-                                    <span>2. IMPORT LOGO</span>
-                                </li>
-                                <li data-target="#step3">
-                                    <span>3. PROFILE DETAILS</span>
-                                </li>
-                                <li data-target="#step4">
-                                    <span>4. INVITATION</span>
-                                </li>
-                                <li data-target="#step5">
-                                    <span>5. CONFIRMATION</span>
-                                </li>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a id="GoToHome" href="#home" class="selected">Home</a></li>
+                                <li><a id="GoToFeatures" href="#features">Benefits</a></li>
+                                <li><a id="GoToDesc" href="#description">How it works</a></li>
+                                <li><a id="" href="pricing.html">Pricing</a></li>
                             </ul>
+                            <div class="navbar-right">
+                                <!--<a href="signin.html" class="btn btn-bordered">Sign in</a>
+                                <a href="signup.html" class="btn btn-primary">Sign up</a>-->
+                                <a href="#" class="btn btn-primary" data-bind="click: showScheduleCommand" data-fa-src="https://www.timetrade.com/book/QRXQL">See It In Action</a>
+                                <a href="https://wealthoffice.com" class="btn btn-bordered">Sign in</a>
+                            </div>
+                        </div><!--/.nav-collapse -->
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- End header -->
+        <!-- start content -->
+        <div class="content">
+            <section id="home" class="home-wrapper parallax polygon-bg">
+                <div class="home-contain">
+                    <div class="container">
+                        <div class="row text-center wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-md-12 col-lg-10 col-lg-offset-1">
+                                <div class="video">
+                                    <h3>UNLOCK YOUR GREATEST <br>SOURCE OF NEW ASSETS</h3>
+                                    <span class="sub-title">FROM EACH OF YOUR CLIENT HOUSEHOLDS</span>
+
+                                    <a href="#" id="play-video" class="btn btn-primary play-video-btn" data-bind="click: playVideoCommand">
+                                        WATCH THE VIDEO
+                                        <span><i class="fa fa-chevron-right"></i></span>
+                                    </a>
+                                    <div data-bind="visible: isVideoVisible, html: videoHtml" class="wistia_embed" style="position:absolute; top:0px; width: 945px; height: 532px;"></div>
+                                    <div data-bind="click: closeVideoCommand,visible: isVideoVisible" class="close-video-btn"><i class="fa fa-times"></i></div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End home -->
+            <!-- Start client -->
+            <section id="client" class="contain gray-bg test-2">
+                <div class="container">
 
-                        <div class="step-content">
-                            <form class="form-horizontal wizard-form" method="post">
+                    <div class="row">
+                        <div class="col-sm-6 left text-center padding-top-40 left-top">
+                            <div class="clearfix">
+                                <a href="#" class="client-link pull-left">
+                                    <img src="img/client/logo3.png" alt="AmeriTrade" />
+                                </a>
+                                <a href="#" class="client-link margin-left-20">
+                                    <img src="img/client/logo5.png" alt="CharlesSchwab" />
+                                </a>
+                                <a href="#" class="client-link pull-left margin-top-10 sm">
+                                    <img src="img/client/logo7.png" alt="Scottrade" />
+                                </a>
+                                <a href="#" class="client-link margin-top-10">
+                                    <img src="img/client/logo1.png" alt="FolioInstituional" />
+                                </a>
+                            </div>
+                            <div class="margin-top-20 clients-modal">
+                                <a href="#" data-toggle="modal" data-target=".ClientsModal">See our growing list</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 right text-center padding-top-40 right-top">
+                            <div class="clearfix">
+                                <a href="#" class="client-link sm pull-left">
+                                    <img src="img/client/logo4.png" alt="Chase" />
+                                </a>
+                                <a href="#" class="client-link">
+                                    <img src="img/client/logo8.png" alt="Citi" />
+                                </a>
+                                <a href="#" class="client-link pull-right sm">
+                                    <img src="img/client/logo9.png" alt="CapitalOne" />
+                                </a>
+                                <a href="#" class="client-link margin-top-10">
+                                    <img src="img/client/logo2.png" alt="CapitalOfAmerica" />
+                                </a>
+                                <a href="#" class="client-link pull-right margin-top-10">
+                                    <img src="img/client/logo10.png" alt="Fidelity" />
+                                </a>
+                            </div>
+                            <div class="margin-top-25 link-modal">
+                                <a href="#" data-toggle="modal" data-target=".AccountsModal">Search for Yourself</a>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div class="step-pane active" id="step1">
-                                    <p><strong>Create Login Settings</strong></p>
+                    <div class="row">
+                        <div class="text-center titles-holder">
+                            <h3>VISUALIZATION</h3>
+                            <p>FOR YOUR CLIENTS</p>
+                            <h1>GROWTH</h1>
+                            <p>FOR YOUR PRACTICE</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
 
-                                    <!-- wizard form starts here -->
-                                    <fieldset>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                    <input class="form-control" id="prepend" placeholder="Username" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div class="row row-bottom">
+                        <div class="col-sm-6 left text-center padding-top-60 padding-bottom-30 bottom-left">
+                            <a href="#" class="client-link same-size">
+                                <img src="img/client/logo6.png" alt="MoneyGuidePro" />
+                            </a>
+                            <p class="note">Coming Soon!</p>
+                            <div class="margin-top-25 partner-request">
+                                <a href="#" data-bind="click: showScheduleCommand" data-fa-src="https://www.timetrade.com/book/ZFGLN">Not a partner? Get on the list.</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 right text-center padding-top-60 padding-bottom-30 bottom-right">
+                            <h4 class="margin-top-15"><i class="fa fa-folder-o"></i> Document Vault</h4>
+                            <p>Your clients can upload their own documents, share with household, create folders, and YOU can upload thousands of documents in an instant to all your clients.</p>
+                            <div class="margin-top-20 margin-bottom-10">
+                                <a href="#" data-bind="click: showScheduleCommand" data-fa-src="https://www.timetrade.com/book/QRXQL">Ready to Schedule a demo?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End client -->
+            <!-- Start features -->
+            <section id="features" class="contain desc-wrapp">
+                <div class="container">
 
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                    <input class="form-control" id="prepend" placeholder="Email" type="text">
-                                                </div>
-                                            </div>
+                    <div class="row text-center wow fadeInUp">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h3 class="heading"><span>Benefits</span></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 feature-box benefit-image img-left">
+                            <img src="img/benefit-1.png" class="img-responsive">
+                        </div>
+                        <div class="col-md-5 benefit-testimonial testimonial-one text-right">
+                            <p><em>"Fusion Advisor’s all about providing a clear uncomplicated view of client accounts while synchronizing your financial planning platform. Less data entry time means more proactive advice and growth."</em></p>
+                            <img src="img/AaronSmith.png" class="img-responsive">
+                            <span>- <em>Aaron J. Smith Sr</em></span>
+                            <span class="separator">|</span>
+                            <span>Founder / CEO</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="computer-view">
+                            <div class="col-md-5 benefit-testimonial testimonial-two">
+                                <p><em>"Fusion Advisor has been an outstanding account aggregation platform for our clients. The portal provides a value added service for our clients, while providing the advisors a tool to maintain touches and accumulate additional assets under management."</em></p>
+                                <img src="img/testimoni/AndrewKinney.png" class="img-responsive">
+                                <span>- <em>Andrew Kinney</em></span>
+                                <span class="separator">|</span>
+                                <a href="http://jw-cole.com" target="_blank">jw-cole.com</a>
+                            </div>
+                            <div class="col-md-7 feature-box benefit-image img-right text-right">
+                                <img src="img/benefit-6.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="tablet-view">
+                            <div class="col-md-7 feature-box benefit-image img-left">
+                                <img src="img/benefit-6.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-5 benefit-testimonial">
+                                <p>"Fusion Advisor has been an outstanding account aggregation platform for our clients. The portal provides a value added service for our clients, while providing the advisors a tool to maintain touches and accumulate additional assets under management."</p>
+                                <img src="img/testimoni/AndrewKinney.png" class="img-responsive">
+                                <span>- <em>Andrew Kinney</em></span>
+                                <span class="separator">|</span>
+                                <a href="http://jw-cole.com" target="_blank">jw-cole.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-7 feature-box benefit-image img-left">
+                            <img src="img/benefit-5.png" class="img-responsive">
+                        </div>
+                        <div class="col-md-5 benefit-testimonial testimonial-two text-right">
+                            <p><em>"When financial advisors are looking for a client portal with account aggregation, I always recommend the Wealth Portal. Their (a) integration partners, (b) easy to use platform, and (c) branded customization makes the Wealth Portal any easy choice for any advisor."</em></p>
+                            <img src="img/testimoni/MattPeterson.png" class="img-responsive">
+                            <span>- <em>Matt Peterson</em></span>
+                            <span class="separator">|</span>
+                            <a href="http://www.miagd.com" target="_blank">miagd.com</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End features -->
+
+            <div class="clearfix"></div>
+
+            <!-- Start description -->
+            <section id="description" class="contain gray-bg padding-top-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="arrow-down arrow-white"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 wow fadeInLeft">
+                            <img src="img/device.png" class="img-responsive" alt="" />
+                        </div>
+                        <div class="col-md-5 margintop40 wow fadeInRight" data-wow-delay="0.4s">
+
+                            <div class="accordion clearfix" id="accordion">
+                                <div class="panel">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                            <i class="indicator pe-7s-angle-up"></i> Extend YOUR Brand
+                                        </a>
+                                    </div>
+                                    <div id="collapse1" class="panel accordion-body collapse in">
+                                        <div class="accordion-inner">
+                                            <p>Your clients will view their portfolios through a web-based portal you can brand and customize.</p>
+                                            <ul>
+                                                <li>Sport your own logo, template color, theme, etc.</li>
+                                                <li>Capture their complete financial landscape.</li>
+                                                <li>Simplified dashboard provides real-time snapshots for proactive advice.</li>
+                                            </ul>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                    <input class="form-control" id="prepend" placeholder="Password" type="text">
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                            <i class="indicator pe-7s-angle-down"></i> Empower YOUR Business
+                                        </a>
+                                    </div>
+                                    <div id="collapse2" class="panel accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            <p>Simplify your wealth management strategy and leverage the full influence of your existing financial systems.</p>
+                                            <ul>
+                                                <li>Create a single view of all client accounts from 10,000+ online institutions.</li>
+                                                <li>Easily manage both offline and other hard to track assets.</li>
+                                                <li>Archive and store investment related documents or other important electronic files.</li>
+                                            </ul>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                    <input class="form-control" id="prepend" placeholder="Re-enter Password" type="text">
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                            <i class="indicator pe-7s-angle-down"></i> Economize YOUR Approach
+                                        </a>
+                                    </div>
+                                    <div id="collapse3" class="panel accordion-body collapse">
+                                        <div class="accordion-inner">
+                                            <p>Finally manage your accounts like a pro and gain the competitive edge that increases earnings for you and your clients!</p>
+                                            <ul>
+                                                <li>Our intuitive formatting and presentation style will compliment your strategies.</li>
+                                                <li>Clients will become more actively engaged in their own asset management.</li>
+                                                <li>Leverage next-gen account aggregation for office, advisors, teams, and enterprise.</li>
+                                            </ul>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col-md-5 -->
+                    </div>
+                </div>
+            </section>
+            <!-- End description -->
+
+            <div class="clearfix"></div>
+
+            <!-- Start download -->
+            <section id="download">
+                <div class="download-wrapper">
+                    <div class="container">
+                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-md-10 col-md-offset-1">
+                                <h3>Try Fusion Advisor Free for 14 days</h3>
+                                <p>No Credit Card needed, Unlimited access, Free Web Training</p>
+                                <form>
+                                    <fieldset class="subscribe-form">
+                                        <!--<input class="subscribe" type="text" placeholder="Enter your email">-->
+                                        <a href="#" class="subscribe-button" type="button" data-bind="click: showScheduleCommand" data-fa-src="https://www.timetrade.com/book/PHWJP">GET STARTED</a>
                                     </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End download -->
+
+            <div class="clearfix"></div>
+        </div>
+        <!-- end content -->
+        <!-- Start Modal -->
+        <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <!-- widget content -->
+                        <div class="widget-body fuelux">
+
+                            <div class="wizard">
+                                <div class="progress-frame">
+                                    <div class="progress margin-bottom-0">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="step-pane" id="step2">
-                                    <h3><strong>Step 2 </strong> - Alerts</h3>
+                                <ul class="steps">
+                                    <li data-target="#step1" class="active">
+                                        <span>1. LOGIN SETTINGS</span>
+                                    </li>
+                                    <li data-target="#step2">
+                                        <span>2. IMPORT LOGO</span>
+                                    </li>
+                                    <li data-target="#step3">
+                                        <span>3. PROFILE DETAILS</span>
+                                    </li>
+                                    <li data-target="#step4">
+                                        <span>4. INVITATION</span>
+                                    </li>
+                                    <li data-target="#step5">
+                                        <span>5. CONFIRMATION</span>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                    <div class="alert alert-warning fade in">
-                                        <button class="close" data-dismiss="alert">
-                                            ×
-                                        </button>
-                                        <i class="fa-fw fa fa-warning"></i>
-                                        <strong>Warning</strong> Your monthly traffic is reaching limit.
+                            <div class="step-content">
+                                <form class="form-horizontal wizard-form" method="post">
+
+                                    <div class="step-pane active" id="step1">
+                                        <p><strong>Create Login Settings</strong></p>
+
+                                        <!-- wizard form starts here -->
+                                        <fieldset>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                        <input class="form-control" id="prepend" placeholder="Username" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                                        <input class="form-control" id="prepend" placeholder="Email" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                        <input class="form-control" id="prepend" placeholder="Password" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                        <input class="form-control" id="prepend" placeholder="Re-enter Password" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
                                     </div>
 
-                                    <div class="alert alert-success fade in">
-                                        <button class="close" data-dismiss="alert">
-                                            ×
-                                        </button>
-                                        <i class="fa-fw fa fa-check"></i>
-                                        <strong>Success</strong> The page has been added.
+                                    <div class="step-pane" id="step2">
+                                        <h3><strong>Step 2 </strong> - Alerts</h3>
+
+                                        <div class="alert alert-warning fade in">
+                                            <button class="close" data-dismiss="alert">
+                                                ×
+                                            </button>
+                                            <i class="fa-fw fa fa-warning"></i>
+                                            <strong>Warning</strong> Your monthly traffic is reaching limit.
+                                        </div>
+
+                                        <div class="alert alert-success fade in">
+                                            <button class="close" data-dismiss="alert">
+                                                ×
+                                            </button>
+                                            <i class="fa-fw fa fa-check"></i>
+                                            <strong>Success</strong> The page has been added.
+                                        </div>
+
+                                        <div class="alert alert-info fade in">
+                                            <button class="close" data-dismiss="alert">
+                                                ×
+                                            </button>
+                                            <i class="fa-fw fa fa-info"></i>
+                                            <strong>Info!</strong> You have 198 unread messages.
+                                        </div>
+
+                                        <div class="alert alert-danger fade in">
+                                            <button class="close" data-dismiss="alert">
+                                                ×
+                                            </button>
+                                            <i class="fa-fw fa fa-times"></i>
+                                            <strong>Error!</strong> The daily cronjob has failed.
+                                        </div>
+
                                     </div>
 
-                                    <div class="alert alert-info fade in">
-                                        <button class="close" data-dismiss="alert">
-                                            ×
-                                        </button>
-                                        <i class="fa-fw fa fa-info"></i>
-                                        <strong>Info!</strong> You have 198 unread messages.
-                                    </div>
-
-                                    <div class="alert alert-danger fade in">
-                                        <button class="close" data-dismiss="alert">
-                                            ×
-                                        </button>
-                                        <i class="fa-fw fa fa-times"></i>
-                                        <strong>Error!</strong> The daily cronjob has failed.
-                                    </div>
-
-                                </div>
-
-                                <div class="step-pane" id="step3">
-                                    <h3><strong>Step 3 </strong> - Wizard continued</h3>
-                                    <br>
-                                    <br>
-                                    <h1 class="text-center text-primary"> This will be your Step 3 </h1>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                </div>
-
-                                <div class="step-pane" id="step4">
-                                    <h3><strong>Step 4 </strong> - Wizard continued...</h3>
-                                    <br>
-                                    <br>
-                                    <h1 class="text-center text-danger"> This will be your Step 4 </h1>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                </div>
-
-                                <div class="step-pane" id="step5">
-                                    <h3><strong>Step 5 </strong> - Finished!</h3>
-                                    <br>
-                                    <br>
-                                    <h1 class="text-center text-success">
-                                        <i class="fa fa-check"></i> Congratulations!
+                                    <div class="step-pane" id="step3">
+                                        <h3><strong>Step 3 </strong> - Wizard continued</h3>
                                         <br>
-                                        <small>Click finish to end wizard</small>
-                                    </h1>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- end widget content -->
-                </div>
-                <!-- end modal body -->
+                                        <br>
+                                        <h1 class="text-center text-primary"> This will be your Step 3 </h1>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
 
-                <div class="modal-footer">
-                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                    <button type="button" class="btn btn-primary">Next</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Modal -->
-    <!-- Start Accounts Modal -->
-    <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-image.png" class="img-responsive">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Accounts Modal -->
-    <!-- Start Clients Modal -->
-    <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row margin-top-10">
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo3-hover.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo5-hover.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo7-hover.png" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="row margin-top-25">
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo1-hover.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo11.png" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo12.png" class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="row margin-top-25 margin-bottom-10">
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo13.png" class="img-responsive negative-margin">
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img src="img/client/logo14.png" class="img-responsive">
-                        </div>
-                        <!--<div class="col-sm-4">
-                            <img src="img/client/logo15.png" class="img-responsive">
-                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Clients Modal -->
+                                    <div class="step-pane" id="step4">
+                                        <h3><strong>Step 4 </strong> - Wizard continued...</h3>
+                                        <br>
+                                        <br>
+                                        <h1 class="text-center text-danger"> This will be your Step 4 </h1>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
 
-    <fadialog params="isVisible: isDialogVisible, options: dialogOptions"></fadialog>
-    <div class="clearfix"></div>
+                                    <div class="step-pane" id="step5">
+                                        <h3><strong>Step 5 </strong> - Finished!</h3>
+                                        <br>
+                                        <br>
+                                        <h1 class="text-center text-success">
+                                            <i class="fa fa-check"></i> Congratulations!
+                                            <br>
+                                            <small>Click finish to end wizard</small>
+                                        </h1>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end widget content -->
+                    </div>
+                    <!-- end modal body -->
 
-    <!-- Start footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="guaranted-logos">
-                        <span class="aicpa-logo">
-                            <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/SORHome.aspx" target="blank" class="btn popoverData margin-left-5" data-content="Servers are located in a (Formerly know as SAS 70 Type II)" rel="popover" data-placement="top" data-trigger="hover">
-                                <img src="img/SOC-report-SSAE-16.png" class="img-responsive" alt="soc">
-                            </a>
-                        </span>
-                        <span class="pci-logo">
-                            <a href="https://www.pcisecuritystandards.org" target="blank" class="btn popoverData pci" data-content="Fusion Advisor is hosted within a managed facility that strictly adheres to SOC 1/SSAE 16/ISAE 3402 which supersede Statement on Auditing Standards for the formerly known SAS 70 Type II with the professional guidance on performing the service auditor's examination." rel="popover" data-placement="top" data-trigger="hover">
-                                <img src="img/pci-badge.png" class="img-responsive margin-left-10" alt="pci">
-                            </a>
-                        </span>
+                    <div class="modal-footer">
+                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                        <button type="button" class="btn btn-primary">Next</button>
                     </div>
-                    <div class="social-network">
-                        <a href="https://www.facebook.com/fusionadvisor" target="blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://twitter.com/fusionadvisor" target="blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank"><i class="fa fa-google-plus"></i></a>
-                        <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    <p>Copyright © 2005-2015, Fusion Advisor. All rights Reserved.</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- End footer -->
+        <!-- End Modal -->
+        <!-- Start Accounts Modal -->
+        <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/modal-image.png" class="img-responsive">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accounts Modal -->
+        <!-- Start Clients Modal -->
+        <div class="modal fade ClientsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Direct Access to All Client Accounts</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row margin-top-10">
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo3-hover.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo5-hover.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo7-hover.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="row margin-top-25">
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo1-hover.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo11.png" class="img-responsive">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo12.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="row margin-top-25 margin-bottom-10">
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo13.png" class="img-responsive negative-margin">
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="img/client/logo14.png" class="img-responsive">
+                            </div>
+                            <!--<div class="col-sm-4">
+                                <img src="img/client/logo15.png" class="img-responsive">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Clients Modal -->
+
+        <fadialog params="isVisible: isDialogVisible, options: dialogOptions"></fadialog>
+        <div class="clearfix"></div>
+
+        <!-- Start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="guaranted-logos">
+                            <span class="aicpa-logo">
+                                <a href="http://www.aicpa.org/InterestAreas/FRC/AssuranceAdvisoryServices/Pages/SORHome.aspx" target="blank" class="btn popoverData margin-left-5" data-content="Servers are located in a (Formerly know as SAS 70 Type II)" rel="popover" data-placement="top" data-trigger="hover">
+                                    <img src="img/SOC-report-SSAE-16.png" class="img-responsive" alt="soc">
+                                </a>
+                            </span>
+                            <span class="pci-logo">
+                                <a href="https://www.pcisecuritystandards.org" target="blank" class="btn popoverData pci" data-content="Fusion Advisor is hosted within a managed facility that strictly adheres to SOC 1/SSAE 16/ISAE 3402 which supersede Statement on Auditing Standards for the formerly known SAS 70 Type II with the professional guidance on performing the service auditor's examination." rel="popover" data-placement="top" data-trigger="hover">
+                                    <img src="img/pci-badge.png" class="img-responsive margin-left-10" alt="pci">
+                                </a>
+                            </span>
+                        </div>
+                        <div class="social-network">
+                            <a href="https://www.facebook.com/fusionadvisor" target="blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/fusionadvisor" target="blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://plus.google.com/u/0/b/109747310268936066719/109747310268936066719/about" target="blank"><i class="fa fa-google-plus"></i></a>
+                            <a href="https://www.linkedin.com/company/fusion-advisor" target="blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <p>Copyright © 2005-2015, Fusion Advisor. All rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

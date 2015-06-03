@@ -1,5 +1,5 @@
 /*global require */
-require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($, ko) {
+require(['jquery', 'knockout', 'fusion-iframe-dialog'], function ($, ko, faDialog) {
     var hideDiv,
         numberFormat,
         currencyFormat,
@@ -36,9 +36,11 @@ require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($,
 
     VM = function () {
         var self = this,
+            _dialog,
             _wistiaEmbed,
             _init;
         _init = function () {
+            _dialog = faDialog();
         };
 
         // public
@@ -59,23 +61,10 @@ require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($,
             self.isVideoVisible(false);
             self.videoHtml("");
         };
-        self.scheduleGetStartedCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/PHWJP" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
-            self.isDialogVisible(true);
+        self.showScheduleCommand = function (vm, e) {
+            var src = $(e.currentTarget).attr('data-fa-src');
+            _dialog.show(src);
         };
-        self.schedulePartnerRequestCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/ZFGLN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
-            self.isDialogVisible(true);
-        };
-        self.scheduleWebinarCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
-            self.isDialogVisible(true);
-        };
-        self.scheduleEnterpriseMeetingCommand = function () {
-            self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>';
-            self.isDialogVisible(true);
-        };
-
 
         // initialization
         _init();
@@ -91,7 +80,7 @@ require(['jquery', 'knockout', 'fusion-knockout-bootstrap-dialog'], function ($,
         var vm = new VM();
 
         hideDiv(); // hide loading spin
-        $.each($('body'), function (index, element) {
+        $.each($('[data-fa-main]'), function (index, element) {
             ko.applyBindings(vm, element);
         });
     });
