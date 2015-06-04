@@ -7,6 +7,7 @@ require.config({
         rest: 'fusion-rest',
         settings: 'fusion-settings',
         log: 'fusion-log',
-        text: 'text-2.0.14'
+        text: 'text-2.0.14',
+        bootstrapModal: 'bootstrap/bootstrap-modal-amd'
     }
 });

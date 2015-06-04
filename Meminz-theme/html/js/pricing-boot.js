@@ -1,7 +1,7 @@
 /*global require */
 require(['jquery',
         'knockout',
-        'fusion-knockout-bootstrap-dialog'], function ($, ko) {
+        'fusion-iframe-dialog'], function ($, ko, faDialog) {
             var hideDiv,
                 numberFormat,
                 currencyFormat,
@@ -38,6 +38,7 @@ require(['jquery',
 
             VM = function () {
                 var self = this,
+                     _dialog,
                     _init,
                     _wistiaEmbed,
                     _calculated,
@@ -82,6 +83,7 @@ require(['jquery',
                     }
                     self.advisorCount(counts);
                     self.selectedPeriod(_saving.quarterly.period);
+                    _dialog = faDialog();
                 };
                 // public
                 // other
@@ -118,7 +120,7 @@ require(['jquery',
                 self.isVideoVisible = ko.observable(false);
                 self.videoHtml = ko.observable('');
                 self.playVideoCommand = function () {
-                    var src = window.location.protocol + '//' + window.location.host + '/promo-video.html';
+                    var src = window.location.protocol + '//' + window.location.host + '/promo-video-pricing.html';
                     self.isVideoVisible(true);
                     self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 1140px; height: 641px;" ></iframe>');
                 };
@@ -126,25 +128,9 @@ require(['jquery',
                     self.isVideoVisible(false);
                     self.videoHtml("");
                 };
-                self.scheduleOfficeMeetingCommand = function () {
-                    self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/167VR" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
-                    self.isDialogVisible(true);
-                };
-                self.scheduleAdvisorMeetingCommand = function () {
-                    self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/2V8WJ" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
-                    self.isDialogVisible(true);
-                };
-                self.scheduleTeamMeetingCommand = function () {
-                    self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/SKZM6" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
-                    self.isDialogVisible(true);
-                };
-                self.scheduleWebinarCommand = function () {
-                    self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/QRXQL" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
-                    self.isDialogVisible(true);
-                };
-                self.scheduleEnterpriseMeetingCommand = function () {
-                    self.dialogOptions().message = '<iframe src="https://www.timetrade.com/book/BSBRN" frameborder="0" allowtransparency="1" width="100%" scrolling="no" height="650" marginheight="0" marginwidth="0"></iframe>'
-                    self.isDialogVisible(true);
+                self.showScheduleCommand = function (vm, e) {
+                    var src = $(e.currentTarget).attr('data-fa-src');
+                    _dialog.show(src);
                 };
 
                 // calculated
