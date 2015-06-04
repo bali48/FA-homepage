@@ -1458,6 +1458,14 @@ footer .guaranted-logos {
 	font-weight: normal;
 }
 
+/* Additional pages */
 
+.additional-page p {
+	margin-bottom: 15px;
+}
+
+.additional-page h5 {
+	margin-top: 30px;
+}
 
 
