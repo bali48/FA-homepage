@@ -122,7 +122,7 @@ require(['jquery',
                 self.playVideoCommand = function () {
                     var src = window.location.protocol + '//' + window.location.host + '/promo-video-pricing.html';
                     self.isVideoVisible(true);
-                    self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 1140px; height: 641px;" ></iframe>');
+                    self.videoHtml('<iframe src=' + src + ' frameborder="0" marginheight="0" marginwidth="0" scrolling="no" style="width: 1140px; height: 815px;" ></iframe>');
                 };
                 self.closeVideoCommand = function () {
                     self.isVideoVisible(false);
