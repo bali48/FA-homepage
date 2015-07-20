@@ -1,0 +1,24 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# 1. is not directory, 2. is an existing html file, 3. rewrite index to index.html
+RewriteCond %{REQUEST_FILENAME} !-d          
+RewriteCond %{REQUEST_FILENAME}\.html -f     
+RewriteRule ^(.*)$ $1.html                   
+
+# Redirects domain.com/file.html to domain.com/file
+# 1. is not directory, 2.is an existing html file, 3. request URI ends with .html, 4. redirect from index.html to index
+RewriteCond %{REQUEST_FILENAME} !-d         
+RewriteCond %{REQUEST_FILENAME}\.html -f    
+RewriteCond %{REQUEST_URI} ^(.+)\.html$     
+RewriteRule (.*)\.html$ /$1 [R=301,L]       
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
