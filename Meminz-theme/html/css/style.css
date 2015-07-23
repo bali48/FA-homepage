@@ -40,7 +40,6 @@ CSS structure
 Home
 =========================== */
 .home-wrapper{
-	/*background:#1a1a1a;*/
 	background: #636363;
 	position:relative;
 	width:100%;
@@ -49,8 +48,19 @@ Home
 	color:#fff;
 }
 
-.home-wrapper .video {
-	margin-top: 120px;
+.wistia_embed {
+	position: relative !important;
+	overflow: hidden;
+	width: auto !important;
+	margin-top: -370px;
+}
+
+.wistia_embed iframe {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100%!important;
+	height: 100%!important;
 }
 
 .home-wrapper .video h3 {
@@ -58,6 +68,7 @@ Home
 	line-height: 70px;
 	color: #555;
 	text-align: left;
+	margin-top: 130px;
 }
 
 .home-wrapper .test-2 h3 {
@@ -92,10 +103,11 @@ Home
 
 .close-video-btn {
 	position: absolute;
-	top: 0;
+	top: 24px;
 	right: 20px;
 	cursor: pointer;
 	z-index: 1999;
+	color: #d7d7d7;
 }
 
 .parallax{
@@ -113,7 +125,7 @@ Home
 }
 
 .home-contain{
-	padding: 30px 0 0 0;
+	padding: 5px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
 }
 
@@ -1226,6 +1238,16 @@ Custom responsive
 }
 
 @media (max-width: 991px) {
+
+	.home-wrapper .video h3 {
+		margin-top: 25px;
+	}
+
+	.home-contain,
+	.video-wrapper{
+		padding: 65px 0 0 0;
+	}
+
 	.computer-view {
 		display: none;
 	}
@@ -1252,7 +1274,7 @@ Custom responsive
 	}
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 	.slider-wrapper{
 		width:662px;
 		top:30px;
@@ -1285,13 +1307,16 @@ Custom responsive
 		width: 160px;
 	}
 
-	.home-contain,
-	.video-wrapper{
-		padding: 100px 0 0 0;
+	.wistia_embed {
+		margin-top: -405px;
 	}
 
 	.home-wrapper .video {
 		margin-top: 0;
+	}
+
+	.close-video-btn {
+		top: 0;
 	}
 
 	.screenshot-wrapper{
@@ -1494,3 +1519,26 @@ Custom responsive
 	}
 }
 
+@media (min-width: 745px) and (max-width: 767px) {
+	.close-video-btn {
+		top: -56px;
+	}
+}
+
+@media (max-width: 744px) {
+
+	.home-wrapper .video {
+		margin-top: 40px;
+	}
+
+	.close-video-btn {
+		top: 2px;
+	}
+}
+
+@media (max-width: 632px) {
+
+	.close-video-btn {
+		top: 36px;
+	}
+}
