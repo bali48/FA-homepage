@@ -1487,16 +1487,18 @@ Custom responsive
 		line-height: 32px;
 	}
 
-	.slider-wrapper{
-		width:93%;
-		top:4%;
-		left:4%;
+	#client .titles-holder {
+		display: none;
 	}
-	.screenshot-wrapper{
-		width:97%;
-		top:12.5%;
-		left:1.5%;
+
+	#client .col-sm-6.left {
+		padding-right: 15px;
 	}
+
+	#client .col-sm-6.right {
+		padding-left: 15px;
+	}
+
 	.pricing-wrapper{
 		margin-bottom:30px;
 	}
@@ -1516,6 +1518,20 @@ Custom responsive
 	}
 	.flexslider:hover .flex-direction-nav a{
 		display:block;
+	}
+
+	.pricing-page .item .form-group .col-sm-6 {
+		width: 40px;
+		display: inline-block;
+	}
+
+	.pricing-page .item .form-group .form-control {
+		float: none;
+	}
+
+	.pricing-page .item .form-group .control-label {
+		float: none;
+		margin-left: 20px;
 	}
 }
 

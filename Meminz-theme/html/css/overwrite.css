@@ -925,7 +925,7 @@ Fusion Advisor style
 }
 
 .pricing-page .wistia_embed {
-	top: 10px;
+	margin-top: -45px;
 }
 
 .pricing-page .close-video-btn {
@@ -1086,48 +1086,6 @@ Fusion Advisor style
 	padding-left: 0;
 }
 
-.pricing-page .column-billing {
-	/*background-color: #fafafa;
-	background-color: #ebebeb;*/
-	margin-top: 220px;
-}
-
-.pricing-page .column-billing .radio-wrap {
-	/*background: url(../img/most-popular.png) no-repeat right;*/
-	background-color: #ebebeb;
-	/*border: 2px solid #EC9D00;*/
-	border-radius: 2px;
-	padding: 2px 0;
-}
-
-.pricing-page .column-billing .radio-wrap img {
-	position: absolute;
-	top: 280px;
-	right: 19px;
-}
-
-.pricing-page .column-billing .radio-options {
-	border: 2px dashed #1fa2ed;
-	padding: 5px;
-}
-
-.pricing-page .column-billing .radio-options .radio {
-	padding: 2px 0 2px 5px;
-}
-
-.pricing-page .column-billing .checkbox {
-	border-top: 4px solid #fff;
-	padding: 5px 5px 5px 10px;
-	margin: 0;
-	line-height: 20px;
-}
-
-.pricing-page .column-billing img {
-	position: absolute;
-	top: -10px;
-	right: 0;
-}
-
 .pricing-page .btn-info {
 	border: 1px solid #1fa2ed;
 }
@@ -1273,6 +1231,14 @@ Fusion Advisor style
 
 .pricing-page .col-md-3 .item p {
 	margin: 0;
+}
+
+.pricing-page .item .form-group .form-control {
+	float: right;
+}
+
+.pricing-page .item .form-group .control-label {
+	float: left;
 }
 
 .pricing-page .col-md-3 .btn-primary {
