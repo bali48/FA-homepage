@@ -1520,6 +1520,10 @@ Custom responsive
 		display:block;
 	}
 
+	.ClientsModal img {
+		margin-bottom: 15px;
+	}
+
 	.pricing-page .item .form-group .col-sm-6 {
 		width: 40px;
 		display: inline-block;
