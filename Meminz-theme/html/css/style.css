@@ -1497,6 +1497,31 @@ Custom responsive
 
 	#client .col-sm-6.right {
 		padding-left: 15px;
+		border-top: 2px solid #fff;
+	}
+
+	.clients-modal {
+		margin-bottom: 30px;
+	}
+
+	.client-link.same-size {
+		margin-top: 0;
+	}
+
+	#client .col-sm-6 .partner-request {
+		margin-top: 30px;
+	}
+
+	#client .col-sm-6.bottom-right {
+		padding-top: 20px;
+	}
+
+	#download h3 {
+		font-size: 36px;
+	}
+
+	#download p {
+		font-size: 20px;
 	}
 
 	.pricing-wrapper{
