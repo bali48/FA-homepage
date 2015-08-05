@@ -1360,6 +1360,10 @@ Custom responsive
 		padding-left: 80px;
 	}
 
+	#client .col-sm-6.right-top .logo-fidelity {
+		float: right;
+	}
+
 	#client .col-sm-6.right-top .link-modal {
 		text-align: right;
 		margin-top: 15px;
@@ -1578,6 +1582,18 @@ Custom responsive
 
 	.close-video-btn {
 		top: 2px;
+	}
+}
+
+@media (max-width: 710px) {
+	#client .col-sm-6.right-top .logo-ca {
+		margin-left: 20px;
+	}
+
+	footer .guaranted-logos {
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
 	}
 }
 
