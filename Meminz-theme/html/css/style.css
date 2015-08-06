@@ -1603,3 +1603,18 @@ Custom responsive
 		top: 36px;
 	}
 }
+
+@media (max-width: 467px) {
+
+	.home-contain {
+		padding-top: 20px;
+	}
+
+	.close-video-btn {
+		top: 96px;
+	}
+
+	.benefit-image img {
+		max-width: 100%;
+	}
+}
