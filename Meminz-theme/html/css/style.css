@@ -871,14 +871,14 @@ footer .pci-logo .popover {
 	display:block;
 	width:100%;
 	margin-bottom:10px;
-	font-size:24px;
+	font-size: 22px;
 	line-height:24px;
 }
 
-.social-network a{
+.social-network a {
 	display:inline-block;
 	color:#b6b6b6;
-	margin:0 2px 5px 2px;
+	margin:0 3px 5px 3px;
 }
 
 /*
