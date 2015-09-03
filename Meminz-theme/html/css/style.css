@@ -1618,3 +1618,22 @@ Custom responsive
 		max-width: 100%;
 	}
 }
+
+@media (max-width: 414px) {
+	.subscribe-form {
+		width: 60%;
+	}
+
+	.accordion-heading a {
+		font-size: 18px;
+		padding: 5px 20px 5px 65px;
+	}
+
+	.accordion-heading a i {
+		width: 55px;
+		height: 55px;
+		font-size: 50px;
+		line-height: 1;
+	}
+}
+
