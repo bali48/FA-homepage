@@ -120,20 +120,13 @@ Home
 	background-image:url(../img/bg1.jpg);
 }
 
-.parallax.polygon-bg{
-	/*background-image:url(../img/background.png);*/
-}
-
 .home-contain{
 	padding: 5px 0 0 0;
 	background:url(../img/pattern.png) repeat 0 0;
 }
 
 .parallax.polygon-bg .home-contain{
-	/*background:none;*/
-	/*background-image:url(../img/background.png);*/
 	background-image: radial-gradient(   rgba(255, 255, 255, 0.75), rgba(143, 191, 229, 0.85)), url(../img/background-3.jpg);
-	/*height: 871px;*/
 	height: 600px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

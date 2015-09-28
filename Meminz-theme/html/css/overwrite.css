@@ -183,8 +183,6 @@ Navbar
 	float: left;
 	width: 100%;
 	border: none;
-	/*background:#2e2e2e;*/
-	/*background: #181919;*/
 	background: rgba(0, 0, 0, 0.9);
 	color: #a0a0a0;
 }
@@ -198,6 +196,11 @@ Navbar
 .navbar-brand {
 	padding: 10px 0 23px 0;
 	margin: 0;
+}
+
+.navbar-brand img {
+	width: 100%;
+	height: auto;
 }
 
 .navbar-default .collapse {
@@ -226,7 +229,6 @@ Navbar
 	color: #b6b6b6;
 	padding: 30px 10px 30px 10px;
 	margin: 0;
-	/*border-top:2px solid #2e2e2e;*/
 	border-top: 2px solid #000;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -246,7 +248,6 @@ Navbar
 		background: #none;
 		border: none;
 		border-top: 2px solid;
-		/*padding-top: 28px;*/
 	}
 
 .navbar-default .navbar-toggle,
@@ -349,15 +350,15 @@ Tabs
 	padding: 0;
 }
 
-	.log-tabs li {
-		border: none;
-		width: 50%;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-		border-radius: 0;
-		border: none;
-	}
+.log-tabs li {
+	border: none;
+	width: 50%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	border: none;
+}
 
 .log-tabs li a {
 	color: #fff;
@@ -846,7 +847,6 @@ Fusion Advisor style
 }
 
 .header-wrap .ribbon {
-	/*background: #181919;*/
 	background: #2e2e2e;
 	padding: 4px 0;
 }
@@ -936,152 +936,6 @@ Fusion Advisor style
 	text-decoration: line-through;
 }
 
-.pricing-page th span {
-	font-weight: normal;
-	color: #4a4a4a;
-}
-
-.pricing-page th:first-child {
-	vertical-align: middle;
-	font-size: 26px;
-	background: transparent !important;
-}
-
-.pricing-page th.stand-out {
-	border-top: 4px solid #ccc !important;
-}
-
-.pricing-page th:first-child {
-	background: #fff;
-}
-
-.pricing-page th h5 {
-	color: #1ec279;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-.pricing-page th h5 span {
-	color: #1ec279;
-	font-weight: 700;
-}
-
-.pricing-page th h3 {
-	margin: 0;
-	color: #4a4a4a;
-}
-
-.pricing-page th p {
-	font-weight: normal;
-	font-size: 11px;
-	margin-bottom: 5px;
-	color: #999;
-}
-
-.pricing-page th span strong.saving {
-	text-decoration: line-through;
-}
-
-.pricing-page th span {
-	font-weight: normal;
-	color: #4a4a4a;
-}
-
-.table > tbody > tr.empty-space {
-	display: none;
-}
-
-.table > tbody > tr > td {
-	border-left: 1px solid #ddd;
-}
-
-.table > tbody > tr > td.stand-out {
-	border-left: 4px solid #1fa2ed !important;
-	border-right: 4px solid #1fa2ed !important;
-}
-
-.table > tbody > tr > td:last-child {
-	border-right: 1px solid #ddd;
-}
-
-.table > tbody > tr:last-child > td {
-	border-bottom: 1px solid #ddd;
-	vertical-align: middle;
-}
-
-.table > tbody > tr > td.no-border {
-	border-left: none;
-	border-bottom: none;
-	background-color: #fff;
-}
-
-.pricing-page td a:hover,
-.pricing-page td a:focus {
-	text-decoration: none;
-}
-
-.pricing-page td select {
-	border: none;
-	background: transparent;
-	width: 44px;
-}
-
-.pricing-page td input[type=checkbox] {
-	display: none;
-}
-
-.pricing-page td input[type=checkbox] + label:before {
-	font-family: FontAwesome;
-	display: table;
-	margin-top: -4px;
-	margin-left: 12px;
-	font-size: 18px;
-	height: 10px;
-}
-
-.pricing-page td input[type=checkbox] + label:before {
-	content: "\f096";
-	letter-spacing: 10px;
-}
-
-.pricing-page td input[type=checkbox]:checked + label:before {
-	content: "\f046";
-	letter-spacing: 5px;
-	color: #1ec279;
-}
-
-.pricing-page td label {
-	height: 10px;
-	margin-bottom: 0;
-}
-
-.pricing-page td .fa-check {
-	/*color: #1ec279;*/
-	color: #EC9D00;
-	font-size: 16px;
-}
-
-.pricing-page td .fa-check.green {
-	color: #1ec279;
-	/*color: #EC9D00;*/
-	font-size: 16px;
-}
-
-.pricing-page td .fa-times {
-	color: #bfbfbf;
-	font-size: 16px;
-}
-
-.pricing-page td .white-background {
-	background: #fff;
-	color: #1ec279;
-}
-
-.pricing-page td .white-background:hover {
-	background: #1ec279;
-	color: #fff;
-}
-
 .pricing-page .col-md-2 {
 	padding-left: 0;
 }
@@ -1094,7 +948,6 @@ Fusion Advisor style
 	background-color: #1fa2ed;
 }
 
-/* new */
 .pricing-page .common-features {
 	margin-top: 30px;
 }
@@ -1256,83 +1109,6 @@ Fusion Advisor style
 	margin: 0 0 20px 0;
 }
 
-/* Wizard */
-.modal-wizard .modal-dialog {
-	width: 720px;
-}
-
-.fuelux .wizard {
-	border: none;
-	box-shadow: none;
-	background: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-}
-
-.fuelux .wizard .progress-frame {
-	position: relative;
-	background: #e1e1e1;
-	padding: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-}
-
-.fuelux .wizard .progress-frame:after,
-.fuelux .wizard .progress-frame:before {
-	top: 100%;
-	left: 10%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.fuelux .wizard .progress-frame:after {
-	/*border-color: rgba(136, 183, 213, 0);*/
-	border-top-color: #e1e1e1;
-	border-width: 3px;
-	margin-left: -3px;
-}
-
-.fuelux .wizard .progress-frame:before {
-	/*border-color: rgba(194, 225, 245, 0);*/
-	border-top-color: #e1e1e1;
-	border-width: 8px;
-	margin-left: -8px;
-}
-
-.fuelux .wizard .progress-frame .progress {
-	line-height: 10px;
-	height: 10px;
-}
-
-.fuelux .wizard-form .step-pane {
-	margin-top: 20px;
-}
-
-.fuelux .wizard-form fieldset .row {
-	margin-bottom: 15px;
-}
-
-.fuelux .wizard ul li {
-	background: none;
-	font-size: 12px;
-	padding: 0 20px;
-}
-
-.fuelux .wizard ul li.active {
-	background: none;
-	color: #999;
-}
-
-.fuelux .wizard ul li.active span {
-	border-bottom: 1px dotted #999;
-}
-
 /* Benefits */
 .tablet-view {
 	display: none;
@@ -1340,6 +1116,7 @@ Fusion Advisor style
 
 .benefit-image img {
 	border-radius: 50%;
+	width: 100%;
 	max-width: 450px;
 	border: 1px solid #f9f9f9;
 }
@@ -1368,6 +1145,7 @@ Fusion Advisor style
 
 .benefit-testimonial img {
 	border-radius: 50%;
+	width: 100%;
 	max-width: 60px;
 }
 
@@ -1406,6 +1184,7 @@ footer .guaranted-logos {
 }
 
 .ClientsModal img {
+	width: 100%;
 	max-width: 160px;
 }
 

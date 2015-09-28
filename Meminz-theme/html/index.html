@@ -28,9 +28,6 @@
     <!-- Animate css -->
     <link href="css/animate.css" rel="stylesheet">
 
-    <!-- prettyPhoto -->
-    <link href="css/prettyPhoto.css" rel="stylesheet" />
-
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -101,7 +98,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" /></a>
+                            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Fusion Advisor" /></a>
                         </div>
                         <div class="collapse navbar-collapse">
                             <ul class="nav navbar-nav">
@@ -390,180 +387,7 @@
             <div class="clearfix"></div>
         </div>
         <!-- end content -->
-        <!-- Start Modal -->
-        <div class="modal fade modal-wizard" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                    </div>
 
-                    <div class="modal-body">
-
-                        <!-- widget content -->
-                        <div class="widget-body fuelux">
-
-                            <div class="wizard">
-                                <div class="progress-frame">
-                                    <div class="progress margin-bottom-0">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <ul class="steps">
-                                    <li data-target="#step1" class="active">
-                                        <span>1. LOGIN SETTINGS</span>
-                                    </li>
-                                    <li data-target="#step2">
-                                        <span>2. IMPORT LOGO</span>
-                                    </li>
-                                    <li data-target="#step3">
-                                        <span>3. PROFILE DETAILS</span>
-                                    </li>
-                                    <li data-target="#step4">
-                                        <span>4. INVITATION</span>
-                                    </li>
-                                    <li data-target="#step5">
-                                        <span>5. CONFIRMATION</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="step-content">
-                                <form class="form-horizontal wizard-form" method="post">
-
-                                    <div class="step-pane active" id="step1">
-                                        <p><strong>Create Login Settings</strong></p>
-
-                                        <!-- wizard form starts here -->
-                                        <fieldset>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                                        <input class="form-control" id="prepend" placeholder="Username" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                                        <input class="form-control" id="prepend" placeholder="Email" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                        <input class="form-control" id="prepend" placeholder="Password" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="input-group">
-                                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                        <input class="form-control" id="prepend" placeholder="Re-enter Password" type="text">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="step-pane" id="step2">
-                                        <h3><strong>Step 2 </strong> - Alerts</h3>
-
-                                        <div class="alert alert-warning fade in">
-                                            <button class="close" data-dismiss="alert">
-                                                ×
-                                            </button>
-                                            <i class="fa-fw fa fa-warning"></i>
-                                            <strong>Warning</strong> Your monthly traffic is reaching limit.
-                                        </div>
-
-                                        <div class="alert alert-success fade in">
-                                            <button class="close" data-dismiss="alert">
-                                                ×
-                                            </button>
-                                            <i class="fa-fw fa fa-check"></i>
-                                            <strong>Success</strong> The page has been added.
-                                        </div>
-
-                                        <div class="alert alert-info fade in">
-                                            <button class="close" data-dismiss="alert">
-                                                ×
-                                            </button>
-                                            <i class="fa-fw fa fa-info"></i>
-                                            <strong>Info!</strong> You have 198 unread messages.
-                                        </div>
-
-                                        <div class="alert alert-danger fade in">
-                                            <button class="close" data-dismiss="alert">
-                                                ×
-                                            </button>
-                                            <i class="fa-fw fa fa-times"></i>
-                                            <strong>Error!</strong> The daily cronjob has failed.
-                                        </div>
-
-                                    </div>
-
-                                    <div class="step-pane" id="step3">
-                                        <h3><strong>Step 3 </strong> - Wizard continued</h3>
-                                        <br>
-                                        <br>
-                                        <h1 class="text-center text-primary"> This will be your Step 3 </h1>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-
-                                    <div class="step-pane" id="step4">
-                                        <h3><strong>Step 4 </strong> - Wizard continued...</h3>
-                                        <br>
-                                        <br>
-                                        <h1 class="text-center text-danger"> This will be your Step 4 </h1>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-
-                                    <div class="step-pane" id="step5">
-                                        <h3><strong>Step 5 </strong> - Finished!</h3>
-                                        <br>
-                                        <br>
-                                        <h1 class="text-center text-success">
-                                            <i class="fa fa-check"></i> Congratulations!
-                                            <br>
-                                            <small>Click finish to end wizard</small>
-                                        </h1>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <br>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- end widget content -->
-                    </div>
-                    <!-- end modal body -->
-
-                    <div class="modal-footer">
-                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                        <button type="button" class="btn btn-primary">Next</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal -->
         <!-- Start Accounts Modal -->
         <div class="modal fade AccountsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -727,18 +551,10 @@
     <script src="js/flexslider/jquery.flexslider.js"></script>
     <script src="js/flexslider/setting.js"></script>
 
-    <!-- prettyPhoto -->
-    <script src="js/prettyPhoto/jquery.prettyPhoto.js"></script>
-    <script src="js/prettyPhoto/setting.js"></script>
-
     <!-- counters -->
     <script src="js/counters/jquery.appear.js"></script>
     <script src="js/counters/stellar.js"></script>
     <script src="js/counters/setting.js"></script>
-
-    <!-- Owl carousel -->
-    <script src="js/owlcarousel/owl.carousel.js"></script>
-    <script src="js/owlcarousel/setting.js"></script>
 
     <!-- Totop -->
     <!--<script src="js/totop/jquery.ui.totop.js"></script>
@@ -750,9 +566,7 @@
     <script src="js/custom.js"></script>
 
     <!--<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>-->
-    <!-- Wizard javascript -->
-    <!--<script src="js/wizard/jquery.bootstrap.wizard.min.js"></script>
-    <script src="js/wizard/wizard.min.js"></script>-->
+
     <!-- Application startup javascript -->
     <script src="js/require-2.1.16.js"></script>
     <script src="js/requirejs-config.js"></script>
