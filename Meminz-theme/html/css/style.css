@@ -186,49 +186,6 @@ Contain
 }
 
 /*
-Counter
-=========================== */
-#counter-wrapper{
-	/*background-image:url(../img/bg2.jpg);*/
-	background-position:0 0;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-}
-
-.counter-contain{
-	padding:80px 0 80px 0;
-	background-color:rgba(26, 26, 26, 0.95);
-	color:#fff;
-	font-size:24px;
-	line-height:32px;
-}
-
-.counter-contain h3{
-	color:#fff;
-	font-size:48px;
-	line-height:56px;
-	text-transform:uppercase;
-}
-
-.counter-number{
-	font-weight:700;
-	display:block;
-	text-align:center;
-	font-size:72px;
-	line-height:72px;
-	margin-top:30px;
-}
-
-.counter-text{
-	display:block;
-	text-align:center;
-	font-weight:400;
-	font-size:18px;
-	line-height:24px;
-	color:#d3d3d3;
-}
-
-/*
 Testimoni
 =========================== */
 #testimoni{
