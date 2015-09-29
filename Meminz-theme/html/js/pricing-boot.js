@@ -233,15 +233,12 @@ require(['jquery',
             };
 
             // application start
-            document.getElementById("loading").className = "loading-visible";
-            hideDiv = function () { document.getElementById("loading").className = "loading-invisible"; };
             //var oldLoad = window.onload;
             //var newLoad = oldLoad ? function () { hideDiv.call(this); oldLoad.call(this); } : hideDiv;
             //window.onload = newLoad;
             $(document).ready(function () {
                 var vm = new VM();
 
-                hideDiv(); // hide loading spin
                 $.each($('body'), function (index, element) {
                     ko.applyBindings(vm, element);
                 });

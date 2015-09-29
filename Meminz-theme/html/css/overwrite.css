@@ -1176,6 +1176,11 @@ footer .guaranted-logos {
 	left: 0;
 }
 
+/* Description */
+#description .col-md-7 img {
+	width: 100%;
+}
+
 /* Modals */
 .modal-dialog {
 	width: 80%;

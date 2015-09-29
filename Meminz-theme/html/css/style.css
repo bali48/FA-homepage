@@ -569,6 +569,7 @@ Download
 	background-position:0 0;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
+	background-size: cover;
 	text-align:center;
 	font-size:24px;
 	line-height:36px;
@@ -919,38 +920,6 @@ Ui to top
 }
 
 /*
-Loading
-=========================== */
-div.loading-invisible{
-    display:none;
-}
-
-div.loading-visible{
-    position:fixed;
-	z-index:9999999;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    text-align:center;
-    padding-top:20%;
-	font-size:24px;
-	line-height:36px;
-	color:#fff;
-	background-color:#1a1a1a;
-	font-weight:300;
-}
-
-div.loading-visible i{
-	display:inline-block;
-	margin-bottom:20px;
-}
-
-div.loading-visible .loader{
-	margin-bottom:20px;
-}
-
-/*
 Divider
 =========================== */
 .divider{
@@ -960,33 +929,6 @@ Divider
 	display:block;
 	background:#3f4149;
 	margin:40px 0 40px 0;
-}
-
-/*
-Clear spacer
-=========================== */
-.margin-clear{
-	margin:0;
-}
-
-.padding-clear{
-	padding:0;
-}
-
-.margintop-clear{
-	margin-top:0;
-}
-
-.paddingtop-clear{
-	padding-top:0;
-}
-
-.marginbot-clear{
-	margin-bottom:0;
-}
-
-.paddingbot-clear{
-	padding-bottom:0;
 }
 
 /*
