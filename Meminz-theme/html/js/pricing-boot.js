@@ -236,11 +236,11 @@ require(['jquery',
             //var oldLoad = window.onload;
             //var newLoad = oldLoad ? function () { hideDiv.call(this); oldLoad.call(this); } : hideDiv;
             //window.onload = newLoad;
-            // $(document).ready(function () {
-            var vm = new VM();
+            $(document).ready(function () {
+                var vm = new VM();
 
-            $.each($('body'), function (index, element) {
-                ko.applyBindings(vm, element);
+                $('[data-vm="main"]').each(function (index, element) {
+                    ko.applyBindings(vm, element);
+                });
             });
-            // });
         });
