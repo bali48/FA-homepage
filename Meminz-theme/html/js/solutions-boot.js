@@ -26,14 +26,14 @@ require(['jquery', 'knockout', 'fusion-iframe-dialog'], function ($, ko, faDialo
         _init();
     };
 
-    document.getElementById("loading").className = "loading-visible";
-    hideDiv = function () { document.getElementById("loading").className = "loading-invisible"; };
+    //document.getElementById("loading").className = "loading-visible";//
+    //hideDiv = function () { document.getElementById("loading").className = "loading-invisible"; };//
 
     $(document).ready(function () {
         // application start
         var vm = new VM();
 
-        hideDiv(); // hide loading spin
+        //hideDiv(); // hide loading spin
         $.each($('[data-fa-main]'), function (index, element) {
             ko.applyBindings(vm, element);
         });

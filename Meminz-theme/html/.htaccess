@@ -4,6 +4,16 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 
+RedirectMatch 301 /getting-started/(.*) /getting-started.html$1
+RedirectMatch 301 /solutions/(.*) /solutions.html$1
+RedirectMatch 301 /partners/(.*) /partners.html$1
+RedirectMatch 301 /advisor-reviews/(.*) /index.html$1
+RedirectMatch 301 /press/(.*) /index.html$1
+RedirectMatch 301 /contact/(.*) /index.html$1
+RedirectMatch 301 /terms-of-services/(.*) /index.html$1
+RedirectMatch 301 /sitemap/(.*) /index.html$1
+RedirectMatch 301 /security-policy/(.*) /index.html$1
+
 # 1. is not directory, 2. is an existing html file, 3. rewrite index to index.html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
