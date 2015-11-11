@@ -163,7 +163,7 @@ require(['jquery',
                     // do the calculation
                     // first for one advisor
                     advisorBaseCost = 180;
-                    advisorAggOptionsCost = 125;
+                    advisorAggOptionsCost = 50;
                     if (isAccountAggregationSelected) {
                         totalBaseCost = advisorBaseCost + advisorAggOptionsCost;
                     } else {
@@ -202,7 +202,7 @@ require(['jquery',
                     // now for office
                     if (isAccountAggregationSelected) {
                         realCost = (advisorBaseCost + advisorAggOptionsCost) * officeAdvisorSelectedCount;
-                        additionalAddvisorAggOptionsCost = 105; // aggregate option price
+                        additionalAddvisorAggOptionsCost = 50; // aggregate option price
                         cost = realCost * _saving[selectedPeriod].months;
                         self.officeAdvisorRealCost(currencyFormat(cost, 2));
                         realCost = (advisorBaseCost + advisorAggOptionsCost + additionalAddvisorAggOptionsCost * (officeAdvisorSelectedCount - 1)) * (1 - _saving[selectedPeriod].saving);
