@@ -1156,6 +1156,21 @@ Custom responsive
 		margin-bottom: 30px;
 	}
 
+	.pricing-page .common-features .col-sm-12 p {
+		display: inline-block;
+		float: left;
+		margin-left: 42px;
+	}
+
+	.pricing-page .common-features .col-sm-12 p.middle {
+		margin-left: 130px;
+		margin-right: 90px;
+	}
+
+	.pricing-page .packages {
+		margin-bottom: 50px;
+	}
+
 	.feature-box {
 		margin-bottom: 40px;
 	}
@@ -1189,8 +1204,6 @@ Custom responsive
 	}
 	.navbar-header{
 		float:left;
-		/*display:block;
-		width:100%;*/
 		padding: 15px 0 10px 0;
 		text-align:center;
 	}
@@ -1318,10 +1331,14 @@ Custom responsive
 		margin:0;
 	}
 
+	.navbar-brand img {
+		width: 160px;
+	}
+
 	.navbar-header{
-		float:right;
+		/*float:right;*/
 		width:100%;
-		padding: 10px 20px 10px 0;
+		padding: 10px 20px;
 	}
 
 	.navbar-header .navbar-toggle {
@@ -1371,16 +1388,26 @@ Custom responsive
 	}
 
 	.home-wrapper .video {
-		margin-top: 80px;
+		/*margin-top: 80px;*/
+	}
+
+	.parallax.polygon-bg .home-contain {
+		height: 450px;
 	}
 
 	.home-wrapper .video h3 {
-		font-size: 60px;
-		line-height: 60px;
+		font-size: 40px;
+		line-height: 45px;
+		margin-top: 0;
 	}
 
 	.home-wrapper .video span.sub-title {
-		line-height: 32px;
+		line-height: 25px;
+		font-size: 20px;
+	}
+
+	.close-video-btn {
+		top: 10px;
 	}
 
 	#client .titles-holder {
@@ -1462,18 +1489,18 @@ Custom responsive
 
 @media (min-width: 745px) and (max-width: 767px) {
 	.close-video-btn {
-		top: -56px;
+		/*top: -56px;*/
 	}
 }
 
 @media (max-width: 744px) {
 
 	.home-wrapper .video {
-		margin-top: 40px;
+		/*margin-top: 40px;*/
 	}
 
 	.close-video-btn {
-		top: 2px;
+		/*top: 2px;*/
 	}
 }
 
@@ -1492,7 +1519,7 @@ Custom responsive
 @media (max-width: 632px) {
 
 	.close-video-btn {
-		top: 36px;
+		/*top: 36px;*/
 	}
 }
 
@@ -1503,7 +1530,7 @@ Custom responsive
 	}
 
 	.close-video-btn {
-		top: 96px;
+		/*top: 96px;*/
 	}
 
 	.benefit-image img {
@@ -1528,4 +1555,3 @@ Custom responsive
 		line-height: 1;
 	}
 }
-

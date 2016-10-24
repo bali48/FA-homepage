@@ -1184,7 +1184,7 @@ footer .guaranted-logos {
 /* Modals */
 .modal-dialog {
 	width: 80%;
-	margin: 0 auto;
+	margin: 110px auto 0 auto;
 	max-width: 800px;
 }
 
@@ -1238,5 +1238,3 @@ footer .guaranted-logos {
 .additional-page .text-justify {
 	text-align: justify;
 }
-
-
