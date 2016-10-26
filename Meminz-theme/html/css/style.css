@@ -1472,43 +1472,50 @@ Custom responsive
 	}
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+.parallax.polygon-bg .home-contain {
+	height: 350px;
+}
+
+.home-wrapper .video h3 {
+	font-size: 45px;
+	line-height: 50px;
+	margin-top: 0;
+}
+
+.home-wrapper .video span.sub-title {
+	font-size: 24px;
+}
+
+.wistia_embed {
+	margin-top: -270px;
+}
+
+.close-video-btn {
+	top: -40px;
+}
+
+.pricing-page .common-features .col-sm-12 p {
+	margin-left: 20px;
+}
+
+.pricing-page .common-features .col-sm-12 p.middle {
+	margin-left: 60px;
+	margin-right: 50px;
+}
+
+@media (max-width: 589px) {
 
 	.parallax.polygon-bg .home-contain {
-		height: 350px;
+		height: 300px;
+	}
+
+	.home-contain {
+		padding-top: 40px;
 	}
 
 	.home-wrapper .video h3 {
-		font-size: 45px;
-		line-height: 50px;
-		margin-top: 0;
-	}
-
-	.home-wrapper .video span.sub-title {
-		font-size: 24px;
-	}
-
-	.wistia_embed {
-		margin-top: -270px;
-	}
-
-	.close-video-btn {
-		top: -50px;
-	}
-
-	.pricing-page .common-features .col-sm-12 p {
-		margin-left: 20px;
-	}
-
-	.pricing-page .common-features .col-sm-12 p.middle {
-		margin-left: 60px;
-		margin-right: 50px;
-	}
-}
-
-@media (min-width: 745px) and (max-width: 767px) {
-	.close-video-btn {
-		/*top: -56px;*/
+		font-size: 40px;
+		line-height: 45px;
 	}
 }
 
