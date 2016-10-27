@@ -1470,37 +1470,53 @@ Custom responsive
 		float: none;
 		margin-left: 20px;
 	}
+
+	.parallax.polygon-bg .home-contain {
+		height: 350px;
+	}
+
+	.home-wrapper .video h3 {
+		font-size: 45px;
+		line-height: 50px;
+		margin-top: 0;
+	}
+
+	.home-wrapper .video span.sub-title {
+		font-size: 24px;
+	}
+
+	.wistia_embed {
+		margin-top: -270px;
+	}
+
+	.close-video-btn {
+		top: -40px;
+	}
+
+	.pricing-page .common-features .col-sm-12 p {
+		margin-left: 20px;
+	}
+
+	.pricing-page .common-features .col-sm-12 p.middle {
+		margin-left: 60px;
+		margin-right: 50px;
+	}
 }
 
-.parallax.polygon-bg .home-contain {
-	height: 350px;
-}
+@media (max-width: 710px) {
+	#client .col-sm-6.right-top .logo-ca {
+		margin-left: 20px;
+	}
 
-.home-wrapper .video h3 {
-	font-size: 45px;
-	line-height: 50px;
-	margin-top: 0;
-}
+	.client-link.ameri-trade-img {
+		margin-right: 20px;
+	}
 
-.home-wrapper .video span.sub-title {
-	font-size: 24px;
-}
-
-.wistia_embed {
-	margin-top: -270px;
-}
-
-.close-video-btn {
-	top: -40px;
-}
-
-.pricing-page .common-features .col-sm-12 p {
-	margin-left: 20px;
-}
-
-.pricing-page .common-features .col-sm-12 p.middle {
-	margin-left: 60px;
-	margin-right: 50px;
+	footer .guaranted-logos {
+		display: block;
+		position: relative;
+		margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 589px) {
@@ -1519,26 +1535,24 @@ Custom responsive
 	}
 }
 
-@media (max-width: 744px) {
+@media (max-width: 510px) {
 
-	.home-wrapper .video {
-		/*margin-top: 40px;*/
+	.parallax.polygon-bg .home-contain {
+		height: 280px;
 	}
 
-	.close-video-btn {
-		/*top: 2px;*/
-	}
-}
-
-@media (max-width: 710px) {
-	#client .col-sm-6.right-top .logo-ca {
-		margin-left: 20px;
+	.home-wrapper .video h3 {
+		font-size: 35px;
+		line-height: 40px;
 	}
 
-	footer .guaranted-logos {
-		display: block;
-		position: relative;
-		margin-bottom: 20px;
+	.home-wrapper .video span.sub-title {
+		font-size: 20px;
+	}
+
+	.home-wrapper .video .play-video-btn {
+		font-size: 14px;
+		padding: 10px 20px;
 	}
 }
 
