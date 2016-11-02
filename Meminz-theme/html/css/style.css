@@ -1391,10 +1391,6 @@ Custom responsive
 		/*margin-top: 80px;*/
 	}
 
-	.close-video-btn {
-		top: 10px;
-	}
-
 	#client .titles-holder {
 		display: none;
 	}
@@ -1533,12 +1529,32 @@ Custom responsive
 		font-size: 40px;
 		line-height: 45px;
 	}
+
+	.wistia_embed {
+		margin-top: -255px;
+	}
+
+	.pricing-page .common-features div.text-center {
+		width: 50%;
+	}
+
+	.pricing-page .common-features .col-sm-12 p,
+	.pricing-page .common-features .col-sm-12 p.middle {
+		margin-left: 0;
+		margin-right: 0;
+		display: block;
+		float: none;
+	}
 }
 
 @media (max-width: 510px) {
 
 	.parallax.polygon-bg .home-contain {
 		height: 280px;
+	}
+
+	.wistia_embed {
+		margin-top: -235px;
 	}
 
 	.home-wrapper .video h3 {
@@ -1570,11 +1586,16 @@ Custom responsive
 	}
 
 	.close-video-btn {
-		/*top: 96px;*/
+		top: 10px;
 	}
 
 	.benefit-image img {
 		max-width: 100%;
+	}
+
+	.pricing-page .radio-inline label {
+		font-weight: normal;
+		padding: 5px 15px;
 	}
 }
 
