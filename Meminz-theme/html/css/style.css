@@ -1517,10 +1517,6 @@ Custom responsive
 
 @media (max-width: 589px) {
 
-	.parallax.polygon-bg .home-contain {
-		height: 300px;
-	}
-
 	.home-contain {
 		padding-top: 40px;
 	}
@@ -1547,11 +1543,13 @@ Custom responsive
 	}
 }
 
-@media (max-width: 510px) {
-
+@media (min-width: 511px) and (max-width: 589px) {
 	.parallax.polygon-bg .home-contain {
-		height: 280px;
+		height: 300px;
 	}
+}
+
+@media (max-width: 510px) {
 
 	.wistia_embed {
 		margin-top: -235px;
@@ -1572,10 +1570,9 @@ Custom responsive
 	}
 }
 
-@media (max-width: 632px) {
-
-	.close-video-btn {
-		/*top: 36px;*/
+@media (min-width: 450px) and (max-width: 510px) {
+	.parallax.polygon-bg .home-contain {
+		height: 280px;
 	}
 }
 
@@ -1596,6 +1593,12 @@ Custom responsive
 	.pricing-page .radio-inline label {
 		font-weight: normal;
 		padding: 5px 15px;
+	}
+}
+
+@media (max-width: 467px) {
+	.close-video-btn {
+		top: 40px;
 	}
 }
 
