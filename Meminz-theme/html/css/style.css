@@ -102,12 +102,12 @@ Home
 }
 
 .close-video-btn {
-	position: absolute;
-	top: 24px;
-	right: 20px;
+	position: relative;
 	cursor: pointer;
-	z-index: 1999;
 	color: #d7d7d7;
+	margin-top: -530px;
+	text-align: right;
+	margin-right: 10px;
 }
 
 .parallax{
@@ -1148,6 +1148,10 @@ Custom responsive
 		display: block;
 	}
 
+	.contain {
+		padding-top: 60px;
+	}
+
 	.benefit-testimonial {
 		margin-bottom: 60px;
 	}
@@ -1220,18 +1224,12 @@ Custom responsive
 		margin-top: 0;
 	}
 
-	.close-video-btn {
-		top: 0;
-	}
-
 	.screenshot-wrapper{
 		width:699px;
 		top:55px;
 		left:10px;
 	}
-	.contain{
-		padding-top:140px
-	}
+
 	.pricing-wrapper{
 		margin-bottom:30px;
 	}
@@ -1309,10 +1307,6 @@ Custom responsive
 
 	#client .col-sm-6 .partner-request {
 		text-align: left;
-	}
-
-	.contain {
-		padding-top: 60px;
 	}
 
 	#download h3 {
@@ -1485,10 +1479,6 @@ Custom responsive
 		margin-top: -270px;
 	}
 
-	.close-video-btn {
-		top: -40px;
-	}
-
 	.pricing-page .common-features .col-sm-12 p {
 		margin-left: 20px;
 	}
@@ -1582,10 +1572,6 @@ Custom responsive
 		padding-top: 20px;
 	}
 
-	.close-video-btn {
-		top: 10px;
-	}
-
 	.benefit-image img {
 		max-width: 100%;
 	}
@@ -1596,15 +1582,9 @@ Custom responsive
 	}
 }
 
-@media (max-width: 467px) {
-	.close-video-btn {
-		top: 40px;
-	}
-}
-
 @media (max-width: 414px) {
 	.subscribe-form {
-		width: 60%;
+		width: 70%;
 	}
 
 	.accordion-heading a {
@@ -1617,5 +1597,40 @@ Custom responsive
 		height: 55px;
 		font-size: 50px;
 		line-height: 1;
+	}
+
+	.pricing-page .radio-inline label {
+		font-size: 12px;
+		padding: 5px 10px;
+	}
+
+	.pricing-page .common-features div.text-center {
+		width: 100%;
+	}
+}
+
+@media (max-width: 365px) {
+
+	#download h3 {
+		font-size: 30px;
+	}
+
+	#download p {
+		font-size: 18px;
+	}
+
+	.subscribe-form {
+		width: 80%;
+	}
+
+	.accordion-heading a {
+		font-size: 14px;
+		padding: 5px 20px 5px 65px;
+	}
+
+	.accordion-heading a i {
+		width: 50px;
+		height: 50px;
+		font-size: 45px;
 	}
 }

@@ -929,7 +929,8 @@ Fusion Advisor style
 }
 
 .pricing-page .close-video-btn {
-	top: 10px;
+	margin-top: -815px;
+	z-index: 9999;
 }
 
 .saving {
