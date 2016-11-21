@@ -1607,6 +1607,10 @@ Custom responsive
 	.pricing-page .common-features div.text-center {
 		width: 100%;
 	}
+
+	.navbar-collapse .navbar-right .btn {
+		padding: 6px 18px;
+	}
 }
 
 @media (max-width: 365px) {
@@ -1632,5 +1636,10 @@ Custom responsive
 		width: 50px;
 		height: 50px;
 		font-size: 45px;
+	}
+
+	.pricing-page .radio-inline label {
+		font-size: 11px;
+		padding: 5px 8px;
 	}
 }
